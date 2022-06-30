@@ -191,3 +191,98 @@
 .no-acc{
   color: #7d7d7d;
 }
+
+.no-acc span{
+  color:  #1EBA60;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.SignUp2{
+  height: 100vh;
+  text-align: center;
+}
+.SignUp2 h2{
+  color: #1EBA60;
+  margin-top: -10px;
+}
+.people2{
+  height: 20vh;
+  margin-top: -50px;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container h2{
+  color: black;
+  margin-top: 10px;
+}
+
+.form {
+    margin-top: 20px;
+    background-color: white;
+    padding: 0 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);*/
+}
+
+.form--input {
+    text-indent: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.form--submit {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #1EBA60;
+    border: none;   
+    cursor: pointer; 
+}
+
+.form--input:focus{
+    outline: 2px solid #1EBA60;
+}
+
+.form--marketing {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.form--marketing > input {
+    margin-right: 10px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 30vw;
+}
+
+.forget{
+    color: #1EBA60; 
+    cursor: pointer;
+}
+
+.back{
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
