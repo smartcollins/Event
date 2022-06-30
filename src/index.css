@@ -26,16 +26,25 @@ code {
 }
 
 
-/*form mobile large*/@media (max-width: 37.5em){}
-/*from tablet*/@media (max-width: 56.25em){
+/*form mobile large*/@media (min-width: 37.5em){}
+/*from tablet*/@media (min-width: 56.25em){
+  html{
+    font-size: 75%;
+  }  
   body{
-    background-color: red;
-  }
-  .intro-img{
-    /*background-color: blue;*/
-    /*height: 50vh;*/
+    /*background-color: red;*/
   }
 }
-/*from laptop*/@media (max-width: 75em){}
+/*from laptop*/@media (min-width: 75em){}
 /*for screen bigger than medium sized laptops*/@media (min-width: 112.5em){}
 /*@media screen and (min-width: 768px){}*/
+
+
+
+
+/*56.25%
+
+50%
+
+75%
+*/
