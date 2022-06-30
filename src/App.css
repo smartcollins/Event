@@ -62,13 +62,24 @@
   /*background-color: blue;*/
 }
 
-.intro-img{
+.intro-img,.intro2-img,.intro3-img{
   margin: 0 auto;
-  background-image: url(./image/easycart.webp);
   background-position: 50% 50%;
   height: 50vh;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.intro-img{
+  background-image: url(./image/easycart.webp);
+}
+
+.intro2-img{
+  background-image: url(./image/world.webp);
+}
+
+.intro3-img{
+  background-image: url(./image/packaged.webp);
 }
 
 .intro h2{
