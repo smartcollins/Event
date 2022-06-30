@@ -62,7 +62,7 @@
   /*background-color: blue;*/
 }
 
-.intro-img,.intro2-img,.intro3-img{
+.intro-img,.intro2-img,.intro3-img,{
   margin: 0 auto;
   background-position: 50% 50%;
   height: 50vh;
@@ -134,4 +134,60 @@
   background-color: transparent;
   color: #1EBA60;
   border: 1px solid #1EBA60;
+}
+
+
+.signup-img{
+  background-image: url(./image/welcome.png);
+  margin: 0 auto;
+  background-position: 50% 50%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*.signup-img{
+  background-image: url(./image/welcome.png);
+}
+*/
+.signup-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*padding: 1rem;*/
+}
+.signup-btn p{
+  font-weight: bold;
+}
+
+.signup-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.signup-btn button{
+  background-color: transparent;
+  border: 1px solid #e6e6e6;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.logo-text{
+  padding-left: 1rem;
+}
+
+.signup-btn .sign-in{
+  background-color: #1EBA60;
+  border-radius: 3rem;
+  color: white;
+  padding: 1rem 5px;
+}
+
+.no-acc{
+  color: #7d7d7d;
 }

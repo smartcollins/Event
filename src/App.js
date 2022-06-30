@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from "react";
 import Intro from "./Intro";
+import SignUp from "./SignUp"
 
 function App() {
   const [nextPhase,setNextPhase] = useState(false);
@@ -23,7 +24,6 @@ function App() {
 
   function onNextphase3(){
     setNextPhase3(true)
-    // setNextPhase2(false)
   }
 
   function onNextphase2(){
@@ -38,11 +38,12 @@ function App() {
     <div className="App">
       {
         skip?
-        <div>werty</div>:
+        <SignUp/>:
         nextPhase3 ?
         <Intro
           img="intro3-img"
           txt="Trusted, transparent, and effective in sharing kindness"
+          nxt3={true}
           nxt={onSkip}
           skip={onSkip}
         />:
@@ -50,6 +51,7 @@ function App() {
         <Intro
           img="intro2-img"
           txt="Create your own fundraising and publish it to the world"
+          nxt2={true}
           nxt={onNextphase3}
           skip={onSkip}
         />:
