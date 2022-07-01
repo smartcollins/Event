@@ -62,7 +62,7 @@
   /*background-color: blue;*/
 }
 
-.intro-img,.intro2-img,.intro3-img,{
+.intro-img,.intro2-img,.intro3-img{
   margin: 0 auto;
   background-position: 50% 50%;
   height: 50vh;
@@ -115,7 +115,7 @@
   border-radius: 2.5rem;
   color: white;
   background-color: #1EBA60;
-  /*width: 100%;*/
+  width: 80vw;
 }
 
 .intro .end .nxt:first-child{
@@ -136,6 +136,10 @@
   border: 1px solid #1EBA60;
 }
 
+.signup{
+  padding-bottom: 1rem;
+}
+
 
 .signup-img{
   background-image: url(./image/welcome.png);
@@ -150,17 +154,14 @@
   background-image: url(./image/welcome.png);
 }
 */
-.signup-btn {
+.signup-btn{
   display: flex;
   flex-direction: column;
   justify-content: center;
   /*padding: 1rem;*/
 }
-.signup-btn p{
-  font-weight: bold;
-}
 
-.signup-btn {
+.signup-btn{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -170,15 +171,28 @@
 .signup-btn button{
   background-color: transparent;
   border: 1px solid #e6e6e6;
-  margin: 5px 0;
+  margin: 5px auto;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.signup-btn button div{
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  width: 50%;
 }
 
 .logo-text{
-  padding-left: 1rem;
+  margin-left: 1rem;
+  font-weight: bold;
+  align-items: flex-start;
+  width: 50%;
+  text-align: left;
 }
 
 .signup-btn .sign-in{
@@ -190,6 +204,7 @@
 
 .no-acc{
   color: #7d7d7d;
+  margin: 1rem auto;
 }
 
 .no-acc span{

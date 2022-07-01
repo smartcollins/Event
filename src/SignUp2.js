@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {AppleLogo, GoogleLogo, FacebookLogo  } from "phosphor-react";
-import SignIn from "./SignIn";
-import HomePage from "./HomePage"
+// import SignIn from "./SignIn";
+// import HomePage from "./HomePage"
 
 function SignUp2(){
 	const [signIn,setSignIn] = useState(false)
@@ -39,10 +39,10 @@ function SignUp2(){
 	return(
 			<div>
 				{
-					signIn ?
-						<SignIn/> :
-					signUp ?
-						<HomePage/> :
+					// signIn ?
+					// 	<SignIn/> :
+					// signUp ?
+					// 	<HomePage/> :
 					<div className="SignUp2">
 						<img className="people2" src="https://5.imimg.com/data5/AA/IF/TH/SELLER-1594742/download-free-bulk-whatsapp-sending-software-1000x1000.png" alt="head"/>
 						<h2>We care</h2>
