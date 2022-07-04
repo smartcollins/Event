@@ -141,7 +141,7 @@
 }
 
 
-.signup-img,.signup2-img{
+.welcome-img,.signup-img{
   margin: 0 auto;
   background-position: 50% 50%;
   height: 50vh;
@@ -149,25 +149,18 @@
   background-size: contain;
 }
 
-.signup-img{
+.welcome-img{
   background-image: url(./image/welcome.png);
 }
 
-.signup-btn{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /*padding: 1rem;*/
-}
-
-.signup-btn{
+.welcome-btn{
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
 }
 
-.signup-btn button{
+.welcome-btn button{
   background-color: transparent;
   border: 1px solid #e6e6e6;
   margin: 5px auto;
@@ -178,7 +171,7 @@
   border-radius: 5px;
 }
 
-.signup-btn button div{
+.welcome-btn button div{
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -194,7 +187,7 @@
   text-align: left;
 }
 
-.signup-btn .sign-in{
+.welcome-btn .sign-in{
   background-color: #1EBA60;
   border-radius: 3rem;
   color: white;
@@ -212,15 +205,15 @@
   cursor: pointer;
 }
 
-.signup2-img{
+.signup-img{
   background-image: url(./image/wecare.webp);
 }
 
-.signup2{
-  font-size: 1.5rem;
+.signup{
+  /*font-size: 1.5rem;*/
 }
 
-.signup2 h1{
+.signup h1{
   color: #1EBA60;
 }
 
@@ -252,7 +245,8 @@
 
 .form--input {
   width: 100%;
-  margin-bottom: 2rem;
+  /*margin-bottom: 2rem;*/
+  margin: 1rem;
   padding: 2rem;
   border-radius: 5px;
   border: 1px solid #EBEEF2;

@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { useState, useEffect } from "react";
 import Intro from "./Intro";
-import SignUp from "./SignUp";
+import Welcome from "./Welcome";
 
 function App() {
   const [nextPhase, setNextPhase] = useState(false);
@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="App">
       {skip ? (
-        <SignUp />
+        <Welcome />
       ) : nextPhase3 ? (
         <Intro
           img="intro3-img"

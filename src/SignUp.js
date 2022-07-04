@@ -1,60 +1,121 @@
 import { useState } from "react";
 import { AppleLogo, GoogleLogo, FacebookLogo } from "phosphor-react";
-import SignUp2 from "./SignUp2";
-// import SignIn from "./SignIn"
+// import SignIn from "./SignIn";
+// import HomePage from "./HomePage"
 
 function SignUp() {
-  const [signUp, setSignUp] = useState(false);
   const [signIn, setSignIn] = useState(false);
+  const [signUp, setSignUp] = useState(false);
+  const [form, setForm] = useState({
+    email: "",
+    password: "",
+    password2: "",
+    join: true,
+  });
 
-  function onSignUp() {
-    setSignUp(true);
+  function handle(e) {
+    const { name, value, type, checked } = e.target;
+    setForm((prevForm) => {
+      return {
+        ...prevForm,
+        [name]: type === "checkbox" ? checked : value,
+      };
+    });
+  }
+  console.log(form);
+  function handleSubmit(event) {
+    event.preventDefault();
   }
 
   function onSignIn() {
     setSignIn(true);
   }
 
+  function onSignUp() {
+    setSignUp(true);
+  }
+
   return (
     <div>
       {
-        signUp ?
-        <SignUp2/> :
         // signIn ?
-        // <SignIn/> :
+        // 	<SignIn/> :
+        // signUp ?
+        // 	<HomePage/> :
         <div className="signup">
           <div className="intro-main">
             <div className="signup-img"></div>
           </div>
-          <h2>Lets you in</h2>
-          <div className="signup-btn">
-            <button>
-              <div>
-                <FacebookLogo size={25} color="#0d1be3" weight="fill" />
-                <p className="logo-text">Facebook</p>
+          <h1>We care</h1>
+          <div className="form-container">
+            <h2>Sign up for free</h2>
+            <form className="form" onSubmit={handleSubmit}>
+              <p>
+                Email <span>*</span>
+              </p>
+              <input
+                type="email"
+                placeholder="Email address"
+                className="form--input"
+                name="email"
+                value={form.email}
+                onChange={handle}
+              />
+              <p>
+                Password <span>*</span>
+              </p>
+              <input
+                type="password"
+                placeholder="Password"
+                className="form--input"
+                name="password"
+                value={form.password}
+                onChange={handle}
+              />
+              <p>
+                Confirm <span>*</span>
+              </p>
+              <input
+                type="password"
+                placeholder="Confirm password"
+                className="form--input"
+                name="password2"
+                value={form.password2}
+                onChange={handle}
+              />
+
+              <div className="form--marketing">
+                <input
+                  id="okayToEmail"
+                  type="checkbox"
+                  name="join"
+                  checked={form.join}
+                  onChange={handle}
+                />
+                <label htmlFor="okayToEmail">Keep me always logged in</label>
               </div>
-            </button>
-            <button>
-              <div>
-                <GoogleLogo size={25} color="#ec0909" weight="fill" />
-                <p className="logo-text">Google</p>
-              </div>
-            </button>
-            <button>
-              <div>
-                <AppleLogo size={25} color="#3f2727" weight="fill" />
-                <p className="logo-text">Apple</p>
-              </div>
-            </button>
-            <p>Or</p>
-          </div>
-          <button onClick={onSignIn} className="nxt">
-            Sign in With Password
-          </button>
-          <div className="no-acc">
-            <p>
-              don't have an account ? <span onClick={onSignUp}>Sign Up</span>
-            </p>
+              <button onClick={onSignUp} className="nxt">
+                Sign up
+              </button>
+            </form>
+            <p>Or continue with</p>
+            <div className="icons">
+              <button>
+                <FacebookLogo size={32} color="#0d1be3" weight="fill" />
+              </button>
+              <button>
+                <GoogleLogo size={32} color="#ec0909" weight="fill" />
+              </button>
+              <button>
+                <AppleLogo size={32} color="#3f2727" weight="fill" />
+              </button>
+            </div>
+            <div className="no-acc">
+              <p>
+                Already have an account ?{" "}
+                <span onClick={onSignIn}>Sign In</span>
+              </p>
+            </div>
           </div>
         </div>
       }
