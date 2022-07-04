@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { AppleLogo, GoogleLogo, FacebookLogo } from "phosphor-react";
-// import SignIn from "./SignIn";
+import Forgot from "./Forgot";
 // import HomePage from "./HomePage"
 
 function SignUp({ txt, txt2, txt3, txt4, forgot }) {
   const [signIn, setSignIn] = useState(false);
   const [signUp, setSignUp] = useState(false);
+  const [forgotPass, setForgotPass] = useState(false);
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -35,9 +36,15 @@ function SignUp({ txt, txt2, txt3, txt4, forgot }) {
     setSignUp(true);
   }
 
+  function onForgot() {
+    setForgotPass(true);
+  }
+
   return (
     <div>
       {
+        forgot?
+        <Forgot/>:
         // signIn ?
         //  <SignIn/> :
         // signUp ?
@@ -98,7 +105,7 @@ function SignUp({ txt, txt2, txt3, txt4, forgot }) {
                 {txt2}
               </button>
             </form>
-            <p className="forget">{forgot}</p>
+            <p onClick="onForgot" className="forget">{forgot}</p>
             <p>Or continue with</p>
             <div className="icons">
               <button>
