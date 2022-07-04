@@ -141,8 +141,7 @@
 }
 
 
-.signup-img{
-  background-image: url(./image/welcome.png);
+.signup-img,.signup2-img{
   margin: 0 auto;
   background-position: 50% 50%;
   height: 50vh;
@@ -150,10 +149,10 @@
   background-size: contain;
 }
 
-/*.signup-img{
+.signup-img{
   background-image: url(./image/welcome.png);
 }
-*/
+
 .signup-btn{
   display: flex;
   flex-direction: column;
@@ -214,8 +213,14 @@
 }
 
 .SignUp2{
-  height: 100vh;
-  text-align: center;
+  /*height: 100vh;*/
+  /*text-align: center;*/
+  /*background-color: red;*/
+  /*height: 100%;*/
+}
+
+.signup2-img{
+  background-image: url(./image/wecare.webp);
 }
 .SignUp2 h2{
   color: #1EBA60;
@@ -223,7 +228,7 @@
 }
 .people2{
   height: 20vh;
-  margin-top: -50px;
+  /*margin-top: -50px;*/
 }
 .form-container {
     display: flex;

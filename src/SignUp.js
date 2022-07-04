@@ -18,8 +18,8 @@ function SignUp() {
   return (
     <div>
       {
-        // signUp ?
-        // <SignUp2/> :
+        signUp ?
+        <SignUp2/> :
         // signIn ?
         // <SignIn/> :
         <div className="signup">
