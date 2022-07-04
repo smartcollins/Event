@@ -284,6 +284,8 @@
 .forget{
   color: #1EBA60; 
   cursor: pointer;
+  margin-top: -2rem;
+  margin-bottom: 1rem;
 }
 
 .back{

@@ -3,7 +3,7 @@ import { AppleLogo, GoogleLogo, FacebookLogo } from "phosphor-react";
 // import SignIn from "./SignIn";
 // import HomePage from "./HomePage"
 
-function SignUp() {
+function SignUp({ txt, txt2, txt3, txt4, forgot }) {
   const [signIn, setSignIn] = useState(false);
   const [signUp, setSignUp] = useState(false);
   const [form, setForm] = useState({
@@ -39,16 +39,16 @@ function SignUp() {
     <div>
       {
         // signIn ?
-        // 	<SignIn/> :
+        //  <SignIn/> :
         // signUp ?
-        // 	<HomePage/> :
+        //  <HomePage/> :
         <div className="signup">
           <div className="intro-main">
             <div className="signup-img"></div>
           </div>
           <h1>We care</h1>
           <div className="form-container">
-            <h2>Sign up for free</h2>
+            <h2>{txt}</h2>
             <form className="form" onSubmit={handleSubmit}>
               <p>
                 Email <span>*</span>
@@ -95,9 +95,10 @@ function SignUp() {
                 <label htmlFor="okayToEmail">Keep me always logged in</label>
               </div>
               <button onClick={onSignUp} className="nxt">
-                Sign up
+                {txt2}
               </button>
             </form>
+            <p className="forget">{forgot}</p>
             <p>Or continue with</p>
             <div className="icons">
               <button>
@@ -112,8 +113,8 @@ function SignUp() {
             </div>
             <div className="no-acc">
               <p>
-                Already have an account ?{" "}
-                <span onClick={onSignIn}>Sign In</span>
+                {txt3}
+                <span onClick={onSignIn}> {txt4}</span>
               </p>
             </div>
           </div>
