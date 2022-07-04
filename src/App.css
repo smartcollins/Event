@@ -141,7 +141,7 @@
 }
 
 
-.welcome-img,.signup-img{
+.welcome-img,.signup-img,.forgot-img{
   margin: 0 auto;
   background-position: 50% 50%;
   height: 50vh;
@@ -290,8 +290,13 @@
 
 .back{
   display: flex;
-  align-items: center;
-  margin-top: -20px;
-  margin-bottom: 20px;
+  margin: 1rem;
 }
 
+.back h1{
+  margin-left: 1rem;
+}
+
+.forgot-img{
+  background-image: url(./image/password.svg);
+}

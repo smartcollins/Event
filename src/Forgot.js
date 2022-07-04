@@ -22,10 +22,12 @@ function Forgot(){
 					// 	<Reset/> :
 					<div className="forgot">
 						<div className="back">
-							<ArrowLeft size={32} color="#2fe22c" weight="duotone" onClick={onBack} />
-							<h2>Forgot password</h2>
+							<ArrowLeft size={30} color="#2fe22c" weight="duotone" onClick={onBack} />
+							<h1>Forgot password</h1>
 						</div>
-						<img src="https://www.eurofiscalis.com/wp-content/uploads/2022/03/undraw_my_password_re_ydq7.svg" alt="logo" />
+						<div className="intro-main">
+			        	    <div className="forgot-img"></div>
+				        </div>
 						<div>
 							<p>Select which contact details should we use to reset your password</p>
 							<button className="method">
