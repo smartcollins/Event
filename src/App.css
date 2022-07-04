@@ -212,91 +212,84 @@
   cursor: pointer;
 }
 
-.SignUp2{
-  /*height: 100vh;*/
-  /*text-align: center;*/
-  /*background-color: red;*/
-  /*height: 100%;*/
-}
-
 .signup2-img{
   background-image: url(./image/wecare.webp);
 }
-.SignUp2 h2{
+
+.signup2{
+  font-size: 1.5rem;
+}
+
+.signup2 h1{
   color: #1EBA60;
-  margin-top: -10px;
 }
-.people2{
-  height: 20vh;
-  /*margin-top: -50px;*/
-}
+
 .form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  /*background-color: blue;*/
 }
 
 .form-container h2{
   color: black;
-  margin-top: 10px;
+  margin-top: 2rem;
 }
 
 .form {
-    margin-top: 20px;
-    background-color: white;
-    padding: 0 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /*box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);*/
+  padding: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form p{
+  width: 100%;
+  text-align: left;
+}
+
+.form span{
+  color: red;
 }
 
 .form--input {
-    text-indent: 10px;
-    width: 100%;
-    margin-bottom: 20px;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    padding: 5px;
-    font-family: 'Inter', sans-serif;
-}
-
-.form--submit {
-    width: 50%;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-    background-color: #1EBA60;
-    border: none;   
-    cursor: pointer; 
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 5px;
+  border: 1px solid #EBEEF2;
 }
 
 .form--input:focus{
-    outline: 2px solid #1EBA60;
+  outline: 2px solid #1EBA60;
 }
 
+
 .form--marketing {
-    display: flex;
-    margin-bottom: 20px;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
 }
 
 .form--marketing > input {
-    margin-right: 10px;
+  margin-right: 1rem;
 }
 
 .icons{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 30vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+
+.icons button{
+  border-radius: 50%;
+  padding: 1rem;
+  border: 1px solid #EBEEF2;
+  background-color: transparent;
 }
 
 .forget{
-    color: #1EBA60; 
-    cursor: pointer;
+  color: #1EBA60; 
+  cursor: pointer;
 }
 
 .back{
