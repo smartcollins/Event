@@ -1,12 +1,9 @@
 import { useState } from "react";
 import { AppleLogo, GoogleLogo, FacebookLogo } from "phosphor-react";
-import Forgot from "./Forgot";
-// import HomePage from "./HomePage"
 
-function SignUp({ txt, txt2, txt3, txt4, forgot }) {
+function SignUp({ txt, txt2, txt3, txt4, forgot,onSign, onForgot, onSwitch }) {
   const [signIn, setSignIn] = useState(false);
   const [signUp, setSignUp] = useState(false);
-  const [forgotPass, setForgotPass] = useState(false);
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -28,27 +25,9 @@ function SignUp({ txt, txt2, txt3, txt4, forgot }) {
     event.preventDefault();
   }
 
-  function onSignIn() {
-    setSignIn(true);
-  }
-
-  function onSignUp() {
-    setSignUp(true);
-  }
-
-  function onForgot() {
-    setForgotPass(true);
-  }
-
   return (
     <div>
       {
-        forgot?
-        <Forgot/>:
-        // signIn ?
-        //  <SignIn/> :
-        // signUp ?
-        //  <HomePage/> :
         <div className="signup">
           <div className="intro-main">
             <div className="signup-img"></div>
@@ -101,11 +80,11 @@ function SignUp({ txt, txt2, txt3, txt4, forgot }) {
                 />
                 <label htmlFor="okayToEmail">Keep me always logged in</label>
               </div>
-              <button onClick={onSignUp} className="nxt">
+              <button onClick={onSign} className="nxt">
                 {txt2}
               </button>
             </form>
-            <p onClick="onForgot" className="forget">{forgot}</p>
+            <p onClick={onForgot} className="forget">{forgot}</p>
             <p>Or continue with</p>
             <div className="icons">
               <button>
@@ -121,7 +100,7 @@ function SignUp({ txt, txt2, txt3, txt4, forgot }) {
             <div className="no-acc">
               <p>
                 {txt3}
-                <span onClick={onSignIn}> {txt4}</span>
+                <span onClick={onSwitch}> {txt4}</span>
               </p>
             </div>
           </div>

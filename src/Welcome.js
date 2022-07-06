@@ -1,38 +1,60 @@
 import { useState } from "react";
 import { AppleLogo, GoogleLogo, FacebookLogo } from "phosphor-react";
 import SignUp from "./SignUp";
+import Forgot from "./Forgot";
 // import SignIn from "./SignIn"
 
 function Welcome() {
+  const [sign, setSign] = useState(false);
   const [signUp, setSignUp] = useState(false);
   const [signIn, setSignIn] = useState(false);
+  const [forgotPass, setForgotPass] = useState(false);
 
   function onSignUp() {
     setSignUp(true);
+    setSignIn(false);
   }
 
   function onSignIn() {
     setSignIn(true);
+    setSignUp(false);
   }
+
+  function onSign(){
+    setSign(true);
+  }
+
+  function onForgot() {
+    setForgotPass(true);
+  }
+
 
   return (
     <div>
       {
+        sign ?
+        <p>Home page</p> :
+        forgotPass?
+        <Forgot/>:
         signUp ?
         <SignUp
           txt="Sign up for free"
           txt2="Sign Up"
           txt3="Already have an account"
+          onSign={onSign}
           txt4="Sign In"
+          onSwitch={onSignIn}
         /> :
         signIn ?
         <SignUp
-          // onSignIn={onSignIn}
           txt="Sign in to your account"
           txt2="Sign In"
           txt3="Don't have an Account"
           txt4="Sign Up"
           forgot="Forgot the Password?"
+          onSign={onSign}
+          onForgot={onForgot}
+          onSwitch={onSignUp}
         /> :
         <div className="welcome">
           <div className="intro-main">
