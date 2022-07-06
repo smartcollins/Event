@@ -1,6 +1,6 @@
 import {ArrowLeft,ChatText,Envelope} from "phosphor-react";
 import {useState} from "react";
-// import Reset from "./Reset"
+import Reset from "./Reset"
 import Welcome from "./Welcome"
 function Forgot(){
 	const [back,setBack] = useState(false)
@@ -29,8 +29,8 @@ function Forgot(){
 			<div>
 				{	back ?
 					<Welcome/> :
-					// method ? 
-					// 	<Reset/> :
+					verify ? 
+					<Reset/> :
 					<div className="forgot">
 						<div className="back">
 							<ArrowLeft size={30} color="#2fe22c" weight="duotone" onClick={onBack} />
