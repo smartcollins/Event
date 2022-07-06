@@ -1,11 +1,10 @@
 import {useState} from "react";
-import {ArrowLeft,ChatText,Envelope} from "phosphor-react";
-// import Ready from "./Ready"
+import {ArrowLeft} from "phosphor-react";
+import Ready from "./Ready"
 import Forgot from "./Forgot"
 
 function Reset2(){
 	const [save,setSave] = useState(false);
-
 	const [back,setBack] = useState(false);
 
 	function onSave(){
@@ -43,8 +42,8 @@ function Reset2(){
 			<div>
 				{	back ?
 					<Forgot/> :
-					// save ? 
-					// 	<Ready/> :
+					save ? 
+					<Ready/> :
 					<div>
 						<div className="back">
 							<ArrowLeft size={30} color="#2fe22c" weight="duotone" onClick={onBack} />

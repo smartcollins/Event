@@ -385,6 +385,12 @@
   margin: 0 auto;
 }
 
+.resend h1{
+  margin-bottom: 1rem;
+  color: #1EBA60;
+  text-align: center;
+}
+
 .reset-img{
   background-image: url(./image/reset.svg);
 }

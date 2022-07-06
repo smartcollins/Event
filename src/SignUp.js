@@ -2,8 +2,8 @@ import { useState } from "react";
 import { AppleLogo, GoogleLogo, FacebookLogo } from "phosphor-react";
 
 function SignUp({ txt, txt2, txt3, txt4, forgot,onSign, onForgot, onSwitch }) {
-  const [signIn, setSignIn] = useState(false);
-  const [signUp, setSignUp] = useState(false);
+  // const [signIn, setSignIn] = useState(false);
+  // const [signUp, setSignUp] = useState(false);
   const [form, setForm] = useState({
     email: "",
     password: "",
