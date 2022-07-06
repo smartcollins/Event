@@ -1,5 +1,6 @@
 /*Dark mode color scheme: 
   color: #35e01f;
+  color: #05f020;
   background-color: #121212;
 */
 
@@ -299,4 +300,49 @@
 
 .forgot-img{
   background-image: url(./image/password.svg);
+}
+
+.forgot-txt{
+  padding: 1rem;
+  text-align: left;
+  margin: 1rem auto;
+  width: 85vw;
+  font-size: 1.5rem;
+}
+
+.method{
+  background-color: transparent;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 85vw;
+  border: 1px solid #1EBA60;
+}
+.method:focus{
+  outline: 2px solid #1EBA60;
+  background-color: transparent;
+}
+
+.method-logo{
+  background-color: #D8FDE1;
+  border-radius: 100%;
+  padding: 1rem;
+}
+
+.method-txt{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.method-txt p{
+  padding: 5px;
+}
+
+.forgot .nxt{
+  width: 85vw;
 }

@@ -29,9 +29,9 @@ function Forgot(){
 			        	    <div className="forgot-img"></div>
 				        </div>
 						<div>
-							<p>Select which contact details should we use to reset your password</p>
+							<p className="forgot-txt">Select which contact details should we use to reset your password</p>
 							<button className="method">
-								<div className="logo-back">
+								<div className="method-logo">
 									<ChatText size={32} color="#2fe22c" weight="duotone" />
 								</div>
 								<div className="method-txt">
@@ -40,7 +40,7 @@ function Forgot(){
 								</div>
 							</button>
 							<button className="method">
-								<div className="logo-back">
+								<div className="method-logo">
 									<Envelope size={32} color="#2fe22c" weight="duotone" />
 								</div>
 								<div className="method-txt">
@@ -48,9 +48,7 @@ function Forgot(){
 									<p>ex**le@yourdomain.com</p>
 								</div>
 							</button>
-							<div className="forgot-end">
-								<button onClick={onMethod} className="nxt">Continue</button>
-							</div>
+							<button onClick={onMethod} className="nxt">Continue</button>
 						</div>
 					</div>
 				}
