@@ -1,27 +1,36 @@
+/*Dark mode color scheme: 
+  color: #35e01f;
+  color: #05f020;
+  background-color: #121212;
+*/
+
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
+  position: absolute;
+  bottom: 2rem;
 }
+
+.App-header {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center;*/
+  /*font-size: calc(10px + 2vmin);*/
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -35,4 +44,353 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.loading{
+  max-width: 40%;
+  object-fit: contain;
+  padding-top: 20vh;
+}
+
+.intro{
+  margin-top: 30px;
+  padding: 30px 20px;
+  height: 100vh;
+}
+
+.intro-main{
+  /*background-color: blue;*/
+}
+
+.intro-img,.intro2-img,.intro3-img{
+  margin: 0 auto;
+  background-position: 50% 50%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.intro-img{
+  background-image: url(./image/easycart.webp);
+}
+
+.intro2-img{
+  background-image: url(./image/world.webp);
+}
+
+.intro3-img{
+  background-image: url(./image/packaged.webp);
+}
+
+.intro h2{
+  margin: 2rem auto;
+  color: #1EBA60;
+  text-align: center;
+}
+
+.circle{
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.circle *{
+  padding: 5px;
+}
+
+.end{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.intro .nxt{
+  margin: 1rem auto;
+  width: 80vw;
+}
+
+.nxt{
+  border: 1px solid;
+  padding: 1rem;
+  border-radius: 2.5rem;
+  color: white;
+  background-color: #1EBA60;
+  width: 80vw;
+  cursor: pointer;
+}
+
+.intro .end .nxt:first-child{
+  background-color: transparent;
+  color: #1EBA60;
+  border: none;
+}
+
+.intro .end .nxt:first-child:hover{
+  background-color: #1EBA60;
+  color: white;
+  border: 1px solid #1EBA60;
+}
+
+.intro .end .nxt:last-child:hover{
+  background-color: transparent;
+  color: #1EBA60;
+  border: 1px solid #1EBA60;
+}
+
+.signup{
+  padding-bottom: 1rem;
+}
+
+
+.welcome-img,.signup-img,.forgot-img,.reset-img{
+  margin: 0 auto;
+  background-position: 50% 50%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.welcome-img{
+  background-image: url(./image/welcome.png);
+}
+
+.welcome-btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.welcome-btn button{
+  background-color: transparent;
+  border: 1px solid #e6e6e6;
+  margin: 5px auto;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.welcome-btn button div{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.logo-text{
+  margin-left: 1rem;
+  font-weight: bold;
+  align-items: flex-start;
+  width: 50%;
+  text-align: left;
+}
+
+.welcome-btn .sign-in{
+  background-color: #1EBA60;
+  border-radius: 3rem;
+  color: white;
+  padding: 1rem 5px;
+}
+
+.no-acc{
+  color: #7d7d7d;
+  margin: 1rem auto;
+}
+
+.no-acc span{
+  color:  #1EBA60;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signup-img{
+  background-image: url(./image/wecare.webp);
+}
+
+.signup{
+  /*font-size: 1.5rem;*/
+}
+
+.signup h1{
+  color: #1EBA60;
+}
+
+.form-container {
+  /*background-color: blue;*/
+}
+
+.form-container h2{
+  color: black;
+  margin-top: 2rem;
+}
+
+.form {
+  padding: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form p{
+  width: 100%;
+  text-align: left;
+}
+
+.form span{
+  color: red;
+}
+
+.form--input {
+  width: 100%;
+  /*margin-bottom: 2rem;*/
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 5px;
+  border: 1px solid #EBEEF2;
+}
+
+.form--input:focus{
+  outline: 2px solid #1EBA60;
+}
+
+
+.form--marketing {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.form--marketing > input {
+  margin-right: 1rem;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+
+.icons button{
+  border-radius: 50%;
+  padding: 1rem;
+  border: 1px solid #EBEEF2;
+  background-color: transparent;
+}
+
+.forget{
+  color: #1EBA60; 
+  cursor: pointer;
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+}
+
+.back{
+  display: flex;
+  margin: 1rem;
+}
+
+.back h1{
+  margin-left: 1rem;
+}
+
+.forgot-img{
+  background-image: url(./image/password.svg);
+}
+
+.forgot-txt{
+  padding: 1rem;
+  text-align: left;
+  margin: 1rem auto;
+  width: 85vw;
+  font-size: 1.5rem;
+}
+
+.method{
+  background-color: transparent;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 85vw;
+  border: 1px solid #1EBA60;
+}
+.method:focus{
+  outline: 2px solid #1EBA60;
+  background-color: transparent;
+}
+
+.method-logo{
+  background-color: #D8FDE1;
+  border-radius: 100%;
+  padding: 1rem;
+}
+
+.method-txt{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.method-txt p{
+  padding: 5px;
+}
+
+.forgot .nxt{
+  width: 85vw;
+  margin: 1rem;
+}
+
+.code-slot{
+  position: absolute;
+  width: 85vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+
+}
+
+.code-slot-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.code-slot-btn button{
+  border: 1px solid #05f020;
+  background-color: transparent;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+.code-slot span{
+  color: #05f020;
+}
+
+.resend .nxt{
+  position: fixed;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+.resend h1{
+  margin-bottom: 1rem;
+  color: #1EBA60;
+  text-align: center;
+}
+
+.reset-img{
+  background-image: url(./image/reset.svg);
 }
