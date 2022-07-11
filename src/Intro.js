@@ -1,3 +1,4 @@
+import React from "react";
 import { Circle } from "phosphor-react";
 
 function Intro({ txt, img, nxt, skip, nxt2, nxt3 }) {

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { ArrowLeft } from "phosphor-react";
 import Ready from "./Ready";
 import Forgot from "./Forgot";

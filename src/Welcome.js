@@ -1,7 +1,8 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { AppleLogo, GoogleLogo, FacebookLogo } from "phosphor-react";
 import SignUp from "./SignUp";
 import Forgot from "./Forgot";
+import HomePage from "./HomePage";
 
 function Welcome() {
   const [sign, setSign] = useState(false);
@@ -32,7 +33,7 @@ function Welcome() {
     <div>
       {
         sign ?
-        <p>Home page</p> :
+        <HomePage/> :
         forgotPass?
         <Forgot/>:
         signUp ?

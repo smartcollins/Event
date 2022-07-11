@@ -1,4 +1,5 @@
-import { useState } from "react";
+
+import React, { useState } from "react";
 import { AppleLogo, GoogleLogo, FacebookLogo } from "phosphor-react";
 
 function SignUp({ txt, txt2, txt3, txt4, forgot,onSign, onForgot, onSwitch }) {
@@ -9,7 +10,7 @@ function SignUp({ txt, txt2, txt3, txt4, forgot,onSign, onForgot, onSwitch }) {
     password: "",
     password2: "",
     join: true,
-  });
+  }); 
 
   function handle(e) {
     const { name, value, type, checked } = e.target;

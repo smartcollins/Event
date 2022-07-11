@@ -1,7 +1,8 @@
 import {ArrowLeft,ChatText,Envelope} from "phosphor-react";
-import {useState} from "react";
-import Reset from "./Reset"
-import Welcome from "./Welcome"
+import React, {useState} from "react";
+import Reset from "./Reset";
+import Welcome from "./Welcome";
+
 function Forgot(){
 	const [back,setBack] = useState(false)
 	const [method,setMethod] = useState(false)
