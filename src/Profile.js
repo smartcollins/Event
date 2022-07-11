@@ -1,9 +1,7 @@
 import React, {useState} from "react";
-// import profile from "./image/dp.jpg";
 // import Interest from "./Interest";
 import HomePage from "./HomePage";
 // import Menu from "./Menu"
-import dp from "./image/dp.jpg";
 import {ArrowLeft,User,Envelope,MapPin,Phone,CaretDown,PencilSimple} from "phosphor-react";
 
 function Profile(){
@@ -56,11 +54,11 @@ function Profile(){
 						<ArrowLeft size={30} color="#2fe22c" weight="duotone" onClick={onBack} />
 						<h1>Fill Your Profile</h1>
 					</div>
-					<div className={edit?"user-2":"user"}>
+					<div className={edit?" ":"user"}>
 						{
 							edit ?
-							<div className="me"><User style={{visibility: "hidden",backgroundImage: {dp}}} className="user-icon" size={32} color="#858C94" weight="duotone"/></div> :
-							<User className="user-icon" size={32} color="#858C94" weight="duotone"/>
+							<div className="dp"><User style={{visibility: "hidden"}} className="user-icon" size={30} color="#858C94" weight="duotone"/></div> :
+							<User className="user-icon" size={30} color="#DADADD" weight="duotone"/>
 						}
 						<div className="user-pen" onClick={onEdit}>
 							<PencilSimple size={16} color="#ffffff" />
