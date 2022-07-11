@@ -394,3 +394,16 @@
 .reset-img{
   background-image: url(./image/reset.svg);
 }
+
+.country{
+  margin: 5px auto;
+}
+
+.country-select{
+  margin-bottom: 60vh;
+}
+
+.select-country{
+  padding: 2rem;
+  width: 85vw;
+}
