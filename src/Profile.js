@@ -3,6 +3,7 @@ import React, {useState} from "react";
 // import Interest from "./Interest";
 import HomePage from "./HomePage";
 // import Menu from "./Menu"
+import dp from "./image/dp.jpg";
 import {ArrowLeft,User,Envelope,MapPin,Phone,CaretDown,PencilSimple} from "phosphor-react";
 
 function Profile(){
@@ -58,7 +59,7 @@ function Profile(){
 					<div className={edit?"user-2":"user"}>
 						{
 							edit ?
-							<User style={{visibility: "hidden"}} className="user-icon" size={32} color="#858C94" weight="duotone"/> :
+							<div className="me"><User style={{visibility: "hidden",backgroundImage: {dp}}} className="user-icon" size={32} color="#858C94" weight="duotone"/></div> :
 							<User className="user-icon" size={32} color="#858C94" weight="duotone"/>
 						}
 						<div className="user-pen" onClick={onEdit}>

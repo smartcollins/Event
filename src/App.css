@@ -408,6 +408,58 @@
   width: 85vw;
 }
 
+
+.user-icon{
+  position: relative;
+  background-color: red;
+  padding: 3rem;
+  border-radius: 50%;
+}
+
+.user-2{
+  position: relative;
+  justify-content: center;
+  /* background-color: red;
+  margin: 0 auto;
+  width: 20%;
+  background-image: url(./image/dp.jpg);
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 50%;   */
+  /* padding: 2rem; */
+  /* object-fit: cover; */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+}
+
+.me{
+  /* in tablet mode-- width: 20vw;
+  height: 25vh; */
+  width: 30vw;
+  height: 25vh;
+  margin: 0 auto;
+  background-image: url(./image/dp.jpg);
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
+  border-radius: 50%; 
+}
+
+.user-pen{
+  background-color: #1EBA60;
+  position: absolute;
+  right: 30%;
+  /* bottom: 10px; */
+  transform: translate(-50%,-50%);
+  margin-top: -2rem;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+
 .user-input{
   border: 1px solid #1EBA60;
   width: 85vw;
