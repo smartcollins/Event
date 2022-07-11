@@ -54,11 +54,11 @@ function Profile(){
 						<ArrowLeft size={30} color="#2fe22c" weight="duotone" onClick={onBack} />
 						<h1>Fill Your Profile</h1>
 					</div>
-					<div className={edit?" ":"user"}>
+					<div>
 						{
 							edit ?
 							<div className="dp"><User style={{visibility: "hidden"}} className="user-icon" size={30} color="#858C94" weight="duotone"/></div> :
-							<User className="user-icon" size={30} color="#DADADD" weight="duotone"/>
+							<div className="user"><User className="user-icon" size={30} color="#DADADD" weight="duotone"/></div>
 						}
 						<div className="user-pen" onClick={onEdit}>
 							<PencilSimple size={16} color="#ffffff" />

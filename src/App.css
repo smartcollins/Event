@@ -409,11 +409,20 @@
 }
 
 
-.user-icon{
-  position: relative;
-  background-color: #F5F5F8;
+.user{
   padding: 3rem;
+  background-color: #F5F5F8;
+  margin: 0 auto;
+  position: relative;
+  width: 30%;
   border-radius: 50%;
+}
+
+
+.user-icon{
+  /* position: relative; */
+  /* background-color: #F5F5F8; */
+  /* border-radius: 50%; */
 }
 
 
@@ -432,6 +441,7 @@
   /* background-size: contain; */
   border-radius: 50%; 
 }
+
 
 .user-pen{
   background-color: #1EBA60;
