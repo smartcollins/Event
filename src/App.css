@@ -407,3 +407,28 @@
   padding: 2rem;
   width: 85vw;
 }
+
+.user-input{
+  border: 1px solid #1EBA60;
+  width: 85vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 2rem;
+}
+
+
+.user-input:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.user-input input{
+  border: none;
+  background-color: transparent;
+  text-indent: 5px;
+  outline: none;
+  font-family: Helvetica Neue;
+  width: 100%;
+}
