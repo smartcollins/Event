@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-// import Interest from "./Interest";
+import Interest from "./Interest";
 import HomePage from "./HomePage";
 // import Menu from "./Menu"
 import {ArrowLeft,User,Envelope,MapPin,Phone,CaretDown,PencilSimple} from "phosphor-react";
@@ -47,8 +47,8 @@ function Profile(){
 		<div>
 			{	back ?
 				<HomePage/> :
-				// verify ? 
-				// <Interest/>:
+				verify ? 
+				<Interest/>:
 				<div className="profile">
 					<div className="back">
 						<ArrowLeft size={30} color="#2fe22c" weight="duotone" onClick={onBack} />

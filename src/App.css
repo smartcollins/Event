@@ -419,13 +419,6 @@
 }
 
 
-.user-icon{
-  /* position: relative; */
-  /* background-color: #F5F5F8; */
-  /* border-radius: 50%; */
-}
-
-
 .dp{
   /* in tablet mode-- width: 20vw;
   height: 25vh; */
@@ -478,4 +471,8 @@
   outline: none;
   font-family: Helvetica Neue;
   width: 100%;
+}
+
+.profile .nxt{
+  width: 85vw;
 }
