@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {ArrowLeft,GraduationCap,UsersThree,FirstAidKit,Buildings,Palette,GlobeHemisphereEast,Fish,House
+import {ArrowLeft,GraduationCap,UsersThree,FirstAidKit,Buildings,Palette,GlobeHemisphereEast,House
 ,Wheelchair,Users,Gift,YinYang,Heartbeat}  from "phosphor-react";
 import Pin from "./Pin"
 import Profile from "./Profile"

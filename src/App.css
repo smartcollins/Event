@@ -16,26 +16,11 @@
   bottom: 2rem;
 }
 
-.App-header {
-  position: relative;
-  /* height: 100vh; */
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-  /* font-size: calc(10px + 2vmin); */
-}
-
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -46,13 +31,6 @@
     transform: rotate(360deg);
   }
 }
-
-
-/* .loading{
-  max-width: 40%;
-  object-fit: contain;
-  padding-top: 20vh;
-} */
 
 .loading{
   max-width: 50%;
@@ -492,4 +470,87 @@
 
 .interest .nxt{
   margin: 2rem auto;
+}
+
+.txt{
+  padding: 1rem;
+  text-align: left;
+}
+
+.create{
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.create h2{
+  margin-bottom: 2rem;
+}
+
+.pin{
+  width: 70vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.great{
+  background-color: white;
+  z-index: 1;
+  padding: 20px 10px;
+  width: 80%;
+  border-radius: 15px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.great .nxt{
+  width: 60%;
+}
+
+.great div:first-child{
+  background-color: #1EBA60;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 50%;
+  width: 10vw;
+  /*width: 10%;*/
+}
+
+.great p:last-child{
+  /*color: red;*/
+  font-weight: bold;
+}
+
+.great-btn{
+  /*background-color: red;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.great-btn button{
+  width: 45%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #1EBA60;
+  background-color: transparent;
+  color: #1eba60;
+}
+
+.great-btn button:last-child{
+  color: white;
+  background-color: #1EBA60;
+  border: none;
+}
+
+.success {
+  position: relative;
+  /*background-blend-mode: darken;*/
+  opacity: 0.3;
+  filter: grayscale(10%) blur(1px) brightness(100%);
 }
