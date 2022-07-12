@@ -1,8 +1,7 @@
 import React, {useState} from "react";
 import {ArrowLeft,GraduationCap,UsersThree,FirstAidKit,Buildings,Palette,GlobeHemisphereEast,Fish,House
 ,Wheelchair,Users,Gift,YinYang,Heartbeat}  from "phosphor-react";
-
-// import Pin from "./Pin"
+import Pin from "./Pin"
 import Profile from "./Profile"
 
 
@@ -31,61 +30,61 @@ function Interest(){
 		<div>
 			{	back ? 
 				<Profile/> :
-				// next ? 
-				// <Pin/> :
+				next ? 
+				<Pin/> :
 				<div className="interest">
 					<div className="back">
-						<ArrowLeft size={32} color="#2fe22c" weight="duotone" onClick={onBack}/>
-						<h2>Select Your Interest</h2>
+						<ArrowLeft size={30} color="#2fe22c" weight="duotone" onClick={onBack}/>
+						<h1>Select Your Interest</h1>
 					</div>
 					<p>Choose your interest to donate. Dont worry you can always change it later</p>
 					<div className="interests">
 						<button onClick={onInterest} style={style}>
-							<GraduationCap size={28} color="#1EBA60" />
+							<GraduationCap size={30} color="#1EBA60" />
 							<p>Education</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<YinYang size={28} color="#1EBA60" weight="duotone" />							
+							<YinYang size={30} color="#1EBA60" weight="duotone" />							
 							<p>Environment</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<UsersThree size={28} color="#1EBA60" />
+							<UsersThree size={30} color="#1EBA60" />
 							<p>Social</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<Heartbeat size={28} color="#1EBA60" weight="thin" />
+							<Heartbeat size={30} color="#1EBA60" weight="thin" />
 							<p>Sick Child</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<FirstAidKit size={28} color="#1EBA60" />
+							<FirstAidKit size={30} color="#1EBA60" />
 							<p>Medical</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<Buildings size={28} color="#1EBA60" />
+							<Buildings size={30} color="#1EBA60" />
 							<p>Infrastructure</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<Palette size={28} color="#1EBA60" />
+							<Palette size={30} color="#1EBA60" />
 							<p>Art</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<GlobeHemisphereEast size={28} color="#1EBA60" />
+							<GlobeHemisphereEast size={30} color="#1EBA60" />
 							<p>Disaster</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<House size={28} color="#1EBA60" weight="duotone" />
+							<House size={30} color="#1EBA60" weight="duotone" />
 							<p>Orphanage</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<Wheelchair size={28} color="#1EBA60" weight="duotone" />
+							<Wheelchair size={30} color="#1EBA60" weight="duotone" />
 							<p>Diasable</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<Users size={28} color="#1EBA60" weight="light" />
+							<Users size={30} color="#1EBA60" weight="light" />
 							<p>Humanity</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<Gift size={28} color="#1EBA60" weight="duotone" />
+							<Gift size={30} color="#1EBA60" weight="duotone" />
 							<p>Others</p>
 						</button>
 					</div>

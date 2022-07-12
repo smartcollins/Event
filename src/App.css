@@ -459,7 +459,6 @@
   border-radius: 2rem;
 }
 
-
 .user-input:not(:last-child){
   margin-bottom: 10px;
 }
@@ -474,5 +473,24 @@
 }
 
 .profile .nxt{
+  width: 85vw;
+}
+
+.interests{
+  margin: 1rem;
+  display: grid;
+  grid-template: auto/auto auto auto;
+  grid-gap: 1rem;
+}
+
+.interests button{
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.interest .nxt{
+  margin: 2rem auto;
   width: 85vw;
 }
