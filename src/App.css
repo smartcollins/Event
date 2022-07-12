@@ -468,6 +468,10 @@
   padding: 1rem;
 }
 
+.interests button p{
+  color: white;
+}
+
 .interest .nxt{
   margin: 2rem auto;
 }
@@ -499,26 +503,26 @@
 .great{
   background-color: white;
   z-index: 1;
-  padding: 20px 10px;
-  width: 80%;
-  border-radius: 15px;
+  padding: 3rem;
+  width: 85vw;
+  border-radius: 1.5rem;
   position: absolute;
-  top: 40%;
+  top: 10%;
   left: 50%;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
+  transform: translate(-50%,50%);
 }
 
 .great .nxt{
   width: 60%;
 }
 
-.great div:first-child{
+.great button:first-child{
   background-color: #1EBA60;
-  margin: 0 auto;
-  padding: 20px;
+  padding: 2rem;
   border-radius: 50%;
-  width: 10vw;
-  /*width: 10%;*/
+  border: none;
+  
 }
 
 .great p:last-child{

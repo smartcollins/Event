@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {ArrowLeft,GraduationCap,UsersThree,FirstAidKit,Buildings,Palette,GlobeHemisphereEast,House
 ,Wheelchair,Users,Gift,YinYang,Heartbeat}  from "phosphor-react";
 import Pin from "./Pin"
@@ -10,10 +10,81 @@ function Interest(){
 	const[next,setNext] = useState(false)
 	const [back,setBack] = useState(false)
 
-	function onInterest(){
-		setInterest(oldInterest=>!interest)
+	const interests =[{
+		tittle: "Education",
+		icon: GraduationCap,
+		selected: false
+	},{
+		tittle: "Environment",
+		icon: YinYang,
+		selected: false
+	},{
+		tittle: "Social",
+		icon: UsersThree,
+		selected: false
+	},{
+		tittle: "Sick Child",
+		icon: Heartbeat,
+		selected: false
+	},{
+		tittle: "Medical",
+		icon: FirstAidKit,
+		selected: false
+	},{
+		tittle: "Infrasture",
+		icon: Buildings,
+		selected: false
+	},{
+		tittle: "Art",
+		icon: Palette,
+		selected: false
+	},{
+		tittle: "Diaster",
+		icon: GlobeHemisphereEast,
+		selected: false
+	},{
+		tittle: "Orphange",
+		icon: House,
+		selected: false
+	},{
+		tittle: "Disable",
+		icon: Wheelchair,
+		selected: false
+	},{
+		tittle: "Humanity",
+		icon: Users,
+		selected: false
+	},{
+		tittle: "Others",
+		icon: Gift,
+		selected: false
+	}]
+	
+
+	const [selectedInterests, setSelectedInterests] = useState(interests)
+
+	function onInterest(idx, interest){
+		// setInterest(oldInterest=>!interest)
+		// const temp = [...interests]
+		// temp[idx].selected = !temp[idx].selected
+		const temp = selectedInterests.map((x)=>{
+			if(interest.tittle === x.tittle){
+				x.selected = !x.selected
+			}
+			return x
+		})
+		console.log({idx,interest})
+		setSelectedInterests(temp)
 	}
 
+	useEffect(
+		()=>{
+			console.log(interests)
+		},[
+			interests
+		]
+	)
+	
 	function onContinue(){
 		setNext(true)
 	}
@@ -22,9 +93,10 @@ function Interest(){
 		setBack(true)
 	}
 
-	const style={
-		backgroundColor: interest ? "#1EBA60" : "blue"
-	}
+	
+	const style = (selected)=> ({
+		backgroundColor: selected ? "#1EBA60" : "blue"
+	})
 
 	return(
 		<div>
@@ -39,54 +111,17 @@ function Interest(){
 					</div>
 					<p>Choose your interest to donate. Dont worry you can always change it later</p>
 					<div className="interests">
-						<button onClick={onInterest} style={style}>
-							<GraduationCap size={30} color="#1EBA60" />
-							<p>Education</p>
-						</button>
-						<button onClick={onInterest} style={style}>
-							<YinYang size={30} color="#1EBA60" weight="duotone" />							
-							<p>Environment</p>
-						</button>
-						<button onClick={onInterest} style={style}>
-							<UsersThree size={30} color="#1EBA60" />
-							<p>Social</p>
-						</button>
-						<button onClick={onInterest} style={style}>
-							<Heartbeat size={30} color="#1EBA60" weight="thin" />
-							<p>Sick Child</p>
-						</button>
-						<button onClick={onInterest} style={style}>
-							<FirstAidKit size={30} color="#1EBA60" />
-							<p>Medical</p>
-						</button>
-						<button onClick={onInterest} style={style}>
-							<Buildings size={30} color="#1EBA60" />
-							<p>Infrastructure</p>
-						</button>
-						<button onClick={onInterest} style={style}>
-							<Palette size={30} color="#1EBA60" />
-							<p>Art</p>
-						</button>
-						<button onClick={onInterest} style={style}>
-							<GlobeHemisphereEast size={30} color="#1EBA60" />
-							<p>Disaster</p>
-						</button>
-						<button onClick={onInterest} style={style}>
-							<House size={30} color="#1EBA60" weight="duotone" />
-							<p>Orphanage</p>
-						</button>
-						<button onClick={onInterest} style={style}>
-							<Wheelchair size={30} color="#1EBA60" weight="duotone" />
-							<p>Diasable</p>
-						</button>
-						<button onClick={onInterest} style={style}>
-							<Users size={30} color="#1EBA60" weight="light" />
-							<p>Humanity</p>
-						</button>
-						<button onClick={onInterest} style={style}>
-							<Gift size={30} color="#1EBA60" weight="duotone" />
-							<p>Others</p>
-						</button>
+						
+						{
+							selectedInterests.map((interest, idx)=>{
+								return(
+									<button key={idx} onClick={() => onInterest(idx, interest)} style={style(interest.selected)}>
+										{React.createElement(interest.icon, { size: 30, color:"#1EBA60"})}
+										<p>{interest.tittle} </p>
+									</button>
+								)
+							})
+						}
 					</div>
 					<button onClick={onContinue} className="nxt">Verify</button>
 				</div>

@@ -64,9 +64,9 @@ function Pin(props){
 							<Interest/>
 						</div>
 						<div className="great">
-							<div>
+							<button>
 								<CheckCircle size={30} color="#ffffff" weight="fill" />
-							</div>
+							</button>
 							<h2>Great!</h2>
 							<p>You account has been created succesfully</p>
 							<button onClick={onHome} className="nxt">Go to Home</button>
