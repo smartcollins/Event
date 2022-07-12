@@ -58,10 +58,10 @@
   padding: 30px 20px;
   height: 100vh;
 }
-
+/* 
 .intro-main{
-  /*background-color: blue;*/
-}
+  background-color: blue;
+} */
 
 .intro-img,.intro2-img,.intro3-img{
   margin: 0 auto;
@@ -116,7 +116,7 @@
   border-radius: 2.5rem;
   color: white;
   background-color: #1EBA60;
-  width: 80vw;
+  width: 85vw;
   cursor: pointer;
 }
 
@@ -210,18 +210,18 @@
 .signup-img{
   background-image: url(./image/wecare.webp);
 }
-
+/* 
 .signup{
-  /*font-size: 1.5rem;*/
-}
+  font-size: 1.5rem;
+} */
 
 .signup h1{
   color: #1EBA60;
 }
 
-.form-container {
-  /*background-color: blue;*/
-}
+/* .form-container {
+  background-color: blue;
+} */
 
 .form-container h2{
   color: black;
@@ -345,7 +345,6 @@
 }
 
 .forgot .nxt{
-  width: 85vw;
   margin: 1rem;
 }
 
@@ -472,10 +471,6 @@
   width: 100%;
 }
 
-.profile .nxt{
-  width: 85vw;
-}
-
 .interests{
   margin: 1rem;
   display: grid;
@@ -492,5 +487,4 @@
 
 .interest .nxt{
   margin: 2rem auto;
-  width: 85vw;
 }
