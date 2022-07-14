@@ -6,9 +6,10 @@ import Profile from "./Profile"
 
 
 function Interest(){
-	const[interest,setInterest] = useState(false)
+	// const[interest,setInterest] = useState(false)
 	const[next,setNext] = useState(false)
 	const [back,setBack] = useState(false)
+	const [createBack,setCreateBack] = useState(true)
 
 	const interests =[{
 		tittle: "Education",
@@ -64,9 +65,6 @@ function Interest(){
 	const [selectedInterests, setSelectedInterests] = useState(interests)
 
 	function onInterest(idx, interest){
-		// setInterest(oldInterest=>!interest)
-		// const temp = [...interests]
-		// temp[idx].selected = !temp[idx].selected
 		const temp = selectedInterests.map((x)=>{
 			if(interest.tittle === x.tittle){
 				x.selected = !x.selected
@@ -93,17 +91,28 @@ function Interest(){
 		setBack(true)
 	}
 
+	function onCreateBack(){
+		setCreateBack(true)
+	}
+
 	
-	const style = (selected)=> ({
-		backgroundColor: selected ? "#1EBA60" : "blue"
-	})
+	// const style = (selected)=> ({
+	// 	backgroundColor: selected ? "#1EBA60" : "red"
+	// style={style(interest.selected)}
+	// })
 
 	return(
 		<div>
 			{	back ? 
 				<Profile/> :
 				next ? 
-				<Pin/> :
+				<Pin
+					onCreateBack = {onCreateBack}
+					top = "Create Your Pin"
+					txt = "Please remember this PIN becayse it will be used when you want to top up, withdraw or donate."
+					txt2 = "Create Pin"
+					btn = "Create PIN"
+				/> :
 				<div className="interest">
 					<div className="back">
 						<ArrowLeft size={30} color="#2fe22c" weight="duotone" onClick={onBack}/>
@@ -115,8 +124,12 @@ function Interest(){
 						{
 							selectedInterests.map((interest, idx)=>{
 								return(
-									<button key={idx} onClick={() => onInterest(idx, interest)} style={style(interest.selected)}>
-										{React.createElement(interest.icon, { size: 30, color:"#1EBA60"})}
+									<button className={interest.selected?"sad":"joy"} key={idx} onClick={() => onInterest(idx, interest)}>
+										{
+											interest.selected?
+											React.createElement(interest.icon, { size: 30, color:"#ffffff", weight:"fill"}):
+											React.createElement(interest.icon, { size: 30, color:"#1EBA60", weight:"fill"})
+										}
 										<p>{interest.tittle} </p>
 									</button>
 								)
@@ -131,3 +144,7 @@ function Interest(){
 }
 
 export default Interest;
+
+
+
+

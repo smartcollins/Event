@@ -461,15 +461,22 @@
   grid-gap: 1rem;
 }
 
-.interests button{
+.joy,.sad{
   padding: 5px;
-  border: 1px solid gray;
+  border: 1px solid #D8FDE1;
   border-radius: 1rem;
   padding: 1rem;
 }
 
-.interests button p{
+.sad{
+  background-color: #1EBA60; 
   color: white;
+}
+
+
+.joy{
+  background-color: white;
+  color: inherit;
 }
 
 .interest .nxt{
@@ -495,7 +502,8 @@
 }
 
 .pin{
-  width: 70vw;
+  background-color: red;
+  width: 80vw;
   display: flex;
   justify-content: space-around;
 }
