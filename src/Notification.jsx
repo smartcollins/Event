@@ -34,18 +34,18 @@ function Notification(){
                     <div className="notification">					
                         <p>Today, December 25 2023</p>
                         <div className="notify-bar">
-                            <div className="notify-logo">
+                            <button className="notify-logo">
                                 <CheckCircle size={20} color="#ffffff" weight="fill"/>
-                            </div>
+                            </button>
                             <div>
                                 <h5>Top up Successful</h5>
                                 <p>You have successsfully top up your wallet in the amount of $100</p>
                             </div>
                         </div>
                         <div className="notify-bar">
-                            <div className="notify-logo cancel">
+                            <button className="notify-logo cancel">
                                 <XCircle size={20} color="#ffffff" weight="fill"/>
-                            </div>
+                            </button>
                             <div>
                                 <h5>Donation Cancelled!</h5>
                                 <p>You have cancel donation for victims of natural disasters</p>
@@ -54,9 +54,9 @@ function Notification(){
                         </div>
                         <p>Yesterday, December 24 2023</p>
                         <div className="notify-bar">
-                            <div className="notify-logo new">
+                            <button className="notify-logo new">
                                 <Bell size={20} color="#ffffff" weight="fill" />
-                            </div>
+                            </button>
                             <div>
                                 <h5>New Feature Available</h5>
                                 <p>You can now invite friends to join donation with you</p>
@@ -65,18 +65,18 @@ function Notification(){
 
                         <p>Today, December 23 2023</p>
                         <div className="notify-bar">
-                            <div className="notify-logo">
+                            <button className="notify-logo">
                                 <CheckCircle size={20} color="#ffffff" weight="fill"/>
-                            </div>
+                            </button>
                             <div>
                                 <h5>Top up Successful</h5>
                                 <p>You have successsfully top up your wallet in the amount of $100</p>
                             </div>
                         </div>
                         <div className="notify-bar">
-                            <div className="notify-logo cancel">
+                            <button className="notify-logo cancel">
                                 <XCircle size={20} color="#ffffff" weight="fill"/>
-                            </div>
+                            </button>
                             <div>
                                 <h5>Donation Cancelled</h5>
                                 <p>You cancelled donation for victims of natural disasters</p>

@@ -705,72 +705,72 @@
   color: #1EBA60;
 }
 
-.bell, .book{
-  background-color: #1EBA60;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 50%;
-  width: 10vw;
-}
-
 .notification, .bookmark{
-  /* margin-top: -10vh; */
-  height: 100vh;
+  height: 100%;
   position: relative;
+  /* background-color: blue; */
 }
 
-.notification-top, .bookmark-top{
+/* .notification-top, .bookmark-top{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: red;
+} */
 
-}
-
-
+/* 
 .notification-top .back, .bookmark-top .back{
   margin: 0;
-}
-
+} */
+/* 
 .notification-top h1, .bookmark-top h1{
   margin-left: 10px;
   width: 85%;
   white-space: nowrap;
   overflow: hidden;
-
   text-overflow: ellipsis;
-}
-
+} */
+/* 
 .notify-null-main, .bookmark-null-main{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  /*width: 60vw;*/
-}
+  width: 60vw;
+  background-color: red;
+} */
 
-.notify-null-main p, .bookmark-null-main p{
+/* .notify-null-main p, .bookmark-null-main p{
   color: #1EBA60;
-}
-
+} */
+/* 
 .bell, .book{
   background-color: #1EBA60;
   margin: 0 auto;
   padding: 20px;
   border-radius: 50%;
   width: 10vw;
-}
-
+} */
+/* 
 .notify,.book{
-  /*text-align: left;*/ 
-}
+  text-align: left; 
+} */
 
 .notify-bar{
-  border: 1px solid #e6e6e6;
-  border-radius: 5px;
-  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  border: 1px solid #e6e6e6;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.notify-bar div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .notify-bar h5{
@@ -778,7 +778,7 @@
 }
 
 .notify-bar p{
-  margin-top: 0px;
+  /* margin-top: 0px; */
   color: grey;
 }
 
