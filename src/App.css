@@ -18,6 +18,9 @@
   pointer-events: none;
   position: absolute;
   bottom: 2rem;
+  left: 45%;
+  background-color: red;
+  transform: translate(-50%,-50%);
 }
 
 
@@ -41,8 +44,8 @@
 }
 
 .intro{
-  margin-top: 30px;
-  padding: 30px 20px;
+  /* margin-top: 30px; */
+  padding: 3rem 2rem;
   height: 100vh;
 }
 /* 
@@ -53,7 +56,7 @@
 .intro-img,.intro2-img,.intro3-img{
   margin: 0 auto;
   background-position: 50% 50%;
-  height: 50vh;
+  height: 30vh;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -133,7 +136,7 @@
 .welcome-img,.signup-img,.forgot-img,.reset-img{
   margin: 0 auto;
   background-position: 50% 50%;
-  height: 50vh;
+  height: 30vh;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -523,9 +526,9 @@
   /* left: 50%; */
   /* transform: translate(-50%,50%); */
   /* transform: translateX(-50%); */
-  top: 60%;
+  top: 55%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   
 
 }

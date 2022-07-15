@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import HomePage from "./HomePage";
+import Account from "./Account";
 
 function Ready() {
-  const [homePage, setHomePage] = useState(false);
+  const [account, setAccount] = useState(false);
 
-  function onHomePage() {
-    setHomePage(true);
+  function onAccount() {
+    setAccount(true);
   }
 
   return (
     <div>
-      {homePage ? (
-        <HomePage />
+      {account ? (
+        <Account />
       ) : (
         <div className="resend">
           <div className="code-slot">
@@ -19,7 +19,7 @@ function Ready() {
             <h1>Congratulations!</h1>
             <p>Your account is ready to use</p>
           </div>
-          <button onClick={onHomePage} className="nxt">
+          <button onClick={onAccount} className="nxt">
             Go to Homepage
           </button>
         </div>

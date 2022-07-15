@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Interest from "./Interest";
-import HomePage from "./HomePage";
+import Account from "./Account";
 import {
   ArrowLeft,
   User,
@@ -51,7 +51,7 @@ function Profile() {
   return (
     <div>
       {back ? (
-        <HomePage />
+        <Account />
       ) : verify ? (
         <Interest />
       ) : (

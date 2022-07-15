@@ -4,7 +4,7 @@ import { ArrowLeft } from "phosphor-react";
 import Welcome from "./Welcome";
 import Profile from "./Profile";
 
-function HomePage() {
+function Account() {
   const [profile, setProfile] = useState(false);
 
   const [back, setBack] = useState(false);
@@ -24,7 +24,7 @@ function HomePage() {
       ) : profile ? (
         <Profile />
       ) : (
-        <div className="homepage">
+        <div className="account">
           <div className="back">
             <ArrowLeft
               size={30}
@@ -50,4 +50,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Account;
