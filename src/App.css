@@ -706,9 +706,12 @@
 }
 
 .notification, .bookmark{
-  height: 100%;
   position: relative;
-  /* background-color: blue; */
+  text-align: left;
+}
+
+.notification > p{
+  margin: 1rem auto;
 }
 
 /* .notification-top, .bookmark-top{
@@ -773,8 +776,10 @@
   text-align: left;
 }
 
-.notify-bar h5{
-  margin-bottom: 10px;
+.notify-bar > div > p:first-child{
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: inherit;
 }
 
 .notify-bar p{
@@ -784,10 +789,10 @@
 
 .notify-logo{
   background-color: #1EBA60;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 50%;
-  margin-left: 10px;
-  margin-right: 15px;
+  margin-left: 1rem;
+  margin-right: 1.5rem;
   border: none;
 }
 
@@ -796,4 +801,21 @@
 }
 .new{
   background-color: #ffd500;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: static;
+  z-index: 5;
+}
+
+.menu button{
+  background-color: #e8f8ef;
+  padding: 1rem;
+  width: auto;
+  border-radius: 10px;
+  margin: 1rem auto;
+  border: none;
 }

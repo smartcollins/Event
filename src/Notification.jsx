@@ -1,7 +1,7 @@
 import React from "react"
 import {useState} from "react";
 import Homepage from "./Homepage";
-import Null from "./Null";
+import Menu from "./Menu";
 import {Bell,DotsThreeVertical,ArrowLeft,CheckCircle,XCircle} from "phosphor-react";
 
 function Notification(){
@@ -38,7 +38,7 @@ function Notification(){
                                 <CheckCircle size={20} color="#ffffff" weight="fill"/>
                             </button>
                             <div>
-                                <h5>Top up Successful</h5>
+                                <p>Top up Successful</p>
                                 <p>You have successsfully top up your wallet in the amount of $100</p>
                             </div>
                         </div>
@@ -47,7 +47,7 @@ function Notification(){
                                 <XCircle size={20} color="#ffffff" weight="fill"/>
                             </button>
                             <div>
-                                <h5>Donation Cancelled!</h5>
+                                <p>Donation Cancelled!</p>
                                 <p>You have cancel donation for victims of natural disasters</p>
                             </div>
 
@@ -58,7 +58,7 @@ function Notification(){
                                 <Bell size={20} color="#ffffff" weight="fill" />
                             </button>
                             <div>
-                                <h5>New Feature Available</h5>
+                                <p>New Feature Available</p>
                                 <p>You can now invite friends to join donation with you</p>
                             </div>
                         </div>
@@ -69,7 +69,7 @@ function Notification(){
                                 <CheckCircle size={20} color="#ffffff" weight="fill"/>
                             </button>
                             <div>
-                                <h5>Top up Successful</h5>
+                                <p>Top up Successful</p>
                                 <p>You have successsfully top up your wallet in the amount of $100</p>
                             </div>
                         </div>
@@ -78,11 +78,12 @@ function Notification(){
                                 <XCircle size={20} color="#ffffff" weight="fill"/>
                             </button>
                             <div>
-                                <h5>Donation Cancelled</h5>
+                                <p>Donation Cancelled</p>
                                 <p>You cancelled donation for victims of natural disasters</p>
                             </div>
                         </div>
                     </div>
+                    <Menu/>
                 </div>
 			}
 		</div>
