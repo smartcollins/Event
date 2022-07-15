@@ -1,11 +1,12 @@
 import React from "react";
-import{useState} from "react"
+import{useState} from "react";
+import Null from "./Null";
+import Notification from "./Notification"
 // import Urgent from "./Urgent"
 // import Coming from "./Coming"
 // import Watch from "./Watch"
 // import Prayer from "./Prayer"
 // import Menu from "./Menu"
-// import Notification from "./Notification"
 // import Bookmark from "./Bookmark"
 // import Search from "./Search"
 // import Donation from "./Donation"
@@ -17,7 +18,7 @@ import {UsersThree,MagnifyingGlass,Bell,BookmarkSimple,Wallet,Circle} from "phos
 
 function Home(){
 	// const [logo,setLogo] = useState(false)
-	// const [notify,setNotify] = useState(false)
+	const [notify,setNotify] = useState(false)
 	// const [mark,setMark] = useState(false)
 	// const [search,setSearch] = useState(false)
 
@@ -32,7 +33,7 @@ function Home(){
 	}
 
 	function onNotify(){
-	// 	setNotify(true)
+		setNotify(true)
 	}
 
 	function onMark(){
@@ -79,21 +80,23 @@ function Home(){
 				// <Inbox/>:
 				// profile?
 				// <Userprofile/>:
+				notify?
+				<Null/>:
 				<div className="Home">
 					<div className="home-top">
-						<div className="home-top1">
+						<div className="back">
 							<UsersThree size={40} color="#1EBA60" weight="duotone" onClick={onLogo}/>
 							<h1>Wecare</h1>
 						</div>
 						<div className="home-top2">
 							<button onClick={onSearch}>
-								<MagnifyingGlass size={16} color="#1EBA60" weight="bold" />
+								<MagnifyingGlass size={16} color="#13B157" weight="bold" />
 							</button>
 							<button onClick={onNotify}>
-								<Bell size={16} color="#1EBA60" weight="fill" />
+								<Bell size={16} color="#13B157" weight="fill" />
 							</button>
 							<button onClick={onMark}>
-								<BookmarkSimple size={16} color="#1EBA60" weight="fill" />
+								<BookmarkSimple size={16} color="#13B157" weight="fill" />
 							</button>
 						</div>
 					</div>
@@ -120,6 +123,7 @@ function Home(){
 							<Circle size={10} color="#ffffff" weight="fill" />
 						</div>
 					</div>
+					<Null/>
 
 					{/* <Urgent/> */}
 					{/* <Coming/> */}

@@ -20,7 +20,7 @@ function Welcome() {
     setSignUp(false);
   }
 
-  function onSign(){
+  function onSign() {
     setSign(true);
   }
 
@@ -28,15 +28,13 @@ function Welcome() {
     setForgotPass(true);
   }
 
-
   return (
     <div>
-      {
-        sign ?
-        <Account/> :
-        forgotPass?
-        <Forgot/>:
-        signUp ?
+      {sign ? (
+        <Account />
+      ) : forgotPass ? (
+        <Forgot />
+      ) : signUp ? (
         <SignUp
           txt="Sign up for free"
           txt2="Sign Up"
@@ -44,8 +42,8 @@ function Welcome() {
           onSign={onSign}
           txt4="Sign In"
           onSwitch={onSignIn}
-        /> :
-        signIn ?
+        />
+      ) : signIn ? (
         <SignUp
           txt="Sign in to your account"
           txt2="Sign In"
@@ -55,7 +53,8 @@ function Welcome() {
           onSign={onSign}
           onForgot={onForgot}
           onSwitch={onSignUp}
-        /> :
+        />
+      ) : (
         <div className="welcome">
           <div className="intro-main">
             <div className="welcome-img"></div>
@@ -91,7 +90,7 @@ function Welcome() {
             </p>
           </div>
         </div>
-      }
+      )}
     </div>
   );
 }

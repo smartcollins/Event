@@ -27,7 +27,7 @@ code {
     monospace;
 }
 
-@media (min-width: 112.5em){
+/* @media (min-width: 112.5em){
   body{
     background-color:blue;
   }
@@ -37,22 +37,32 @@ code {
 }
 
 @media (max-width: 75em){
-  /* body{
+  body{
     background-color: aqua;
-  } */
-  /* html{
+  }
+  html{
     font-size: 75%;
-  }   */
-} 
+  }  
+}  */
 
 
 @media (max-width: 56.25em){
   /* html{
     font-size: 60%;
   }   */
+  /* .nxt{
+    background-color: red;
+  }
+  .intro-img,.intro2-img,.intro3-img{
+    height: 50vh;
+  }
+  .welcome-img{
+    height: 50vh;
+  } */
   /* body{
     background-color: red;
   } */
+  
 }
 
 
@@ -65,62 +75,3 @@ code {
     } */
     
   }
-
-
-
-
-
-/* 
-@media (min-width: 56.25em){
-  html{
-    font-size: 56.25%;
-  }  
-  body{
-    background-color: red;
-  }
-}
-
-@media (min-width: 75em){
-  body{
-    background-color: aqua;
-  }
-  html{
-    font-size: 75%;
-  }  
-} 
-
-
-@media (min-width: 112.5em){
-  body{
-    background-color:blue;
-  }
-  html{
-    font-size: 75%;
-  }  
-}  */
-
-
-
-
-
-
-
-
-
-
-
-
-/*for screen bigger than medium sized laptops*/@media (min-width: 112.5em){
-  /* html{
-    font-size: 75%;
-  }   */
-}
-/* @media screen and (min-width: 768px){}
-
-
-
-/*56.25%
-
-50%
-
-75% */

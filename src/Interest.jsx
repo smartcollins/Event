@@ -173,18 +173,26 @@ function Interest() {
             later
           </p>
           <div className="interests">
-						
-						{
-							selectedInterests.map((interest, idx)=>{
-								return(
-									<button className={interest.selected?"sad":"joy"} key={idx} onClick={() => onInterest(idx, interest)}>
-										{
-											interest.selected?
-											React.createElement(interest.icon, { size: 30, color:"#ffffff", weight:"fill"}):
-											React.createElement(interest.icon, { size: 30, color:"#1EBA60", weight:"fill"})
-										}
-										<p>{interest.tittle} </p>
-									</button>
+            {selectedInterests.map((interest, idx) => {
+              return (
+                <button
+                  className={interest.selected ? "sad" : "joy"}
+                  key={idx}
+                  onClick={() => onInterest(idx, interest)}
+                >
+                  {interest.selected
+                    ? React.createElement(interest.icon, {
+                        size: 30,
+                        color: "#ffffff",
+                        weight: "fill",
+                      })
+                    : React.createElement(interest.icon, {
+                        size: 30,
+                        color: "#1EBA60",
+                        weight: "fill",
+                      })}
+                  <p>{interest.tittle} </p>
+                </button>
               );
             })}
           </div>
