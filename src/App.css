@@ -685,3 +685,115 @@
   bottom: 5%;
   left: 30%;
 }
+
+.dot{
+  background-color: #D8FDE1;
+  border: transparent;
+  border-radius: 5px;
+  padding: 5px;
+}
+/* 
+.notify-null-main, .bookmark-null-main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 60vw;
+} */
+
+.notify-null-main p, .bookmark-null-main p{
+  color: #1EBA60;
+}
+
+.bell, .book{
+  background-color: #1EBA60;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 50%;
+  width: 10vw;
+}
+
+.notification, .bookmark{
+  /* margin-top: -10vh; */
+  height: 100vh;
+  position: relative;
+}
+
+.notification-top, .bookmark-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+.notification-top .back, .bookmark-top .back{
+  margin: 0;
+}
+
+.notification-top h1, .bookmark-top h1{
+  margin-left: 10px;
+  width: 85%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+.notify-null-main, .bookmark-null-main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  /*width: 60vw;*/
+}
+
+.notify-null-main p, .bookmark-null-main p{
+  color: #1EBA60;
+}
+
+.bell, .book{
+  background-color: #1EBA60;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 50%;
+  width: 10vw;
+}
+
+.notify,.book{
+  /*text-align: left;*/ 
+}
+
+.notify-bar{
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.notify-bar h5{
+  margin-bottom: 10px;
+}
+
+.notify-bar p{
+  margin-top: 0px;
+  color: grey;
+}
+
+.notify-logo{
+  background-color: #1EBA60;
+  padding: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 15px;
+  border: none;
+}
+
+.cancel{
+  background-color: #f02828;
+}
+.new{
+  background-color: #ffd500;
+}

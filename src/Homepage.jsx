@@ -19,6 +19,7 @@ import {UsersThree,MagnifyingGlass,Bell,BookmarkSimple,Wallet,Circle} from "phos
 function Home(){
 	// const [logo,setLogo] = useState(false)
 	const [notify,setNotify] = useState(false)
+	const [notifyMain,setNotifyMain] = useState(false)
 	// const [mark,setMark] = useState(false)
 	// const [search,setSearch] = useState(false)
 
@@ -61,6 +62,15 @@ function Home(){
 	// 	// setClick(true)
 	// }
 
+	function onNotifyBack(){
+		setNotify(false)
+	}
+
+	function onNotifyMain(){
+		setNotifyMain(true)
+		setNotify(true)
+	}
+
 	return(
 		<div>	
 			{
@@ -80,8 +90,15 @@ function Home(){
 				// <Inbox/>:
 				// profile?
 				// <Userprofile/>:
+				notifyMain?
+				<Notification/>:
 				notify?
-				<Null/>:
+				<Null
+					top= "Notification"
+					onNotifyBack={onNotifyBack}
+					txt= "You have no notification"
+					onNotifyMain={onNotifyMain}
+				/>:
 				<div className="Home">
 					<div className="home-top">
 						<div className="back">
@@ -123,8 +140,6 @@ function Home(){
 							<Circle size={10} color="#ffffff" weight="fill" />
 						</div>
 					</div>
-					<Null/>
-
 					{/* <Urgent/> */}
 					{/* <Coming/> */}
 					{/* <Watch/> */}

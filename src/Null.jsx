@@ -1,14 +1,23 @@
 import React,{useState} from "react";
-import {Bell} from "phosphor-react";
+import {ArrowLeft, Bell,DotsThreeVertical} from "phosphor-react";
 
-function Null(){
+function Null({top,onNotifyBack,txt,onNotifyMain}){
     return(
-        <div className="notify-null">
-            <div className="notify-null-main">
-                <div className="bell">
-                    <Bell size={30} color="#ffffff" />
+        <div className="Home">
+            <div className="home-top">
+                <div className="back">
+                    <ArrowLeft size={30} color="#1EBA60" onClick={onNotifyBack} />
+                    <h1>{top}</h1>
                 </div>
-                <p>You have no notification</p>
+                <button className="dot" onClick={onNotifyMain}>
+                    <DotsThreeVertical size={30} color="#1EBA60" />
+                </button>
+            </div>
+            <div className="great">
+                <button>
+                    <Bell size={30} color="#ffffff" weight="fill" />
+                </button>
+                <p>{txt}</p>
             </div>
         </div>
     )
