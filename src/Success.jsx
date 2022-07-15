@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CheckCircle } from "phosphor-react";
 
-function Success({ top, txt, txt2}) {
+function Success({ top, txt, txt2, onGo }) {
   return (
     <div className="great">
       <button>
@@ -9,9 +9,7 @@ function Success({ top, txt, txt2}) {
       </button>
       <h2>{top}</h2>
       <p>{txt}</p>
-      <button className="nxt">
-        {txt2}
-      </button>
+      <button className="nxt" onClick={onGo}>{txt2}</button>
     </div>
   );
 }
