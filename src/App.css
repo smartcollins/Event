@@ -4,6 +4,10 @@
   background-color: #121212;
 */
 
+.body{
+  background-color: yellow;
+  text-align: center;
+}
 
 .App {
   text-align: center;
@@ -502,27 +506,38 @@
 }
 
 .pin{
-  background-color: red;
   width: 80vw;
   display: flex;
   justify-content: space-around;
 }
 
 .great{
-  background-color: white;
+  /* background-color: white; */
+  background-color: red;
   z-index: 1;
   padding: 3rem;
   width: 85vw;
   border-radius: 1.5rem;
   position: absolute;
-  top: 10%;
-  left: 50%;
+  /* top: 10%; */
+  /* left: 50%; */
+  /* transform: translate(-50%,50%); */
   /* transform: translateX(-50%); */
-  transform: translate(-50%,50%);
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+
+}
+
+.great h2{
+  color: #1EBA60;
+  margin: 1rem;
 }
 
 .great .nxt{
-  width: 60%;
+  width: 100%;
+  border: none;
 }
 
 .great button:first-child{

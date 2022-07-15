@@ -5,7 +5,7 @@ import React, {useState} from "react";
 // import Donate from "./Donate"
 import {ArrowLeft,Circle,CheckCircle} from "phosphor-react";
 
-function Pin({onCreateBack,top,txt,txt2,btn}){
+function Pin({onCreateBack,top,txt,txt2,btn,onCreatePin}){
 	// const [create,setCreate] = useState(false)
 	// const [home,setHome] = useState(false)
 	// const [back,setBack] = useState(false)
@@ -50,7 +50,7 @@ function Pin({onCreateBack,top,txt,txt2,btn}){
 					<Circle size={16} color="#E6E6E6" weight="fill" />
 					<Circle size={16} color="#E6E6E6" weight="fill" />
 				</div>
-				<button className="nxt">{btn}</button>
+				<button className="nxt" onClick={onCreatePin}>{btn}</button>
 			</div>
 		</div>
 		)

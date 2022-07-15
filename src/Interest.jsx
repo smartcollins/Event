@@ -1,15 +1,17 @@
 import React, {useState, useEffect} from "react";
 import {ArrowLeft,GraduationCap,UsersThree,FirstAidKit,Buildings,Palette,GlobeHemisphereEast,House
 ,Wheelchair,Users,Gift,YinYang,Heartbeat}  from "phosphor-react";
-import Pin from "./Pin"
-import Profile from "./Profile"
+import Pin from "./Pin";
+import Success from "./Success";
+import Profile from "./Profile";
+// import Welcome from "./Welcome";
 
 
 function Interest(){
-	// const[interest,setInterest] = useState(false)
 	const[next,setNext] = useState(false)
 	const [back,setBack] = useState(false)
-	const [createBack,setCreateBack] = useState(true)
+	const [pin,setPin] = useState(false)
+	const [success,setSuccess] = useState(false)
 
 	const interests =[{
 		tittle: "Education",
@@ -92,7 +94,13 @@ function Interest(){
 	}
 
 	function onCreateBack(){
-		setCreateBack(true)
+		setNext(false)
+	}
+
+	function onCreatePin(){
+		setNext(false)
+		setPin(true)
+		setSuccess(true)
 	}
 
 	
@@ -112,10 +120,19 @@ function Interest(){
 					txt = "Please remember this PIN becayse it will be used when you want to top up, withdraw or donate."
 					txt2 = "Create Pin"
 					btn = "Create PIN"
+					onCreatePin= {onCreatePin}
 				/> :
 				<div className="interest">
+					{
+						success&&pin&&
+						<Success
+							top= "Great!"
+							txt= "Your account has been created Successfully!"
+							txt2= "Go To Home"
+						/>
+					}
 					<div className="back">
-						<ArrowLeft size={30} color="#2fe22c" weight="duotone" onClick={onBack}/>
+						<ArrowLeft size={30} color="#2fe22c" weight="duotone" onClick={!success&&onBack}/>
 						<h1>Select Your Interest</h1>
 					</div>
 					<p>Choose your interest to donate. Dont worry you can always change it later</p>
@@ -136,7 +153,7 @@ function Interest(){
 							})
 						}
 					</div>
-					<button onClick={onContinue} className="nxt">Verify</button>
+					<button onClick={!success&&onContinue} className="nxt">Verify</button>
 				</div>
 			}
 		</div>
