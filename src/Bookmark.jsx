@@ -8,21 +8,19 @@ import {DotsThreeVertical,BookmarkSimple,ArrowLeft} from "phosphor-react"
 
 
 function Bookmark(){
-	const [back,setBack] = useState(false)
-	const [bookmark,setBookMark] = useState(false)
+	const [back,setBack] = useState(false);
+    const [dot,setDot] = useState(false);
 
 	function onBack(){
 		setBack(true)
 	}
 
-	function onBookMark(){
-		setBookMark(true)
-	}
-
-    const [dot,setDot] = useState(false);
-
     function onDot(){
         setDot(true)
+    }
+
+    function onCancel(){
+        setDot(false)
     }
 
 	// const style = {
@@ -74,11 +72,11 @@ function Bookmark(){
                         <div>
                             {
                                 dot &&
-                                <div>
+                                <div className="remove-main">
                                     <h3>Remove from your bookmark</h3>
                                     <div className="remove-btn">
-                                        <button>cancel</button>
-                                        <button>Yes,Remove</button>
+                                        <button onClick={onCancel}>cancel</button>
+                                        <button onClick={onBack}>Yes,Remove</button>
                                     </div>
                                 </div>
                             }

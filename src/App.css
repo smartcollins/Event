@@ -911,3 +911,26 @@
   border-radius: 1rem 1rem 0 0;
 }
 
+.remove-main{
+  /* background-color: blue; */
+  padding: 1rem;
+}
+
+.remove-main button{
+  background-color: white;
+  margin: 1rem;
+  padding: 5px 1rem;
+  border-radius: 2rem;
+  width: 40%;
+  color: #1EBA60;
+  border: 1px solid #1EBA60;
+}
+
+.remove-main button:last-child{
+  background-color: #1EBA60;
+  color: white;
+  border: 1px solid transparent;
+}
+
+
+
