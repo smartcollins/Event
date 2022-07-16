@@ -10,14 +10,11 @@ function BookMarkItem({img,title,amt,txt,num,num2,info,info2}){
                         <BookmarkSimple size={20} color="#ffffff" weight="fill" />
                     </div>
                 </div>
-                <div>
-                    <div className="bookmark-note">
+                <div className="bookmark-note">
+                    {/* <div> */}
                         <h3>{title}</h3>
-                        <p>
-                            <span>{amt} </span>
-                            {txt}
-                        </p>
-                    </div>
+                        <p><span>{amt} </span>{txt} </p>
+                    {/* </div> */}
                     <div className="bookmark-bar"></div>
                     <div className="bookmark-end">
                         <p><span>{num}</span> {info}</p>

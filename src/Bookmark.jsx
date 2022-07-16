@@ -51,32 +51,21 @@ function Bookmark(){
                         txt= "fund rasied from $8,200"
                         num= "3,274"
                         info= "Donators"
-                        num2= "12"
+                        num2= {12}
                         info2= "days left"
                     />
-                    <div className="bookmark-card">
-                        <div>
-                            <div className="bookmark-img2">
-                                <div className="bookmark-mark" onClick={onBookMark}>
-                                    <BookmarkSimple size={20} color="#fafafa" weight="duotone" />
-                                </div>
-                            </div>
-                            <div>
-                                <div className="bookmark-note">
-                                    <h3>Help Orphange Children to Buy Study Books</h3>
-                                    <p>
-                                        <span>$2,379 </span>
-                                        fund raised from $4,200
-                                    </p>
-                                </div>
-                                <div className="bookmark-bar"></div>
-                                <div className="bookmark-end">
-                                    <p><span>1,038</span> Donators</p>
-                                    <p><span>22</span> days left</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <BookMarkItem
+                        img= "bookmark-img2"
+                        title= "Help Orphange Children to Buy Study Books"
+                        amt= "$2,379"
+                        txt= "fund rasied from $4,200"
+                        num= "1,038"
+                        info= "Donators"
+                        num2= {22}
+                        info2= "days left"
+                    />
+                    
+                    
                 </div>
 		    }
 	    </div>

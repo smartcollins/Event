@@ -811,15 +811,12 @@
   width: 100%;
 }
 
-.notification, .bookmark{
+/* .notification, .bookmark{
   position: relative;
   text-align: left;
   background-color: red;
-}
+} */
 
-.notification > p{
-  margin: 1rem auto;
-}
 
 .urgent-img, .bookmark-img, .bookmark-img2{
   background-position: 50% 50%;
@@ -845,40 +842,65 @@
 .bookmark-card{
   margin-top: 2rem;
   border-radius: 1rem;
-  border: 1px solid lightgrey;
+  border: 1px solid lightgray;
 }
-.bookmark-note h3{
+
+.bookmark-note{
+  height: 20vh;
+  border-radius: 0 0 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.bookmark-note > p{
+  margin-top: 5px;
+}
+
+.bookmark-note span{
+  color: #1EBA60;
+}
+
+.bookmark-end{
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .bookmark-note h3{
   width: 90%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
+} */
+
 .urgent-bar, .coming-bar, .bookmark-bar{
-  margin: 0 auto;
-  width: 85%;
+  /* margin: 5px auto; */
+  margin-top: 5px;
+  /* width: 85%; */
+  width: 100%;
   border-radius: 5px;
   height: 5px;
   background: linear-gradient(90deg, #1EBA60,#d6ffed);
 }
 
-.urgent-end, .coming-end, .bookmark-end{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+/* .urgent-end, .coming-end, .bookmark-end{ */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-around; */
   /*text-indent: -10px;*/
-  margin: 0 -10px;
-}
+  /* margin: 0 -10px; */
+  /* background-color: red; */
+/* } */
 
-.urgent-end span, .coming-end span, .bookmark-end span{
-  color: #1EBA60;
-}
-
-.urgent-mark, .coming-mark, .bookmark-mark{
+.bookmark-mark{
   position: absolute;
   top: 10%;
   right: 5%;
   background-color: #1EBA60;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
