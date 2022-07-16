@@ -1,12 +1,13 @@
 import React,{useState} from "react";
+import Menu from "./Menu";
 import {ArrowLeft, Bell,DotsThreeVertical} from "phosphor-react";
 
-function Null({top,onNotifyBack,txt,onNotifyMain}){
+function Null({top,onBack,txt,onNotifyMain}){
     return(
-        <div className="Home">
+        <div className="null">
             <div className="home-top">
                 <div className="back">
-                    <ArrowLeft size={30} color="#1EBA60" onClick={onNotifyBack} />
+                    <ArrowLeft size={30} color="#1EBA60" onClick={onBack} />
                     <h1>{top}</h1>
                 </div>
                 <button className="dot" onClick={onNotifyMain}>
@@ -19,6 +20,7 @@ function Null({top,onNotifyBack,txt,onNotifyMain}){
                 </button>
                 <p>{txt}</p>
             </div>
+            <Menu/>
         </div>
     )
 }

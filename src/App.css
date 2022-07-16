@@ -680,10 +680,11 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 20vw;
   position: absolute;
   bottom: 5%;
-  left: 30%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  width: 50%;
 }
 
 .dot{
@@ -782,18 +783,28 @@
   color: inherit;
 }
 
+.notify-bar > div:last-child{
+  width: 80%;
+}
+
 .notify-bar p{
   /* margin-top: 0px; */
   color: grey;
 }
 
 .notify-logo{
-  background-color: #1EBA60;
+  width: 20%;
+}
+
+.notify-logo button{
+  margin: 0 auto;
   padding: 1rem;
   border-radius: 50%;
-  margin-left: 1rem;
-  margin-right: 1.5rem;
   border: none;
+}
+
+.good{
+  background-color: #1EBA60;
 }
 
 .cancel{
@@ -808,7 +819,7 @@
   align-items: center;
   justify-content: space-around;
   position: static;
-  z-index: 5;
+  /* z-index: 5; */
 }
 
 .menu button{
@@ -818,4 +829,18 @@
   border-radius: 10px;
   margin: 1rem auto;
   border: none;
+}
+
+.null{
+  padding: 1rem;
+}
+
+.null .menu{
+  /* position: fixed; */
+  position: absolute;
+  transform: translate(-50%,50%);
+  left: 50%;
+  bottom:2rem;
+  /* width: 85vw; */
+  width: 100%;
 }

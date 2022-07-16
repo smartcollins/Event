@@ -2,6 +2,7 @@ import React from "react";
 import{useState} from "react";
 import Null from "./Null";
 import Notification from "./Notification"
+import Bookmark from "./Bookmark";
 // import Urgent from "./Urgent"
 // import Coming from "./Coming"
 // import Watch from "./Watch"
@@ -20,6 +21,8 @@ function Home(){
 	// const [logo,setLogo] = useState(false)
 	const [notify,setNotify] = useState(false)
 	const [notifyMain,setNotifyMain] = useState(false)
+	const [book,setBook] = useState(false)
+	const [bookMain,setBookMain] = useState(false)
 	// const [mark,setMark] = useState(false)
 	// const [search,setSearch] = useState(false)
 
@@ -37,10 +40,7 @@ function Home(){
 		setNotify(true)
 	}
 
-	function onMark(){
-	// 	setMark(true)
-	}
-
+	
 	function onSearch(){
 	// 	setSearch(true)
 	}
@@ -62,13 +62,28 @@ function Home(){
 	// 	// setClick(true)
 	// }
 
-	function onNotifyBack(){
-		setNotify(false)
-	}
+	// function onNotifyBack(){
+	// 	setNotify(false)
+	// }
 
 	function onNotifyMain(){
 		setNotifyMain(true)
 		setNotify(true)
+	}
+
+	function onBook(){
+		setBook(true)
+	}
+
+	function onBookMain(){
+
+	}
+
+	function onBack(){
+		setNotify(false)
+		setNotifyMain(false)
+		setBook(false)
+		setBookMain(false)
 	}
 
 	return(
@@ -95,10 +110,19 @@ function Home(){
 				notify?
 				<Null
 					top= "Notification"
-					onNotifyBack={onNotifyBack}
+					onBack={onBack}
 					txt= "You have no notification"
 					onNotifyMain={onNotifyMain}
 				/>:
+				book?
+				<Null
+					top= "Bookmark"
+					onBack= {onBack}
+					txt= "You have no Bookmark"
+					onNotifyMain={onBookMain}
+				/>:
+				bookMain?
+				<Bookmark/>:
 				<div className="Home">
 					<div className="home-top">
 						<div className="back">
@@ -112,7 +136,7 @@ function Home(){
 							<button onClick={onNotify}>
 								<Bell size={16} color="#13B157" weight="fill" />
 							</button>
-							<button onClick={onMark}>
+							<button onClick={onBook}>
 								<BookmarkSimple size={16} color="#13B157" weight="fill" />
 							</button>
 						</div>
