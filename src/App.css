@@ -693,72 +693,6 @@
   border-radius: 5px;
   padding: 5px;
 }
-/* 
-.notify-null-main, .bookmark-null-main{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 60vw;
-} */
-
-.notify-null-main p, .bookmark-null-main p{
-  color: #1EBA60;
-}
-
-.notification, .bookmark{
-  position: relative;
-  text-align: left;
-}
-
-.notification > p{
-  margin: 1rem auto;
-}
-
-/* .notification-top, .bookmark-top{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: red;
-} */
-
-/* 
-.notification-top .back, .bookmark-top .back{
-  margin: 0;
-} */
-/* 
-.notification-top h1, .bookmark-top h1{
-  margin-left: 10px;
-  width: 85%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-} */
-/* 
-.notify-null-main, .bookmark-null-main{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 60vw;
-  background-color: red;
-} */
-
-/* .notify-null-main p, .bookmark-null-main p{
-  color: #1EBA60;
-} */
-/* 
-.bell, .book{
-  background-color: #1EBA60;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 50%;
-  width: 10vw;
-} */
-/* 
-.notify,.book{
-  text-align: left; 
-} */
 
 .bookmark-btn{
   display: flex;
@@ -783,7 +717,6 @@
   border: 1px solid transparent;
   background-color: #1EBA60;
 }
-
 
 .notify-bar{
   display: flex;
@@ -877,3 +810,75 @@
   /* width: 85vw; */
   width: 100%;
 }
+
+.notification, .bookmark{
+  position: relative;
+  text-align: left;
+  background-color: red;
+}
+
+.notification > p{
+  margin: 1rem auto;
+}
+
+.urgent-img, .bookmark-img, .bookmark-img2{
+  background-position: 50% 50%;
+  object-fit: contain;
+  position: relative;
+  background-size: cover;
+  height: 30vh;
+  border-radius: 10px 10px 0 0;
+}
+
+.urgent-img{
+  background-image: url(./image/orphan.jpg);
+}
+
+.bookmark-img{
+  background-image: url(./image/patient.jpg);
+}
+
+.bookmark-img2{
+  background-image: url(./image/student.jpg);
+}
+
+.bookmark-card{
+  margin-top: 2rem;
+  border-radius: 1rem;
+  border: 1px solid lightgrey;
+}
+.bookmark-note h3{
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.urgent-bar, .coming-bar, .bookmark-bar{
+  margin: 0 auto;
+  width: 85%;
+  border-radius: 5px;
+  height: 5px;
+  background: linear-gradient(90deg, #1EBA60,#d6ffed);
+}
+
+.urgent-end, .coming-end, .bookmark-end{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /*text-indent: -10px;*/
+  margin: 0 -10px;
+}
+
+.urgent-end span, .coming-end span, .bookmark-end span{
+  color: #1EBA60;
+}
+
+.urgent-mark, .coming-mark, .bookmark-mark{
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  background-color: #1EBA60;
+  padding: 5px;
+  border-radius: 10px;
+}
+
