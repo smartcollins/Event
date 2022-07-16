@@ -8,37 +8,32 @@ import {DotsThreeVertical,BookmarkSimple,ArrowLeft} from "phosphor-react"
 
 function Bookmark(){
 	const [back,setBack] = useState(false)
-	const [book,setBook] = useState(false)
 	const [bookmark,setBookMark] = useState(false)
 
 	function onBack(){
 		setBack(true)
 	}
 
-	function onBook(){
-		setBook(true)
-	}
-
 	function onBookMark(){
 		setBookMark(true)
 	}
 
-	const style = {
-		backgroundColor : bookmark && "rgba(0,0,0,0.8)" 
-	}
+	// const style = {
+	// 	backgroundColor : bookmark && "rgba(0,0,0,0.8)" 
+	// }
 
 	return(
 		<div>
 			{ 	
 				back ?
 				<Homepage/> :
-                <div className="bookmark" style={style}>
-                    <div className="bookmark-top">
+                <div className="Home">
+                    <div className="home-top">
                         <div className="back">
                             <ArrowLeft size={30} color="#1EBA60" onClick={onBack} />
                             <h1>Bookmark</h1>
                         </div>
-                        <button className="dot3">
+                        <button className="dot">
                             <DotsThreeVertical size={30} color="#1EBA60" />
                         </button>
                     </div>

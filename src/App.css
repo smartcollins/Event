@@ -760,6 +760,31 @@
   text-align: left; 
 } */
 
+.bookmark-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.bookmark-btn button{
+  padding: 5px;
+  margin: 0 5px;
+  width: 50%;
+  background-color: white;
+  color: #1EBA60;
+  border-radius: 15px;
+  border: 1px solid #1EBA60;
+  border-radius: 1.5rem;
+}
+
+.bookmark-btn button:first-child{
+  color: white;
+  border: 1px solid transparent;
+  background-color: #1EBA60;
+}
+
+
 .notify-bar{
   display: flex;
   align-items: center;
@@ -835,8 +860,16 @@
   padding: 1rem;
 }
 
+.null .great{
+  background-color: transparent;
+}
+
+.null p{
+  color: #1EBA60;
+  margin-top: 1rem;
+}
+
 .null .menu{
-  /* position: fixed; */
   position: absolute;
   transform: translate(-50%,50%);
   left: 50%;

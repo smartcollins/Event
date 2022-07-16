@@ -68,7 +68,7 @@ function Home(){
 
 	function onNotifyMain(){
 		setNotifyMain(true)
-		setNotify(true)
+		// setNotify(true)
 	}
 
 	function onBook(){
@@ -76,7 +76,8 @@ function Home(){
 	}
 
 	function onBookMain(){
-
+		setBookMain(true)
+		setBook(false)
 	}
 
 	function onBack(){
@@ -112,14 +113,15 @@ function Home(){
 					top= "Notification"
 					onBack={onBack}
 					txt= "You have no notification"
-					onNotifyMain={onNotifyMain}
+					onMain={onNotifyMain}
 				/>:
 				book?
 				<Null
+					book= {true}
 					top= "Bookmark"
 					onBack= {onBack}
 					txt= "You have no Bookmark"
-					onNotifyMain={onBookMain}
+					onMain={onBookMain}
 				/>:
 				bookMain?
 				<Bookmark/>:

@@ -5,12 +5,12 @@ import Menu from "./Menu";
 import {Bell,DotsThreeVertical,ArrowLeft,CheckCircle,XCircle} from "phosphor-react";
 
 function Notification(){
-	const [bell,setBell] = useState(false)
+	// const [bell,setBell] = useState(false)
 	const [back,setBack] = useState(false)
 
-	function onBell(){
-		setBell(true)
-	}
+	// function onBell(){
+	// 	setBell(true)
+	// }
 
 	function onBack(){
 		setBack(true)
