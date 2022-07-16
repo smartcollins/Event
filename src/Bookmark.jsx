@@ -19,6 +19,12 @@ function Bookmark(){
 		setBookMark(true)
 	}
 
+    const [dot,setDot] = useState(false);
+
+    function onDot(){
+        setDot(true)
+    }
+
 	// const style = {
 	// 	backgroundColor : bookmark && "rgba(0,0,0,0.8)" 
 	// }
@@ -34,7 +40,7 @@ function Bookmark(){
                             <ArrowLeft size={30} color="#1EBA60" onClick={onBack} />
                             <h1>Bookmark</h1>
                         </div>
-                        <button className="dot">
+                        <button className="dot" onClick={onDot}>
                             <DotsThreeVertical size={30} color="#1EBA60" />
                         </button>
                     </div>
@@ -54,17 +60,30 @@ function Bookmark(){
                         num2= {12}
                         info2= "days left"
                     />
-                    <BookMarkItem
-                        img= "bookmark-img2"
-                        title= "Help Orphange Children to Buy Study Books"
-                        amt= "$2,379"
-                        txt= "fund rasied from $4,200"
-                        num= "1,038"
-                        info= "Donators"
-                        num2= {22}
-                        info2= "days left"
-                    />
-                    
+                    <div className={dot&&"remove"}>
+                        <BookMarkItem
+                            img= "bookmark-img2"
+                            title= "Help Orphange Children to Buy Study Books"
+                            amt= "$2,379"
+                            txt= "fund rasied from $4,200"
+                            num= "1,038"
+                            info= "Donators"
+                            num2= {22}
+                            info2= "days left"
+                        />
+                        <div>
+                            {
+                                dot &&
+                                <div>
+                                    <h3>Remove from your bookmark</h3>
+                                    <div className="remove-btn">
+                                        <button>cancel</button>
+                                        <button>Yes,Remove</button>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
                     
                 </div>
 		    }

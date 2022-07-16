@@ -904,3 +904,10 @@
   border-radius: 1rem;
 }
 
+.remove{
+  background-color: red;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
