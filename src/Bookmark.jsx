@@ -2,9 +2,8 @@ import React from "react"
 import {useState} from "react"
 import Menu from "./Menu"
 import BookMarkItem from "./BookMarkItem"
-// import Remove from "./Remove"
 import Homepage from "./Homepage"
-import {DotsThreeVertical,BookmarkSimple,ArrowLeft} from "phosphor-react"
+import {DotsThreeVertical,ArrowLeft} from "phosphor-react"
 
 
 function Bookmark(){

@@ -3,47 +3,28 @@ import{useState} from "react";
 import Null from "./Null";
 import Notification from "./Notification"
 import Bookmark from "./Bookmark";
-// import Urgent from "./Urgent"
-// import Coming from "./Coming"
-// import Watch from "./Watch"
-// import Prayer from "./Prayer"
-// import Menu from "./Menu"
-// import Bookmark from "./Bookmark"
-// import Search from "./Search"
-// import Donation from "./Donation"
-// import MyDonation from "./MyDonation"
-// import MyFundraising from "./MyFundraising"
-// import Inbox from "./Inbox"
-// import Userprofile from "./Userprofile"
 import {UsersThree,MagnifyingGlass,Bell,BookmarkSimple,Wallet,Circle} from "phosphor-react";
 
 function Home(){
 	// const [logo,setLogo] = useState(false)
+	const [search,setSearch] = useState(false);
 	const [notify,setNotify] = useState(false)
 	const [notifyMain,setNotifyMain] = useState(false)
 	const [book,setBook] = useState(false)
 	const [bookMain,setBookMain] = useState(false)
-	// const [mark,setMark] = useState(false)
-	// const [search,setSearch] = useState(false)
-
-	// const [calender,setCalender] = useState(false)
-	// const [fund,setFund] = useState(false)
-	// const [inbox,setInbox] = useState(false)
-	// const [profile,setProfile] = useState(false)
-	// const [click,setClick] = useState(false)
-
+	
 	function onLogo(){
 	// 	setLogo(true)
+	}
+
+	function onSearch(){
+		setSearch(true)
 	}
 
 	function onNotify(){
 		setNotify(true)
 	}
 
-	
-	function onSearch(){
-	// 	setSearch(true)
-	}
 
 	// function onCalender(){
 	// 	setCalender(true)
@@ -81,6 +62,7 @@ function Home(){
 	}
 
 	function onBack(){
+		setSearch(false)
 		setNotify(false)
 		setNotifyMain(false)
 		setBook(false)
@@ -106,6 +88,13 @@ function Home(){
 				// <Inbox/>:
 				// profile?
 				// <Userprofile/>:
+				search?
+				<Null
+					search= {true}
+					top= "Search"
+					onBack= {onBack}
+					txt= "No results found"
+				/>:
 				notifyMain?
 				<Notification/>:
 				notify?

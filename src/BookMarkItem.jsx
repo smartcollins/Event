@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import Remove from "./Remove";
 import {BookmarkSimple} from "phosphor-react";
 
 
