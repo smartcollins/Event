@@ -17,7 +17,7 @@ function Null({top,onBack,txt,onMain,book,search}){
                             <input type="" name="" placeholder="Search"/>
                             <MagnifyingGlass size={20} color="#D3D3D3" weight="light" />
                         </div>
-                        <button className="dot">
+                        <button className="dot" onClick={onMain}>
                             <FunnelSimple size={20} color="#1EBA60" weight="fill" />
                         </button>
                     </div>

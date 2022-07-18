@@ -1,6 +1,7 @@
 import React from "react";
 import{useState} from "react";
 import Null from "./Null";
+import Search from "./Search";
 import Notification from "./Notification"
 import Bookmark from "./Bookmark";
 import {UsersThree,MagnifyingGlass,Bell,BookmarkSimple,Wallet,Circle} from "phosphor-react";
@@ -8,6 +9,7 @@ import {UsersThree,MagnifyingGlass,Bell,BookmarkSimple,Wallet,Circle} from "phos
 function Home(){
 	// const [logo,setLogo] = useState(false)
 	const [search,setSearch] = useState(false);
+	const [searchMain,setSearchMain] = useState(false);
 	const [notify,setNotify] = useState(false)
 	const [notifyMain,setNotifyMain] = useState(false)
 	const [book,setBook] = useState(false)
@@ -43,9 +45,10 @@ function Home(){
 	// 	// setClick(true)
 	// }
 
-	// function onNotifyBack(){
-	// 	setNotify(false)
-	// }
+	function onSearchMain(){
+		setSearchMain(true)
+		setSearch(false)
+	}
 
 	function onNotifyMain(){
 		setNotifyMain(true)
@@ -94,7 +97,10 @@ function Home(){
 					top= "Search"
 					onBack= {onBack}
 					txt= "No results found"
+					onMain={onSearchMain}
 				/>:
+				searchMain?
+				<Search/>:
 				notifyMain?
 				<Notification/>:
 				notify?
