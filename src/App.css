@@ -282,7 +282,8 @@
 .back{
   display: flex;
   align-items: center;
-  margin: 1rem;
+  /* margin: 1rem; */
+  margin: 1rem 0;
 }
 
 .back h1{
@@ -810,6 +811,57 @@
   /* width: 85vw; */
   width: 100%;
 }
+
+.search-max{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.search-min{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  padding: 5px;
+  width: 70%;
+  background-color: #F4F6F9;
+}
+
+
+.search-min input{
+  border: none;
+  background-color: transparent;
+  color: black;
+  text-indent: 1rem;
+}
+
+.search-min input:focus{
+  outline: none;
+}
+
+.search-txt{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-txt P:first-child{
+  color: lightgrey;
+}
+.search-txt p:last-child{
+  color: #1EBA60;
+}
+
+.search-null-main{
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 
 /* .notification, .bookmark{
   position: relative;
