@@ -38,7 +38,16 @@ function Search(){
                         <p>Search Results</p>
                         <p>3,459 found</p>
                     </div>
-                    <SearchItem/>
+                    <SearchItem
+                        img="search-img3"
+                        title= "Help Little Baby Surgery"
+                        amt= "$2,275"
+                        info= "fund raised from $10,310"
+                        num= "4,471"
+                        txt= "Donators"
+                        num2= "9"
+                        txt2= "days left"
+                    />
                 </div>
             }
         </div>
