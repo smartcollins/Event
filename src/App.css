@@ -516,22 +516,20 @@
 }
 
 .great{
-  /* background-color: white; */
   background-color: red;
   z-index: 1;
   padding: 3rem;
   width: 85vw;
   border-radius: 1.5rem;
   position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   /* top: 10%; */
   /* left: 50%; */
   /* transform: translate(-50%,50%); */
   /* transform: translateX(-50%); */
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   
-
 }
 
 .great h2{
@@ -864,11 +862,11 @@
 
 .search-result{
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  border-radius: 10px;
+  border-radius: 1rem;
   border: 1px solid lightgrey;
   overflow: hidden;
+  margin: 1rem 0;
 }
 
 .search-img, .search-img2, .search-img3, .search-img4, .search-img5, .search-img6, .search-img7, .search-img8{
@@ -876,9 +874,8 @@
   object-fit: contain;
   background-position: 50% 50%;
   background-size: cover;
-  height: 35vh;
+  height: 25vh;
   width: 30vw;
-  /*border-radius: 10px 0 0 10px;*/
 }
 
 .search-img{
@@ -914,14 +911,25 @@
 }
 
 .search-detail{
-  width: 55vw;
-  height: 35vh;
-  /*background-color: red;*/
-  overflow: hidden;
-  border-radius: 10px;
+  width: 70%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
+.search-detail h3{
+  margin-bottom: 1rem;
+}
 
+.search-detail span{
+  color: #1EBA60;
+}
+
+.search-detail .bookmark-bar{
+  margin-top: 1rem;
+  /* width: 90%; */
+}
 
 /* .notification, .bookmark{
   position: relative;
@@ -988,24 +996,13 @@
   text-overflow: ellipsis;
 } */
 
-.urgent-bar, .coming-bar, .bookmark-bar{
-  /* margin: 5px auto; */
-  margin-top: 5px;
-  /* width: 85%; */
+.bookmark-bar{
+  margin: 5px auto;
   width: 100%;
   border-radius: 5px;
   height: 5px;
   background: linear-gradient(90deg, #1EBA60,#d6ffed);
 }
-
-/* .urgent-end, .coming-end, .bookmark-end{ */
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: space-around; */
-  /*text-indent: -10px;*/
-  /* margin: 0 -10px; */
-  /* background-color: red; */
-/* } */
 
 .bookmark-mark{
   position: absolute;
