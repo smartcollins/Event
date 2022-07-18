@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import Homepage from "./Homepage";
+import SearchItem from "./SearchItem";
 import {ArrowLeft,MagnifyingGlass,onMain,FunnelSimple} from "phosphor-react"
 
 function Search(){
@@ -37,6 +38,7 @@ function Search(){
                         <p>Search Results</p>
                         <p>3,459 found</p>
                     </div>
+                    <SearchItem/>
                 </div>
             }
         </div>

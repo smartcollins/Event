@@ -850,6 +850,7 @@
 .search-txt P:first-child{
   color: lightgrey;
 }
+
 .search-txt p:last-child{
   color: #1EBA60;
 }
@@ -859,6 +860,65 @@
   bottom: 10px;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.search-result{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  overflow: hidden;
+}
+
+.search-img, .search-img2, .search-img3, .search-img4, .search-img5, .search-img6, .search-img7, .search-img8{
+  position: relative;
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 35vh;
+  width: 30vw;
+  /*border-radius: 10px 0 0 10px;*/
+}
+
+.search-img{
+  background-image: url(./image/mal.jpg);
+}
+
+.search-img2{
+  background-image: url(./image/can.jpg);
+}
+
+.search-img3{
+  background-image: url(./image/baby.jpg);
+}
+
+.search-img4{
+  background-image: url(./image/volcano.jpg);
+}
+
+.search-img5{
+  background-image: url(./image/flood1.jpg);
+}
+
+.search-img6{
+  background-image: url(./image/poor.jpg);
+}
+
+.search-img7{
+  background-image: url(./image/baby2.jpg);
+}
+
+.search-img8{
+  background-image: url(./image/flood2.jpg);
+}
+
+.search-detail{
+  width: 55vw;
+  height: 35vh;
+  /*background-color: red;*/
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 
