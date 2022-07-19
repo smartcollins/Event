@@ -5,6 +5,7 @@ import Search from "./Search";
 import Notification from "./Notification"
 import Bookmark from "./Bookmark";
 import {UsersThree,MagnifyingGlass,Bell,BookmarkSimple,Wallet,Circle} from "phosphor-react";
+import BookMarkItem from "./BookMarkItem";
 
 function Home(){
 	// const [logo,setLogo] = useState(false)
@@ -75,22 +76,7 @@ function Home(){
 	return(
 		<div>	
 			{
-				// logo? 
-				// <Donation/>:
-				// search? 
-				// <Search/>:
-				// notify?
-				// <Notification/>:
-				// mark?
-				// <Bookmark/>:
-				// calender?
-				// <MyDonation/> :
-				// fund?
-				// <MyFundraising/> :
-				// inbox?
-				// <Inbox/>:
-				// profile?
-				// <Userprofile/>:
+				
 				search?
 				<Null
 					search= {true}
@@ -161,16 +147,44 @@ function Home(){
 							<Circle size={10} color="#ffffff" weight="fill" />
 						</div>
 					</div>
-					{/* <Urgent/> */}
-					{/* <Coming/> */}
-					{/* <Watch/> */}
-					{/* <Prayer/> */}
-					{/* <Menu
-						onCalender={onCalender}
-						onFund={onFund}
-						onInbox={onInbox}
-						onProfile={onProfile}
-					/> */}
+					<div className="urgent">
+						<div className="bookmark-btn">
+							<button>All</button>
+							<button>Art</button>
+							<button>Music</button>
+							<button>Sport</button>
+						</div>
+						<div className="search-txt">
+							<h1>Urgent Fundraising</h1>
+							<p>See all</p>
+						</div>
+						<BookMarkItem
+							img= "bookmark-img2"
+							title= "Help Orphange Children to Buy Study Books"
+							amt= "$2,379"
+							txt= "fund rasied from $4,200"
+							num= "1,280"
+							info= "Donators"
+							num2= "19"
+							info2= "days left"	
+						/>
+					</div>
+					<div className="urgent">
+						<div className="search-txt">
+							<h1>Coming to an end</h1>
+							<p>See all</p>
+						</div>
+						<BookMarkItem
+							img= "bookmark-img8"
+							title= "Helping Earthquake victims"
+							amt= "$4,359"
+							txt= "fund rasied from $8,000"
+							num= "2,367"
+							info= "Donators"
+							num2= "4"
+							info2= "days left"	
+						/>
+					</div>
 				</div>
 			}
 		</div>

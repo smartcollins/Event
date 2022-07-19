@@ -906,9 +906,14 @@
   background-image: url(./image/baby2.jpg);
 }
 
+.search-img8, .bookmark-img8{
+  background-image: url(./image/quake.jpg);
+}
+
 .search-img8{
   background-image: url(./image/flood2.jpg);
 }
+
 
 .search-detail{
   width: 70%;
@@ -938,17 +943,13 @@
 } */
 
 
-.urgent-img, .bookmark-img, .bookmark-img2{
+.bookmark-img, .bookmark-img2, .bookmark-img8{
   background-position: 50% 50%;
   object-fit: contain;
   position: relative;
   background-size: cover;
   height: 30vh;
   border-radius: 10px 10px 0 0;
-}
-
-.urgent-img{
-  background-image: url(./image/orphan.jpg);
 }
 
 .bookmark-img{
@@ -1041,5 +1042,11 @@
   border: 1px solid transparent;
 }
 
+.urgent .search-txt{
+  margin-top: 1rem;
+}
 
+.urgent .bookmark-img2,.bookmark-img8{
+  height: 40vh;
+}
 
