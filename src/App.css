@@ -1080,3 +1080,80 @@
 .urgent-item .search-min{
   width: 80%;
 }
+
+.watch-video{
+  display: grid;
+  grid-template: auto/auto auto;
+  grid-gap: 10px;
+}
+
+.watch-main-video{
+  display: grid;
+  grid-template: auto/auto auto;
+  grid-gap: 15px;
+}
+
+.watch-play{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.watch-txt{
+  color: white;
+  position: absolute;
+  bottom: 5%;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.watch1, .watch2, .watch-main, .watch-main2, .watch-main3, .watch-main4, .watch-main5, .watch-main6{
+  position: relative;
+  background-position: 50% 50%;
+  background-size: cover;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.watch1, .watch2{
+  height: 30vh;
+}
+
+.watch-main{
+  height: 50vh;
+}
+
+.watch1{
+  background-image: url(./image/baby.jpg);
+}
+
+.watch2{
+  background-image: url(./image/baby2.jpg);
+}
+
+.watch-main{
+  background-image: url(./image/mal.jpg);
+}
+
+.watch-main2{
+  background-image: url(./image/baby.jpg);
+}
+
+.watch-main3{
+  background-image: url(./image/baby2.jpg);
+}
+
+.watch-main4{
+  background-image: url(./image/patient.jpg);
+}
+
+.watch-main5{
+  background-image: url(./image/orphan.jpg);
+}
+
+.watch-main6{
+  background-image: url(./image/can.jpg);
+}

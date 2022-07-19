@@ -4,7 +4,7 @@ import Null from "./Null";
 import Search from "./Search";
 import Notification from "./Notification"
 import Bookmark from "./Bookmark";
-import {UsersThree,MagnifyingGlass,Bell,BookmarkSimple,Wallet,Circle} from "phosphor-react";
+import {UsersThree,MagnifyingGlass,Bell,BookmarkSimple,Wallet,Circle,PlayCircle} from "phosphor-react";
 import BookMarkItem from "./BookMarkItem";
 import UrgentItems from "./UrgentItems";
 import ComingItems from "./ComingItems";
@@ -19,6 +19,7 @@ function Home(){
 	const [bookMain,setBookMain] = useState(false)
 	const [urgent,setUrgent] = useState(false)
 	const [coming,setComing] = useState(false);
+	const [donation,setDonation] = useState(false);
 
 
 	function onLogo(){
@@ -66,6 +67,10 @@ function Home(){
 
 	function onComing(){
 		setComing(true)
+	}
+
+	function onDonation(){
+		setDonation(true)
 	}
 
 	return(
@@ -182,6 +187,33 @@ function Home(){
 							num2= "4"
 							info2= "days left"	
 						/>
+					</div>
+					<div className="urgent">
+						<div className="search-txt">
+							<h1>Watch the Impact of Your</h1>
+							<p onClick={onDonation}>See all</p>
+						</div>
+						<div>
+							<div className="watch-video">
+								<div className="watch1">
+									<div className="watch-play">
+										<PlayCircle size={30} color="#1EBA60" weight="bold" />
+									</div>
+									<div className="watch-txt">
+										<p>Sarah's Surgrey Was Successful</p>
+									</div>
+								</div>
+								<div className="watch2">
+									<div className="watch-play">
+										<PlayCircle size={30} color="#1EBA60" weight="bold" />
+									</div>
+									<div className="watch-txt">
+										<p>Siamese Twins Surgrey Was Successful</p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
 					</div>
 				</div>
 			}
