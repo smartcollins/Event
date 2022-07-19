@@ -1081,6 +1081,10 @@
   width: 80%;
 }
 
+.urgent .watch-video{
+  margin: 1rem auto;
+}
+
 .watch-video{
   display: grid;
   grid-template: auto/auto auto;

@@ -8,6 +8,7 @@ import {UsersThree,MagnifyingGlass,Bell,BookmarkSimple,Wallet,Circle,PlayCircle}
 import BookMarkItem from "./BookMarkItem";
 import UrgentItems from "./UrgentItems";
 import ComingItems from "./ComingItems";
+import WatchList from "./WatchList";
 
 function Home(){
 	// const [logo,setLogo] = useState(false)
@@ -19,7 +20,7 @@ function Home(){
 	const [bookMain,setBookMain] = useState(false)
 	const [urgent,setUrgent] = useState(false)
 	const [coming,setComing] = useState(false);
-	const [donation,setDonation] = useState(false);
+	const [watch,setWatch] = useState(false);
 
 
 	function onLogo(){
@@ -69,13 +70,15 @@ function Home(){
 		setComing(true)
 	}
 
-	function onDonation(){
-		setDonation(true)
+	function onWatch(){
+		setWatch(true)
 	}
 
 	return(
 		<div>	
 			{
+				watch?
+				<WatchList/>:
 				coming?
 				<ComingItems/>:
 				urgent?
@@ -191,28 +194,26 @@ function Home(){
 					<div className="urgent">
 						<div className="search-txt">
 							<h1>Watch the Impact of Your</h1>
-							<p onClick={onDonation}>See all</p>
+							<p onClick={onWatch}>See all</p>
 						</div>
-						<div>
-							<div className="watch-video">
-								<div className="watch1">
-									<div className="watch-play">
-										<PlayCircle size={30} color="#1EBA60" weight="bold" />
-									</div>
-									<div className="watch-txt">
-										<p>Sarah's Surgrey Was Successful</p>
-									</div>
+						<div className="watch-video">
+							<div className="watch1">
+								<div className="watch-play">
+									<PlayCircle size={30} color="#1EBA60" weight="bold" />
 								</div>
-								<div className="watch2">
-									<div className="watch-play">
-										<PlayCircle size={30} color="#1EBA60" weight="bold" />
-									</div>
-									<div className="watch-txt">
-										<p>Siamese Twins Surgrey Was Successful</p>
-									</div>
+								<div className="watch-txt">
+									<p>Sarah's Surgrey Was Successful</p>
 								</div>
-								
 							</div>
+							<div className="watch2">
+								<div className="watch-play">
+									<PlayCircle size={30} color="#1EBA60" weight="bold" />
+								</div>
+								<div className="watch-txt">
+									<p>Siamese Twins Surgrey Was Successful</p>
+								</div>
+							</div>
+							
 						</div>
 					</div>
 				</div>
