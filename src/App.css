@@ -690,7 +690,7 @@
   background-color: #D8FDE1;
   border: transparent;
   border-radius: 5px;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 .bookmark-btn{
@@ -814,6 +814,9 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+.search-max .dot{
+  padding: 5px;
 }
 
 .search-min{
@@ -1050,3 +1053,22 @@
   height: 40vh;
 }
 
+
+/* Idea on the remove section i.e posibility for my custom hook to affect a parent div that would act as the body tag */
+
+/* .urgent-item{
+  background-color: red;
+}
+
+.urgent-item .Home .home-top .dot{
+  padding: 0;
+  background-color: blue;
+} */
+
+.urgent-item .home-top{
+  margin-bottom: 1rem;
+}
+
+.urgent-item .search-min{
+  width: 80%;
+}
