@@ -872,7 +872,7 @@
   margin: 1rem 0;
 }
 
-.search-img, .search-img2, .search-img3, .search-img4, .search-img5, .search-img6, .search-img7, .search-img8{
+.search-img, .search-img2, .search-img3, .search-img4, .search-img5, .search-img6, .search-img7, .search-img8, .search-img9{
   position: relative;
   object-fit: contain;
   background-position: 50% 50%;
@@ -913,7 +913,7 @@
   background-image: url(./image/quake.jpg);
 }
 
-.search-img8{
+.search-img9{
   background-image: url(./image/flood2.jpg);
 }
 
