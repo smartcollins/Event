@@ -8,7 +8,7 @@ import {
   FunnelSimple,
 } from "phosphor-react";
 
-function UrgentItems() {
+function ComingItems() {
   const [back, setBack] = useState(false);
 
   function onBack() {
@@ -25,7 +25,7 @@ function UrgentItems() {
             <div className="home-top">
               <div className="back">
                 <ArrowLeft size={30} color="#1EBA60" onClick={onBack} />
-                <h1>Urgent Fundraising</h1>
+                <h1>Coming to an end</h1>
               </div>
               <button className="dot">
                 <DotsThreeVertical size={30} color="#1EBA60" />
@@ -47,43 +47,43 @@ function UrgentItems() {
               <button>Sport</button>
             </div>
             <SearchItem
-              img="search-img4"
-              title="Help Victims of Volcanic Erruption"
-              amt="$2,275"
-              info="fund raised from $6,310"
-              num="938"
-              txt="Donators"
-              num2="26"
-              txt2="days left"
-            />
-            <SearchItem
-              img="search-img9"
-              title="Help Victims of Flash Flooding"
-              amt="$9,775"
+              img="search-img"
+              title="Help Overcome Malnutrition"
+              amt="$8,775"
               info="fund raised from $10,540"
               num="4,471"
               txt="Donators"
-              num2="9"
+              num2="2"
               txt2="days left"
             />
             <SearchItem
-              img="search-img8"
-              title="Help Victims of Earthquake"
-              amt="$4,475"
-              info="fund raised from $7,380"
-              num="2,438"
+              img="search-img6"
+              title="Help Improve Child Health"
+              amt="$2,777"
+              info="fund raised from $6,310"
+              num="4,376"
               txt="Donators"
-              num2="26"
+              num2="4"
+              txt2="days left"
+            />
+            <SearchItem
+              img="search-img5"
+              title="Help Victims of Flooding"
+              amt="$7,475"
+              info="fund raised from $8,380"
+              num="2,118"
+              txt="Donators"
+              num2="3"
               txt2="days left"
             />
             <SearchItem
               img="search-img7"
-              title="Help Babies with Piolo"
-              amt="$9,389"
-              info="fund raised from $11,340"
-              num="5,548"
+              title="Help Improve Healthy Food For Children"
+              amt="$9,789"
+              info="fund raised from $10,340"
+              num="5,348"
               txt="Donators"
-              num2="19"
+              num2="4"
               txt2="days left"
             />
           </div>
@@ -93,4 +93,4 @@ function UrgentItems() {
   );
 }
 
-export default UrgentItems;
+export default ComingItems;

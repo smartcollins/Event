@@ -7,6 +7,7 @@ import Bookmark from "./Bookmark";
 import {UsersThree,MagnifyingGlass,Bell,BookmarkSimple,Wallet,Circle} from "phosphor-react";
 import BookMarkItem from "./BookMarkItem";
 import UrgentItems from "./UrgentItems";
+import ComingItems from "./ComingItems";
 
 function Home(){
 	// const [logo,setLogo] = useState(false)
@@ -17,6 +18,7 @@ function Home(){
 	const [book,setBook] = useState(false)
 	const [bookMain,setBookMain] = useState(false)
 	const [urgent,setUrgent] = useState(false)
+	const [coming,setComing] = useState(false);
 
 
 	function onLogo(){
@@ -62,9 +64,15 @@ function Home(){
 		setUrgent(true)
 	}
 
+	function onComing(){
+		setComing(true)
+	}
+
 	return(
 		<div>	
 			{
+				coming?
+				<ComingItems/>:
 				urgent?
 				<UrgentItems/>:
 				search?
@@ -162,7 +170,7 @@ function Home(){
 					<div className="urgent">
 						<div className="search-txt">
 							<h1>Coming to an end</h1>
-							<p>See all</p>
+							<p onClick={onComing}>See all</p>
 						</div>
 						<BookMarkItem
 							img= "bookmark-img8"

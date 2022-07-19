@@ -842,6 +842,14 @@
   outline: none;
 }
 
+.search-note h3{
+  width: 95%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  /* color: red; */
+}
+
 .search-txt{
   display: flex;
   align-items: center;
