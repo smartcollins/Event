@@ -6,6 +6,7 @@ import Notification from "./Notification"
 import Bookmark from "./Bookmark";
 import {UsersThree,MagnifyingGlass,Bell,BookmarkSimple,Wallet,Circle} from "phosphor-react";
 import BookMarkItem from "./BookMarkItem";
+import UrgentItems from "./UrgentItems";
 
 function Home(){
 	// const [logo,setLogo] = useState(false)
@@ -15,7 +16,9 @@ function Home(){
 	const [notifyMain,setNotifyMain] = useState(false)
 	const [book,setBook] = useState(false)
 	const [bookMain,setBookMain] = useState(false)
-	
+	const [urgent,setUrgent] = useState(false)
+
+
 	function onLogo(){
 	// 	setLogo(true)
 	}
@@ -27,24 +30,6 @@ function Home(){
 	function onNotify(){
 		setNotify(true)
 	}
-
-
-	// function onCalender(){
-	// 	setCalender(true)
-	// }
-
-	// function onFund(){
-	// 	setFund(true)
-	// }
-
-	// function onInbox(){
-	// 	setInbox(true)
-	// }
-
-	// function onProfile(){
-	// 	setProfile(true)
-	// 	// setClick(true)
-	// }
 
 	function onSearchMain(){
 		setSearchMain(true)
@@ -73,10 +58,15 @@ function Home(){
 		setBookMain(false)
 	}
 
+	function onUrgent(){
+		setUrgent(true)
+	}
+
 	return(
 		<div>	
 			{
-				
+				urgent?
+				<UrgentItems/>:
 				search?
 				<Null
 					search= {true}
@@ -156,7 +146,7 @@ function Home(){
 						</div>
 						<div className="search-txt">
 							<h1>Urgent Fundraising</h1>
-							<p>See all</p>
+							<p onClick={onUrgent}>See all</p>
 						</div>
 						<BookMarkItem
 							img= "bookmark-img2"
