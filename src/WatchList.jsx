@@ -15,7 +15,7 @@ function WatchList({ img, txt }) {
       {back ? (
         <Homepage />
       ) : (
-        <div>
+        <div className="watch">
           <div className="home-top">
             <div className="back">
               <ArrowLeft size={30} color="#1EBA60" onClick={onBack} />
@@ -32,23 +32,23 @@ function WatchList({ img, txt }) {
             />
             <WatchItem
               img="watch-main2"
-              txt="Help Improve Nutrition on Africa"
+              txt="Siamese Twins Surgery Was Successful"
             />
             <WatchItem
               img="watch-main3"
-              txt="Help Improve Nutrition on Africa"
+              txt="Help Improve Nutrition for Africa"
             />
             <WatchItem
               img="watch-main4"
-              txt="Help Improve Nutrition on Africa"
+              txt="Help Victims of Flas Flood in South America"
             />
             <WatchItem
               img="watch-main5"
-              txt="Help Improve Nutrition on Africa"
+              txt="Help Victims of Flash Flood in Africa"
             />
             <WatchItem
               img="watch-main6"
-              txt="Help Improve Nutrition on Africa"
+              txt="Help Improve Nutrition on Asian"
             />
           </div>
         </div>

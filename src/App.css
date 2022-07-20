@@ -1085,6 +1085,23 @@
   margin: 1rem auto;
 }
 
+.watch{
+  padding: 1rem;
+}
+
+.watch .back {
+  /* background-color: blue; */
+  width: 90%;
+}
+
+.watch .back h1{
+  /* background-color: red; */
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .watch-video{
   display: grid;
   grid-template: auto/auto auto;
@@ -1105,10 +1122,16 @@
 }
 
 .watch-txt{
-  color: white;
+  padding: 1rem;
   position: absolute;
   bottom: 5%;
   width: 90%;
+  text-align: left;
+  white-space: normal;
+}
+
+.watch-txt h3{
+  color: white;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1154,13 +1177,13 @@
 }
 
 .watch-main4{
-  background-image: url(./image/patient.jpg);
+  background-image: url(./image/flood1.jpg);
 }
 
 .watch-main5{
-  background-image: url(./image/orphan.jpg);
+  background-image: url(./image/flood2.jpg);
 }
 
 .watch-main6{
-  background-image: url(./image/can.jpg);
+  background-image: url(./image/orphan.jpg);
 }

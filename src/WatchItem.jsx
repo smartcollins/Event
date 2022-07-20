@@ -19,7 +19,7 @@ function WatchItem({ img, txt }) {
             />
           </div>
           <div className="watch-txt">
-            <p>{txt}</p>
+            <h3>{txt}</h3>
           </div>
         </div>
       </div>
