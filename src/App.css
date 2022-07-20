@@ -1114,20 +1114,13 @@
   text-overflow: ellipsis;
 }
 
-.watch1, .watch2, .watch-main, .watch-main2, .watch-main3, .watch-main4, .watch-main5, .watch-main6{
+.watch1, .watch2{
   position: relative;
   background-position: 50% 50%;
   background-size: cover;
   object-fit: contain;
   border-radius: 20px;
-}
-
-.watch1, .watch2{
   height: 30vh;
-}
-
-.watch-main{
-  height: 50vh;
 }
 
 .watch1{
@@ -1136,6 +1129,16 @@
 
 .watch2{
   background-image: url(./image/baby2.jpg);
+}
+
+
+.watch-main,.watch-main2,.watch-main3,.watch-main4,.watch-main5,.watch-main6{
+  height: 50vh;
+  position: relative;
+  background-position: 50% 50%;
+  background-size: cover;
+  object-fit: contain;
+  border-radius: 20px;
 }
 
 .watch-main{
