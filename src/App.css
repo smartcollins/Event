@@ -1203,3 +1203,55 @@
   /* border-radius: 10px; */
   margin: 0;
 }
+
+.watchfull .back{
+  position: absolute;
+  top: 5%;
+}
+
+.watchfull .urgent-bar{
+  background: linear-gradient(90deg, #1EBA60,#d6ffed 40%);
+}
+
+
+.watchfull-end{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0%;
+  width: 90vw;
+}
+
+.watchfull-note{
+  position: absolute;
+  bottom: 10%;
+  text-align: left;
+  text-indent: 20px;
+  color: white;
+  width: 100%;
+}
+
+.watchfull-end div:first-child{
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.watchfull-end div:nth-child(2){
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.watchfull-end div:last-child{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-left: 10px;
+}
