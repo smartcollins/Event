@@ -244,7 +244,7 @@ function Home(){
 							
 						</div>
 					</div>
-					<div>
+					<div className="urgent">
 						<div className="search-txt">
 								<h1>Prayer From Good People</h1>
 								<p onClick={onPrayer}>See all</p>
