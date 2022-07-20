@@ -85,12 +85,26 @@ function Home(){
 		<div>	
 			{
 				prayer?
-				<Prayer
-					name= "Esther Howard"
-					day= "Today"
-					txt= "Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends."
-					txt2= "You and 48 others sent this prayer"
-				/>:
+				<div>
+					<Prayer
+						name= "Esther Howard"
+						day= "Today"
+						txt= "Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends."
+						txt2= "You and 48 others sent this prayer"
+					/>
+						<Prayer
+						name= "Esther Howard"
+						day= "Today"
+						txt= "Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends."
+						txt2= "You and 48 others sent this prayer"
+					/>
+						<Prayer
+						name= "Esther Howard"
+						day= "Today"
+						txt= "Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends."
+						txt2= "You and 48 others sent this prayer"
+					/>
+				</div>:
 				watch?
 				<WatchList/>:
 				coming?
