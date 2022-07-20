@@ -9,6 +9,7 @@ import BookMarkItem from "./BookMarkItem";
 import UrgentItems from "./UrgentItems";
 import ComingItems from "./ComingItems";
 import WatchList from "./WatchList";
+import Prayer from "./Prayer";
 import Menu from "./Menu";
 
 function Home(){
@@ -22,6 +23,7 @@ function Home(){
 	const [urgent,setUrgent] = useState(false)
 	const [coming,setComing] = useState(false);
 	const [watch,setWatch] = useState(false);
+	const [prayer,setPrayer] = useState(false);
 
 
 	function onLogo(){
@@ -75,9 +77,20 @@ function Home(){
 		setWatch(true)
 	}
 
+	function onPrayer(){
+		setPrayer(true)
+	}
+
 	return(
 		<div>	
 			{
+				prayer?
+				<Prayer
+					name= "Esther Howard"
+					day= "Today"
+					txt= "Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends."
+					txt2= "You and 48 others sent this prayer"
+				/>:
 				watch?
 				<WatchList/>:
 				coming?
@@ -216,6 +229,18 @@ function Home(){
 							</div>
 							
 						</div>
+					</div>
+					<div>
+						<div className="search-txt">
+								<h1>Prayer From Good People</h1>
+								<p onClick={onPrayer}>See all</p>
+						</div>
+						<Prayer
+							name= "Esther Howard"
+							day= "Today"
+							txt= "Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends."
+							txt2= "You and 48 others sent this prayer"
+						/>
 					</div>
 					<Menu/>
 				</div>
