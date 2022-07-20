@@ -9,6 +9,7 @@ import BookMarkItem from "./BookMarkItem";
 import UrgentItems from "./UrgentItems";
 import ComingItems from "./ComingItems";
 import WatchList from "./WatchList";
+import Menu from "./Menu";
 
 function Home(){
 	// const [logo,setLogo] = useState(false)
@@ -216,6 +217,7 @@ function Home(){
 							
 						</div>
 					</div>
+					<Menu/>
 				</div>
 			}
 		</div>

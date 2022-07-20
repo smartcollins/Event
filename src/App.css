@@ -1122,6 +1122,7 @@
 }
 
 .watch-txt{
+  color: white;
   padding: 1rem;
   position: absolute;
   bottom: 5%;
@@ -1186,4 +1187,19 @@
 
 .watch-main6{
   background-image: url(./image/orphan.jpg);
+}
+
+
+.watchfull{
+  position: relative;
+  background-image: url(./image/baby.jpg);
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+  margin-top: 20px;
+  height: 100vh;
+  /* height: 100%; */
+  /* width: 90vw; */
+  /* border-radius: 10px; */
+  margin: 0;
 }
