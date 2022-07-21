@@ -1258,27 +1258,54 @@
 
 .prayer-card{
   border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid lightgrey;
   margin: 1rem auto;
-  /* padding: 1rem; */
+  padding: 1rem;
 }
+
+.prayer-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  padding: 1rem 0px;
+  width: 90%;
+  margin: auto;
+}
+
+.prayer-img{
+  background-image: url(./image/dp.jpg);
+  position: relative;
+  padding: 2rem;
+  border-radius: 50%;
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+  margin-right: 1rem;
+}
+
+.prayer-like{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  margin: 1rem 0px;
+}
+
+.prayer-like div{
+  display: flex;
+  align-items: center;
+}
+
+.prayer-like p{
+  margin-left: 5px;
+}
+
 
 .prayer2-top{
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.prayer2-top *{
-  margin:0 2px;
-}
-
-.prayer2 .bookmark-top{
-  justify-content: space-around;
-}
-
-.prayer2 .prayer-card{
-  margin-top: 10px;
 }
 
 .prayer-send{
@@ -1288,41 +1315,11 @@
   border-radius: 10px;
 }
 
-
-.prayer-top{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border-bottom: 1px solid grey;
-  padding: 1rem;
-  width: 95%;
-  margin: 0 auto;
-}
-
 .prayer-detail{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-
-.prayer-img{
-  background-image: url(./image/dp.jpg);
-  position: relative;
-  padding: 3rem;
-  border-radius: 50%;
-  object-fit: contain;
-  background-position: 50% 50%;
-  background-size: cover;
-  margin-right: 1rem;
-}
-/* 
-.prayer-profile{
-  margin-bottom: 10px;   
-} */
-
-/* .prayer-profile h6{
-  margin-bottom: 5px;
-} */
 
 .prayer-profile span{
   color: grey;
@@ -1338,16 +1335,3 @@
   margin: 1rem;
 }
 
-.prayer-like{
-  display: flex;
-}
-
-.prayer-like div{
-  margin: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.prayer-like p{
-  margin-left: 5px;
-}
