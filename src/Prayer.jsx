@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import {DotsThreeOutlineVertical,ShareNetwork,Heart} from "phosphor-react";
+import { DotsThreeOutlineVertical, ShareNetwork, Heart } from "phosphor-react";
 
-function Prayer({name,day,txt,txt2}) {
-  
+function Prayer({ img, name, day, txt, txt2 }) {
   return (
     <div className="prayer-card">
       <div className="prayer-top">
         <div className="prayer-detail">
-          <div className="prayer-img"></div>
+          <div className={img}></div>
           <div className="prayer-profile">
             <h6>{name}</h6>
             <span>{day}</span>

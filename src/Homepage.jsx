@@ -232,6 +232,7 @@ function Home(){
 								<p onClick={onPrayer}>See all</p>
 						</div>
 						<Prayer
+							img= "prayer-img"
 							name= "Esther Howard"
 							day= "Today"
 							txt= "Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends."
