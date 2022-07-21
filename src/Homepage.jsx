@@ -10,6 +10,7 @@ import UrgentItems from "./UrgentItems";
 import ComingItems from "./ComingItems";
 import WatchList from "./WatchList";
 import Prayer from "./Prayer";
+import Prayers from "./Prayers";
 import Menu from "./Menu";
 
 function Home(){
@@ -85,26 +86,7 @@ function Home(){
 		<div>	
 			{
 				prayer?
-				<div>
-					<Prayer
-						name= "Esther Howard"
-						day= "Today"
-						txt= "Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends."
-						txt2= "You and 48 others sent this prayer"
-					/>
-						<Prayer
-						name= "Esther Howard"
-						day= "Today"
-						txt= "Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends."
-						txt2= "You and 48 others sent this prayer"
-					/>
-						<Prayer
-						name= "Esther Howard"
-						day= "Today"
-						txt= "Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends."
-						txt2= "You and 48 others sent this prayer"
-					/>
-				</div>:
+				<Prayers/>:
 				watch?
 				<WatchList/>:
 				coming?
