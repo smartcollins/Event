@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Prayer from "./Prayer";
 import Homepage from "./Homepage";
+import Send from "./Send";
 import { ArrowLeft, MagnifyingGlass, DotsThreeVertical } from "phosphor-react";
 
 function Prayers() {
@@ -56,6 +57,7 @@ function Prayers() {
                     txt="Hopefully the orphans in Africa can get treatment and nurtriton improvement soon.."
                     txt2="You and 118 others sent this prayer"
                 />
+                <Send/>
             </div>
         }
     </div>

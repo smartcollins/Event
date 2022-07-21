@@ -1340,13 +1340,6 @@
   margin-left: 5px;
 }
 
-.prayer-send{
-  padding: 10px;
-  margin-top: 10px;
-  border: 1px solid lightgrey;
-  border-radius: 10px;
-}
-
 .prayer-detail{
   display: flex;
   align-items: center;
@@ -1370,5 +1363,29 @@
 .prayer-comment span{
   margin-top: 1rem;
   color: #6B737D;
+}
+
+.Send{
+  padding-top: 1rem;
+  border-top: 1px solid lightgrey;
+  border-radius: 1rem
+}
+
+.send{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid lightgrey;
+  border-radius: 1rem;
+}
+
+.send input{
+  border: none;
+  width: 100%;
+}
+
+.send input:focus{
+  outline: none;
 }
 
