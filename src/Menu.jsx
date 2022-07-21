@@ -1,14 +1,14 @@
 import React,{useState} from "react";
 import {House,Notepad,ListDashes,ChatText,User} from "phosphor-react";
 
-function Menu(){
+function Menu({onDonation}){
 	
 	return(
         <div className="menu">
             <button>
             <House size={30} color="#1EBA60" weight="fill" />
             </button>
-            <button>
+            <button onClick={onDonation}>
             <Notepad size={30} color="#1EBA60"/>
             </button>
             <button>

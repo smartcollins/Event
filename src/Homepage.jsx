@@ -11,6 +11,7 @@ import ComingItems from "./ComingItems";
 import WatchList from "./WatchList";
 import Prayer from "./Prayer";
 import Prayers from "./Prayers";
+import Donation from "./Donation";
 import Menu from "./Menu";
 
 function Home(){
@@ -25,6 +26,7 @@ function Home(){
 	const [coming,setComing] = useState(false);
 	const [watch,setWatch] = useState(false);
 	const [prayer,setPrayer] = useState(false);
+	const [donation,setDonation] = useState(false);
 
 
 	function onLogo(){
@@ -82,9 +84,15 @@ function Home(){
 		setPrayer(true)
 	}
 
+	function onDonation(){
+		setDonation(true)
+	}
+
 	return(
 		<div>	
 			{
+				donation?
+				<Donation/>:
 				prayer?
 				<Prayers/>:
 				watch?
@@ -239,7 +247,9 @@ function Home(){
 							txt2= "You and 48 others sent this prayer"
 						/>
 					</div>
-					<Menu/>
+					<Menu
+						onDonation={onDonation}
+					/>
 				</div>
 			}
 		</div>
