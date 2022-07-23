@@ -987,12 +987,21 @@
 }
 
 .bookmark-note > p{
-  margin-top: 5px;
+  /* margin-top: 5px; */
+  margin: 5px 0;
 }
 
 .bookmark-note span{
   color: #1EBA60;
 }
+
+.bookmark-bar{
+  width: 100%;
+  padding: 2px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #1EBA60,#d6ffed);
+}
+
 
 .bookmark-end{
   margin-top: 1rem;
@@ -1007,14 +1016,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
 } */
-
-.bookmark-bar{
-  margin: 5px auto;
-  width: 100%;
-  border-radius: 5px;
-  height: 5px;
-  background: linear-gradient(90deg, #1EBA60,#d6ffed);
-}
 
 .bookmark-mark{
   position: absolute;
@@ -1389,3 +1390,49 @@
   outline: none;
 }
 
+.donation-img{
+  background-image: url(./image/baby2.jpg);
+  position: relative;
+  height: 50vh;
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.donation .home-top2 button{
+  background-color: rgba(53, 224, 31, 0.2);
+}
+
+.donation-img > div:last-child{
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%);
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.donation-mid{
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.donation-mid > button{
+  padding: 5px 1rem;
+  border-radius: 2rem;
+  background-color: transparent;
+  border: 1px solid #1EBA60;
+  color: #1EBA60;
+}
+
+.donation-mid-end{
+  display: flex;
+  align-items: center;
+}
+
+.donation .nxt{
+  width: 95vw;
+}
