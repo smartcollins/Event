@@ -1,6 +1,6 @@
 import React,{useState} from "react"
 import Homepage from "./Homepage"
-import {ArrowLeft,ShareNetwork,BookmarkSimple,ArrowRight,Circle} from "phosphor-react"
+import {ArrowLeft,ShareNetwork,BookmarkSimple,ArrowRight,Circle,House, HouseLine,CircleWavyCheck, User, FirstAidKit} from "phosphor-react"
 
 function Donation(){
 	const [back,setBack] = useState(false)
@@ -56,6 +56,52 @@ function Donation(){
 						</div>
 					</div>
 					<button className="nxt">Donate Now</button>
+					<h3>Fundraiser</h3>
+					<div className="home-mid">
+						<div className="wallet">
+							<button>
+								<HouseLine size={30} color="#1EBA60" weight="duotone" />
+							</button>
+							<div>
+								<h3>Healthy Home</h3>
+								<div className="verify">
+									<p>Verified</p>
+									<CircleWavyCheck size={16} color="#1EBA60" weight="duotone" />
+								</div>
+							</div>
+							
+						</div>
+						<button>Follow</button>
+					</div>
+					<h3>Patient</h3>
+					<div className="home-mid">
+						<div className="wallet">
+							<button>
+								<User size={30} color="#1EBA60" weight="duotone" />
+							</button>
+							<div>
+								<h3>Healthy Home</h3>
+								<div className="verify">
+									<p>Identify according to medical documents</p>
+									<CircleWavyCheck size={16} color="#1EBA60" weight="duotone" />
+								</div>
+							</div>	
+						</div>
+					</div>
+					<div className="home-mid">
+						<div className="wallet">
+							<button>
+								<FirstAidKit size={30} color="#1EBA60" weight="duotone" />
+							</button>
+							<div>
+								<h3>Post Craniontomy EDH + ICH</h3>
+								<div className="verify">
+									<p>Accompanied by medical documents</p>
+									<CircleWavyCheck size={16} color="#1EBA60" weight="duotone" />
+								</div>
+							</div>	
+						</div>
+					</div>
 				</div>
 			}
 		</div>

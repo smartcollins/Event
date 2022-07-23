@@ -1436,3 +1436,19 @@
 .donation .nxt{
   width: 95vw;
 }
+
+.donation .home-mid{
+  margin: 2rem 1rem 1rem 1rem;
+}
+
+.verify{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.donation > h3{
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
