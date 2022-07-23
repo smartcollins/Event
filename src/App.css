@@ -1452,3 +1452,39 @@
   margin-left: 1rem;
   margin-top: 1rem;
 }
+
+.story{
+  margin: 1rem;
+  text-align: left;
+  /* display: flex; */
+  /* align-items: flex-end; */
+  /* overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;   */
+}
+
+.story-more{
+  background-color: red;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;  
+}
+
+.story-less{
+  background-color: blue;
+}
+
+.more{
+  color: #1EBA60;
+  /* background-color: #f02828; */
+  width: 50%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.less{
+  background-color: red;
+}

@@ -3,10 +3,15 @@ import Homepage from "./Homepage"
 import {ArrowLeft,ShareNetwork,BookmarkSimple,ArrowRight,Circle,House, HouseLine,CircleWavyCheck, User, FirstAidKit} from "phosphor-react"
 
 function Donation(){
-	const [back,setBack] = useState(false)
+	const [back,setBack] = useState(false);
+	const [read,setRead] = useState(false);
 
 	function onBack(){
 		setBack(true)
+	}
+
+	function onRead(){
+		setRead(oldRead => !read)
 	}
 
 	return(
@@ -101,6 +106,11 @@ function Donation(){
 								</div>
 							</div>	
 						</div>
+					</div>
+					<h3>Story</h3>
+					<div className="story">
+						<p className={read?"story-less":"story-more"}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga eum sint id doloremque repellendus, repudiandae doloribus libero, numquam eius ea cumque quam facilis. Molestiae non debitis necessitatibus, aperiam facilis fuga.</p>
+						<span onClick={onRead} className={read?"less":"more"}> {read?"Read Less":"Read More"}</span>
 					</div>
 				</div>
 			}
