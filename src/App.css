@@ -617,7 +617,8 @@
   border-radius: 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content: space-between;
   padding: 1rem;
 }
 
@@ -697,7 +698,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
+  margin: 1rem auto;
 }
 
 .bookmark-btn button{
@@ -814,6 +816,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  padding: 1rem;
 }
 .search-max .dot{
   padding: 5px;
@@ -1552,7 +1555,6 @@
   font-weight: bold;
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
 }
 .anonymus input{
   margin-right: 1rem;
@@ -1562,4 +1564,12 @@
   position: absolute;
   bottom: 2rem;
   transform: translateX(-50%);
+}
+
+.payment{
+  margin: 1rem;
+}
+
+.payment .home-mid{
+  margin: 1rem auto;
 }

@@ -1,12 +1,12 @@
 import React,{useState} from "react"
 import Donate from "./Donate"
-// import Pin from "./Pin"
+import Pin from "./Pin"
 import {ArrowLeft,QrCode,Wallet,CurrencyBtc,CurrencyEth,AppleLogo,CreditCard} from "phosphor-react"
 
 function Payment(){
 	const [back,setBack] = useState(false)
 
-	// const [nxt,setNxt] = useState(false)
+	const [nxt,setNxt] = useState(false)
 
 	// const [method,setMethod] = useState(false)
 
@@ -14,9 +14,9 @@ function Payment(){
 		setBack(true)
 	}
 
-	// function onNxt(){
-	// 	setNxt(true)
-	// }
+	function onNxt(){
+		setNxt(true)
+	}
 
 	// function onMethod(){
 	// 	setMethod(true)
@@ -27,25 +27,33 @@ function Payment(){
 			{
 				back ?
 				<Donate/> :
+				nxt?
+				<Pin
+					onCreateBack={onBack}
+					top="Enter Your Pin"
+					txt2="Please enter your Pin"
+					btn="Confirm"
+					// onCreatePin={onCreatePin}
+				/>:
 				// nxt ?
 				// <div className="payment-mthd">
 				// 	<Pin
 				// 		inpayment={true}
 				// 	/> 
 				// </div>:
-				<div className="payment-card">
-					<div className="bookmark-top">
+				<div className="payment">
+					<div className="home-top">
 						<div className="back">
 							<ArrowLeft size={30} color="#1EBA60" onClick={onBack}/>
 							<h1>Payment</h1>
 						</div>
-						<button className="dot3">
+						<button className="dot">
 							<QrCode size={30} color="#1EBA60" />
 						</button>
 					</div>
-					<div className="coming-top">
+					<div className="search-txt">
 						<h3>Select Payment Method</h3>
-						<h5>Add Card</h5>
+						<p>Add Card</p>
 					</div>
 					<div className="payment-btn">
 						<div className="home-mid">
@@ -56,7 +64,7 @@ function Payment(){
 								<p>My wallet balance($349,000)</p>
 							</div>
 							<div>
-								<input id="donate" type="radio"/>
+								<input  type="radio"/>
 							</div>
 						</div>
 						<div className="home-mid">
@@ -67,7 +75,7 @@ function Payment(){
 								<p>My Etherum balance($119.00)</p>
 							</div>
 							<div>
-								<input id="donate" type="radio"/>
+								<input  type="radio"/>
 							</div>
 						</div>
 						<div className="home-mid">
@@ -77,7 +85,7 @@ function Payment(){
 								</button>
 								<p>My Bitcoin balance($349.022)</p>
 							</div>
-							<input id="donate" type="radio"/>
+							<input  type="radio"/>
 						</div>
 						<div className="home-mid">
 							<div className="wallet">
@@ -86,7 +94,7 @@ function Payment(){
 								</button>
 								<p>My Venmo balance($439.000)</p>
 							</div>
-							<input id="donate" type="radio"/>
+							<input  type="radio"/>
 						</div>
 						<div className="home-mid">
 							<div className="wallet">
@@ -95,11 +103,11 @@ function Payment(){
 								</button>
 								<p>My iTunes balance($29,000)</p>
 							</div>
-							<input id="donate" type="radio"/>
+							<input  type="radio"/>
 						</div>
 					</div>
 					<div className="payment-end">
-						<button className="nxt">Continue</button>
+						<button onClick={onNxt} className="nxt">Continue</button>
 					</div>
 				</div>
 			}

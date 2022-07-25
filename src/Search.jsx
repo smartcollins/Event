@@ -18,7 +18,7 @@ function Search(){
                     <div className="back">
                         <ArrowLeft size={30} color="#1EBA60" onClick={onBack}/>
                         <h1>Search</h1>
-                    </div>
+                    </div>\
                     <div className="search-max">
                         <div className="search-min">
                             <input type="" name="" placeholder="Search"/>
