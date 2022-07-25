@@ -1399,6 +1399,9 @@
   background-size: cover;
 }
 
+.donation .home-top{
+  margin: 0 1rem;
+}
 .donation .home-top2 button{
   background-color: rgba(53, 224, 31, 0.2);
 }
