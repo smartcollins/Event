@@ -1465,16 +1465,16 @@
 }
 
 .story-more{
-  background-color: red;
+  /* background-color: red; */
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;  
 }
-
+/* 
 .story-less{
   background-color: blue;
-}
+} */
 
 .more{
   color: #1EBA60;
@@ -1486,5 +1486,14 @@
 }
 
 .less{
-  background-color: red;
+  /* background-color: red; */
+  color: red;
+}
+
+.donation .search-txt{
+  margin: 1rem;
+}
+
+.donation .prayer-card{
+  margin: 1rem;
 }

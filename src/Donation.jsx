@@ -1,10 +1,13 @@
 import React,{useState} from "react"
 import Homepage from "./Homepage"
+import Prayer from "./Prayer";
+import Prayers from "./Prayers";
 import {ArrowLeft,ShareNetwork,BookmarkSimple,ArrowRight,Circle,House, HouseLine,CircleWavyCheck, User, FirstAidKit} from "phosphor-react"
 
 function Donation(){
 	const [back,setBack] = useState(false);
 	const [read,setRead] = useState(false);
+	const [prayer,setPrayer] = useState(false);
 
 	function onBack(){
 		setBack(true)
@@ -14,9 +17,15 @@ function Donation(){
 		setRead(oldRead => !read)
 	}
 
+	function onPrayer(){
+		setPrayer(true)
+	}
+
 	return(
 		<div>
 			{	
+				prayer ?
+				<Prayers/>:
 				back ?
 				<Homepage/> :
 				<div className="donation">
@@ -109,9 +118,24 @@ function Donation(){
 					</div>
 					<h3>Story</h3>
 					<div className="story">
-						<p className={read?"story-less":"story-more"}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga eum sint id doloremque repellendus, repudiandae doloribus libero, numquam eius ea cumque quam facilis. Molestiae non debitis necessitatibus, aperiam facilis fuga.</p>
+						<p className={read?"story-less":"story-more"}>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga eum sint id doloremque repellendus, repudiandae doloribus libero, numquam eius ea cumque quam facilis. Molestiae non debitis necessitatibus, aperiam facilis fuga.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ex asperiores quisquam ab quas labore temporibus esse maiores excepturi accusantium nihil, necessitatibus perferendis repudiandae sint explicabo ipsam architecto totam pariatur!
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ex quasi deserunt corrupti provident at! Magni id inventore cupiditate odit? Impedit voluptatibus ratione molestiae magni necessitatibus temporibus, ducimus numquam odio.
+						</p>
 						<span onClick={onRead} className={read?"less":"more"}> {read?"Read Less":"Read More"}</span>
 					</div>
+					<div className="search-txt">
+						<h3>Prayers from Good People</h3>
+						<p onClick={onPrayer}>See all</p>
+					</div>
+					<Prayer
+						img= "prayer-img"
+						name= "Esther Howard"
+						day= "Today"
+						txt= "Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends."
+						txt2= "You and 48 others sent this prayer"
+					/>
 				</div>
 			}
 		</div>
