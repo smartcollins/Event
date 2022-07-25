@@ -1510,3 +1510,56 @@
 .donation .prayer-card{
   margin: 1rem;
 }
+
+.donate{
+  height: 100vh;
+  margin: 1rem;
+  position: relative;
+}
+
+.donated{
+  width: 100%;
+  height: 20vh;
+  border-radius: 1rem;
+  background-color: transparent;
+  border: 2px solid #1EBA60;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1EBA60;
+  margin-top: 1rem;
+}
+
+.amount{
+  display: grid;
+  grid-template: auto/auto auto auto;
+  grid-gap: 1.5rem;
+  border: 2px solid #f0f0f0;
+  border-style: solid none;
+  padding: 2rem 1rem;
+  margin: 2rem auto;
+}
+
+.amount button{
+  padding: 1rem;
+  color: #1EBA60;
+  background-color: transparent;
+  border: 2px solid #1EBA60;
+  border-radius: 2rem;
+}
+
+.anonymus{
+  text-align: left;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.anonymus input{
+  margin-right: 1rem;
+}
+
+.donate .nxt{
+  position: absolute;
+  bottom: 2rem;
+  transform: translateX(-50%);
+}
