@@ -3,7 +3,7 @@ import Homepage from "./Homepage"
 import Donate from "./Donate";
 import Prayer from "./Prayer";
 import Prayers from "./Prayers";
-import {ArrowLeft,ShareNetwork,BookmarkSimple,ArrowRight,Circle,House, HouseLine,CircleWavyCheck, User, FirstAidKit} from "phosphor-react"
+import {ArrowLeft,ShareNetwork,BookmarkSimple,ArrowRight,Circle,HouseLine,CircleWavyCheck, User, FirstAidKit} from "phosphor-react"
 import Null from "./Null";
 
 function Donation(){

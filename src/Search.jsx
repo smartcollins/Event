@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import Homepage from "./Homepage";
 import SearchItem from "./SearchItem";
-import {ArrowLeft,MagnifyingGlass,onMain,FunnelSimple} from "phosphor-react"
+import {ArrowLeft,MagnifyingGlass,FunnelSimple} from "phosphor-react"
 
 function Search(){
     const [back,setBack] = useState(false);

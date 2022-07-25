@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import { BookmarkSimple } from "phosphor-react";
 
 function SearchItem({img,title,amt,info,txt,num,txt2,num2}){

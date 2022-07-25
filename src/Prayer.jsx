@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { DotsThreeOutlineVertical, ShareNetwork, Heart } from "phosphor-react";
 
 function Prayer({ img, name, day, txt, txt2 }) {

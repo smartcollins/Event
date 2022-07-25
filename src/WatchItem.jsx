@@ -1,14 +1,8 @@
-import React, { useState } from "react";
-import Watchfull from "./WatchFull";
+import React from "react";
 import { PlayCircle } from "phosphor-react";
 
 function WatchItem({ img, txt, onPlay }) {
-  // const [play, setPlay] = useState(false);
-
-  // function onPlay() {
-  //   setPlay(true);
-  // }
-
+  
   return (
     <div className="watch2-main">
       <div>

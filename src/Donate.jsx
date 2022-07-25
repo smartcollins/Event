@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-// import Payment from "./Payment"
+import Payment from "./Payment"
 import Donation from "./Donation";
 // import MyDonation from "./MyDonation"
 import {ArrowLeft,DotsThreeVertical} from "phosphor-react";
@@ -8,7 +8,7 @@ function Donate(){
 	const [anonymus,setAnonymus] = useState(false)
 	const [btn,setBtn] = useState(false)
 	const [back,setBack] = useState(false)
-	const [dot,setDot] = useState(false)
+	// const [dot,setDot] = useState(false)
 
 	function onAnonymus(){
 		setAnonymus(oldAnonymus => !anonymus)
@@ -22,17 +22,17 @@ function Donate(){
 		setBack(true)
 	}
 
-	function onDot(){
-		setDot(true)
-	}
+	// function onDot(){
+	// 	setDot(true)
+	// }
 
 	return(
 		<div>
 			{	
 				back ?
 				<Donation/> :
-				// btn ? 
-				// <Payment/>:
+				btn ? 
+				<Payment/>:
 				// dot ?
 				// <MyDonation/> :
 				<div className="donate">

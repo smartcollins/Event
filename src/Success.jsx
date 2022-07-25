@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { CheckCircle } from "phosphor-react";
 
 function Success({ top, txt, txt2, onGo }) {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Homepage from "./Homepage";
 import WatchItem from "./WatchItem";
-import { ArrowLeft, DotsThreeVertical, PlayCircle } from "phosphor-react";
+import { ArrowLeft, DotsThreeVertical } from "phosphor-react";
 import Watchfull from "./WatchFull";
 
 function WatchList({ img, txt }) {
