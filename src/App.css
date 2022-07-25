@@ -864,6 +864,15 @@
   color: #1EBA60;
 }
 
+.search-txt button{
+  color: #1EBA60;
+  background-color: transparent;
+  border: 2px solid #1EBA60;
+  border-radius: 2rem;
+  /* width: 30%; */
+  padding: 2px 1rem;
+}
+
 .search-null-main{
   position: fixed;
   bottom: 10px;
@@ -1496,6 +1505,7 @@
 .donation .search-txt{
   margin: 1rem;
 }
+
 
 .donation .prayer-card{
   margin: 1rem;

@@ -1,5 +1,6 @@
 import React,{useState} from "react"
 import Homepage from "./Homepage"
+import Donate from "./Donate";
 import Prayer from "./Prayer";
 import Prayers from "./Prayers";
 import {ArrowLeft,ShareNetwork,BookmarkSimple,ArrowRight,Circle,House, HouseLine,CircleWavyCheck, User, FirstAidKit} from "phosphor-react"
@@ -8,6 +9,7 @@ import Null from "./Null";
 function Donation(){
 	const [back,setBack] = useState(false);
 	const [read,setRead] = useState(false);
+	const [donate,setDonate] = useState(false);
 	const [follow,setFollow] = useState(false);
 	const [prayer,setPrayer] = useState(false);
 
@@ -17,6 +19,10 @@ function Donation(){
 
 	function onRead(){
 		setRead(oldRead => !read)
+	}
+
+	function onDonate(){
+		setDonate(true)
 	}
 
 	function onFollow(){
@@ -29,7 +35,9 @@ function Donation(){
 
 	return(
 		<div>
-			{	
+			{
+				donate?
+				<Donate/>:
 				prayer ?
 				<Prayers/>:
 				back ?
@@ -97,7 +105,7 @@ function Donation(){
 									<ArrowRight size={20} color="#1EBA60" weight="duotone"/>
 								</div>
 							</div>
-							<button className="nxt">Donate Now</button>
+							<button onClick={onDonate} className="nxt">Donate Now</button>
 						</div>
 					}
 					<h3>Fundraiser</h3>
@@ -145,6 +153,10 @@ function Donation(){
 								</div>
 							</div>	
 						</div>
+					</div>
+					<div className="search-txt">
+						<h3>Fund Usage Plan</h3>
+						<button>View Plan</button>
 					</div>
 					<h3>Story</h3>
 					<div className="story">
