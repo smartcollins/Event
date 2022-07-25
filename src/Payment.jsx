@@ -28,13 +28,15 @@ function Payment(){
 				back ?
 				<Donate/> :
 				nxt?
-				<Pin
-					onCreateBack={onBack}
-					top="Enter Your Pin"
-					txt2="Please enter your Pin"
-					btn="Confirm"
-					// onCreatePin={onCreatePin}
-				/>:
+				<div className="payment">
+					<Pin
+						onCreateBack={onBack}
+						top="Enter Your Pin"
+						txt2="Please enter your Pin"
+						btn="Confirm"
+						// onCreatePin={onCreatePin}
+					/>
+				</div>:
 				// nxt ?
 				// <div className="payment-mthd">
 				// 	<Pin
