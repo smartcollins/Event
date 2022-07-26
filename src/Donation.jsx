@@ -10,7 +10,7 @@ function Donation(){
 	const [back,setBack] = useState(false);
 	const [read,setRead] = useState(false);
 	const [donate,setDonate] = useState(false);
-	const [follow,setFollow] = useState(false);
+	const [home,setHome] = useState(false);
 	const [prayer,setPrayer] = useState(false);
 
 	function onBack(){
@@ -25,8 +25,8 @@ function Donation(){
 		setDonate(true)
 	}
 
-	function onFollow(){
-		setFollow(true)
+	function onHome(){
+		setHome(true)
 	}
 
 	function onPrayer(){
@@ -45,7 +45,7 @@ function Donation(){
 				<div className="donation">
 					
 					{
-						follow?
+						home?
 						<div className="home-top">
 							<div className="back">
 								<ArrowLeft size={30} color="#1EBA60" weight="duotone" onClick={onBack}/>
@@ -62,7 +62,7 @@ function Donation(){
 						Null
 					}
 					{
-						follow?
+						home?
 						Null:
 						<div>
 							<div className="donation-img">
@@ -111,7 +111,7 @@ function Donation(){
 					<h3>Fundraiser</h3>
 					<div className="home-mid">
 						<div className="wallet">
-							<button>
+							<button onClick={onHome}>
 								<HouseLine size={30} color="#1EBA60" weight="duotone" />
 							</button>
 							<div>
@@ -123,7 +123,7 @@ function Donation(){
 							</div>
 							
 						</div>
-						<button onClick={onFollow}>Follow</button>
+						<button>home</button>
 					</div>
 					<h3>Patient</h3>
 					<div className="home-mid">
