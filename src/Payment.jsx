@@ -23,6 +23,7 @@ function Payment(){
 		setConfirm(true)
 	}
 
+
 	// function onMethod(){
 	// 	setMethod(true)
 	// }
@@ -47,7 +48,7 @@ function Payment(){
 							top="Successfull"
 							txt="Thank You for making a donation"
 							txt2="Ok"
-							// onGo={onGo}
+							onGo={onBack}
 						/>:
 						Null
 					}
