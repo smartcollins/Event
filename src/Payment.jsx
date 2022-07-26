@@ -1,13 +1,14 @@
-import React,{useState} from "react"
-import Donate from "./Donate"
-import Pin from "./Pin"
+import React,{useState} from "react";
+import Donate from "./Donate";
+import Pin from "./Pin";
+import Success from "./Success";
 import {ArrowLeft,QrCode,Wallet,CurrencyBtc,CurrencyEth,AppleLogo,CreditCard} from "phosphor-react"
+import Null from "./Null";
 
 function Payment(){
-	const [back,setBack] = useState(false)
-
+	const [back,setBack] = useState(false)	
 	const [nxt,setNxt] = useState(false)
-
+	const [confirm,setConfirm] = useState(false)
 	// const [method,setMethod] = useState(false)
 
 	function onBack(){
@@ -16,6 +17,10 @@ function Payment(){
 
 	function onNxt(){
 		setNxt(true)
+	}
+
+	function onConfirm(){
+		setConfirm(true)
 	}
 
 	// function onMethod(){
@@ -34,15 +39,19 @@ function Payment(){
 						top="Enter Your Pin"
 						txt2="Please enter your Pin"
 						btn="Confirm"
-						// onCreatePin={onCreatePin}
+						onCreatePin={onConfirm}
 					/>
+					{
+						confirm?
+						<Success
+							top="Successfull"
+							txt="Thank You for making a donation"
+							txt2="Ok"
+							// onGo={onGo}
+						/>:
+						Null
+					}
 				</div>:
-				// nxt ?
-				// <div className="payment-mthd">
-				// 	<Pin
-				// 		inpayment={true}
-				// 	/> 
-				// </div>:
 				<div className="payment">
 					<div className="home-top">
 						<div className="back">
