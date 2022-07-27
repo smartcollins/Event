@@ -1672,21 +1672,6 @@
   color: white;
 }
 
-.profile-end{
-  text-align: left;
-}
-
-.profile-end p{
-  color: grey;
-}
-
-.info-fund .search-result .search-img3{
-  height: 25vh;
-}
-.info-fund .search-result .search-detail{
-  height: 25vh;
-}
-
-.info-fund .search-result .search-img7{
-  height: 25vh;
+.healthy .search-txt{
+  margin-top: 1rem;
 }
