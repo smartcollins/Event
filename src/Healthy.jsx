@@ -21,6 +21,8 @@ function Healthy(){
         setClick(true)
         setClick2(false)
         setClick3(false)
+        setFund(false)
+        setPrayer(false)
     }
 
     function onClicked2(){
