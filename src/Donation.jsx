@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Homepage from "./Homepage";
 import Donate from "./Donate";
 import Prayer from "./Prayer";
+import Story from "./Story";
 import Prayers from "./Prayers";
 import Healthy from "./Healthy";
 import {
@@ -19,17 +20,12 @@ import {
 
 function Donation() {
   const [back, setBack] = useState(false);
-  const [read, setRead] = useState(false);
   const [donate, setDonate] = useState(false);
   const [home, setHome] = useState(false);
   const [prayer, setPrayer] = useState(false);
 
   function onBack() {
     setBack(true);
-  }
-
-  function onRead() {
-    setRead((oldRead) => !read);
   }
 
   function onDonate() {
@@ -162,26 +158,7 @@ function Donation() {
             <button>View Plan</button>
           </div>
           <h3>Story</h3>
-          <div className="story">
-            <p className={read ? "story-less" : "story-more"}>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga eum
-              sint id doloremque repellendus, repudiandae doloribus libero,
-              numquam eius ea cumque quam facilis. Molestiae non debitis
-              necessitatibus, aperiam facilis fuga. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Quasi ex asperiores quisquam ab quas
-              labore temporibus esse maiores excepturi accusantium nihil,
-              necessitatibus perferendis repudiandae sint explicabo ipsam
-              architecto totam pariatur! Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Accusamus, ex quasi deserunt corrupti provident
-              at! Magni id inventore cupiditate odit? Impedit voluptatibus
-              ratione molestiae magni necessitatibus temporibus, ducimus numquam
-              odio.
-            </p>
-            <span onClick={onRead} className={read ? "less" : "more"}>
-              {" "}
-              {read ? "Read Less" : "Read More"}
-            </span>
-          </div>
+          <Story/>
           <div className="search-txt">
             <h3>Prayers from Good People</h3>
             <p onClick={onPrayer}>See all</p>

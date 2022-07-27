@@ -1611,7 +1611,6 @@
 }
 
 .healthy-btn button:nth-child(2){
-  /* background-color: red; */
   border: 1px solid lightgrey;
   border-style: none solid;
 }
@@ -1623,39 +1622,49 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 10px;
+  padding: 1rem;
 }
 
-.profile-mid button:first-child, .profile-mid button:last-child{
+.healthy-mid button{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 40%;
-  height: 30px;
-  border-radius: 20px;
-}
-
-.profile-mid button:first-child{
+  padding: 5px;
+  border-radius: 2rem;
   background-color: #1EBA60;
   color: white;
-  border: 1px solid transparent;
+  border: 2px solid #1EBA60;
 }
 
-.profile-mid button:last-child{
+.healthy-mid button:last-child{
   background-color: transparent;
   color: #1EBA60;
-  border: 1px solid #1EBA60;
+  border: 2px solid #1EBA60;
 }
 
-.profile-mid-end{
+.healthy-end{
   display: flex;
   justify-content: space-around;
 }
 
-.profile-mid-end button{
-  border: 1px solid transparent;
-  padding: 5px 15px;
+.unclicked{
+  background-color: transparent;
+  border: 2px solid #1EBA60;
+  padding: 5px;
+  width: 30%;
   border-radius: 20px;
+  color: #1EBA60;
+}
+
+
+.clicked{
+  background-color: #1EBA60;
+  border: 2px solid #1EBA60;
+  padding: 5px;
+  width: 30%;
+  border-radius: 20px;
+  color: white;
 }
 
 .profile-end{

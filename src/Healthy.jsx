@@ -1,13 +1,36 @@
 import React,{useState} from "react";
 import Donation from "./Donation";
+import Story from "./Story";
 import {ArrowLeft,DotsThreeVertical,HouseLine,CircleWavyCheck,UserPlus,ChatText} from "phosphor-react"
 
 function Healthy(){
     const [back,setBack] = useState(false);
+    const [click,setClick] = useState(false);
+    const [click2,setClick2] = useState(false);
+    const [click3,setClick3] = useState(false);
 
     function onBack(){
         setBack(true)
     }
+
+    function onClicked(){
+        setClick(true)
+        setClick2(false)
+        setClick3(false)
+    }
+
+    function onClicked2(){
+        setClick2(true)
+        setClick(false)
+        setClick3(false)
+    }
+
+    function onClicked3(){
+        setClick3(true)
+        setClick(false)
+        setClick2(false)
+    }
+
 
     return(
         <div>
@@ -58,10 +81,11 @@ function Healthy(){
 						</button>
 					</div>
 					<div className="healthy-end">
-						<button>About</button>
-						<button>Fundraising</button>
-						<button>Prayers</button>
+						<button onClick={onClicked} className={click?"clicked":"unclicked"}>About</button>
+						<button onClick={onClicked2} className={click2?"clicked":"unclicked"}>Fundraising</button>
+						<button onClick={onClicked3} className={click3?"clicked":"unclicked"}>Prayers</button>
 					</div>
+                    <Story/>
                 </div>
             }
         </div>
