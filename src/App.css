@@ -1573,3 +1573,106 @@
 .payment .home-mid{
   margin: 1rem auto;
 }
+
+.healthy{
+  margin: 1rem;
+}
+
+.healthy-top{
+  background-color: #D8FDE1;
+  border: 1px solid transparent;
+  padding: 2rem;
+  border-radius: 50%;
+}
+
+.healthy-txt{
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.healthy-txt h3{
+  margin-right: 1rem;
+}
+
+.healthy-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.healthy-btn button{
+  background-color: transparent;
+  padding: 1rem;
+  border: none;
+}
+
+.healthy-btn button:nth-child(2){
+  /* background-color: red; */
+  border: 1px solid lightgrey;
+  border-style: none solid;
+}
+
+.healthy-mid{
+  margin: 1rem auto;
+  border: 1px solid lightgrey;
+  border-style: solid none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.profile-mid button:first-child, .profile-mid button:last-child{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.profile-mid button:first-child{
+  background-color: #1EBA60;
+  color: white;
+  border: 1px solid transparent;
+}
+
+.profile-mid button:last-child{
+  background-color: transparent;
+  color: #1EBA60;
+  border: 1px solid #1EBA60;
+}
+
+.profile-mid-end{
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-mid-end button{
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.profile-end{
+  text-align: left;
+}
+
+.profile-end p{
+  color: grey;
+}
+
+.info-fund .search-result .search-img3{
+  height: 25vh;
+}
+.info-fund .search-result .search-detail{
+  height: 25vh;
+}
+
+.info-fund .search-result .search-img7{
+  height: 25vh;
+}
