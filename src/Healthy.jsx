@@ -85,6 +85,7 @@ function Healthy(){
 						<button onClick={onClicked2} className={click2?"clicked":"unclicked"}>Fundraising</button>
 						<button onClick={onClicked3} className={click3?"clicked":"unclicked"}>Prayers</button>
 					</div>
+                    <h3>About</h3>
                     <Story/>
                 </div>
             }
