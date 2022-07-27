@@ -1,13 +1,17 @@
 import React,{useState} from "react";
 import Donation from "./Donation";
 import Story from "./Story";
-import {ArrowLeft,DotsThreeVertical,HouseLine,CircleWavyCheck,UserPlus,ChatText} from "phosphor-react"
+import SearchItem from "./SearchItem";
+import Prayer from "./Prayer";
+import {ArrowLeft,DotsThreeVertical,HouseLine,CircleWavyCheck,UserPlus,ChatText, SelectionForeground} from "phosphor-react"
 
 function Healthy(){
     const [back,setBack] = useState(false);
     const [click,setClick] = useState(false);
     const [click2,setClick2] = useState(false);
     const [click3,setClick3] = useState(false);
+    const [fund,setFund] = useState(false);
+    const [prayer,setPrayer] = useState(false);
 
     function onBack(){
         setBack(true)
@@ -20,15 +24,19 @@ function Healthy(){
     }
 
     function onClicked2(){
+        setFund(true)
         setClick2(true)
         setClick(false)
         setClick3(false)
+        setPrayer(false)
     }
 
     function onClicked3(){
+        setPrayer(true)
         setClick3(true)
         setClick(false)
         setClick2(false)
+        setFund(false)
     }
 
 
@@ -85,8 +93,63 @@ function Healthy(){
 						<button onClick={onClicked2} className={click2?"clicked":"unclicked"}>Fundraising</button>
 						<button onClick={onClicked3} className={click3?"clicked":"unclicked"}>Prayers</button>
 					</div>
-                    <h3>About</h3>
-                    <Story/>
+                    {/* {!fund&&!prayer<h3>About</h3>} */}
+                    {
+                        !fund && !prayer?
+                        <h3>About</h3>:
+                        null
+                    }
+                    {
+                        fund?
+                        <div>
+                            <div className="search-txt">
+                                <p>Fundrasing (4,365)</p>
+                                <p>See all</p>
+                            </div>
+                            <SearchItem
+                                img="search-img"
+                                title= "Help Little Baby Surgery"
+                                amt= "$2,275"
+                                info= "fund raised from $10,310"
+                                num= "4,471"
+                                txt= "Donators"
+                                num2= "9"
+                                txt2= "days left"
+                            />
+                            <SearchItem
+                                img="search-img2"
+                                title= "Help Overcome Malnutrition"
+                                amt= "$8, 775"
+                                info= "fund raised from $7,310"
+                                num= "2,471"
+                                txt= "Donators"
+                                num2= "21"
+                                txt2= "days left"
+                            />
+                        </div>:
+                        prayer?
+                        <div>
+                            <div className="search-txt">
+                                <p>Prayer (3,279)</p>
+                                <p>See all</p>
+                            </div>
+                            <Prayer
+                                img= "prayer-img"
+                                name="Esther Howard"
+                                day="Today"
+                                txt="Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends."
+                                txt2="You and 48 others sent this prayer"
+                            />
+                            <Prayer
+                                img= "prayer-img2"
+                                name="Cameroon Williams"
+                                day="Today"
+                                txt="Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends."
+                                txt2="You and 158 others sent this prayer"
+                            />
+                        </div>:
+                        <Story/>
+                    }
                 </div>
             }
         </div>
