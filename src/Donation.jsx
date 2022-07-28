@@ -60,13 +60,13 @@ function Donation() {
       ) : back ? (
         <Homepage />
       ) : (
-        <div className={share?"sucess":null}>
+        <div>
           {
             share?
             <Share/>:
             null
           }
-          <div className="donation">
+          <div className={share?"sucess":"donation"}>
             <div className="donation-img">
               <div className="home-top">
                 <div className="back">
