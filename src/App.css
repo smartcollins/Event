@@ -1716,7 +1716,23 @@
 }
 
 .donators{
-  /* background-color: red; */
   display: flex;
   align-items: center;
+  margin: 1rem auto;
+}
+
+.donator-ayms{
+  display: flex;
+  align-items: center;
+  /*position: relative;*/
+  margin: 1rem auto;
+}
+
+.donator-ayms div{
+  background-color: #1EBA60;
+  /*border: 1px solid black;*/
+  padding: 5px;
+  position: relative;
+  border-radius: 50%;
+  margin-right: 10px;
 }
