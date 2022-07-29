@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Homepage from "./Homepage";
 import Share from "./Share";
-import Donators from "./Donators";
+import List from "./List";
 import Donate from "./Donate";
 import Prayer from "./Prayer";
 import Story from "./Story";
@@ -23,6 +23,7 @@ import {
 function Donation() {
   const [back, setBack] = useState(false);
   const [share,setShare] = useState(false);
+  const [media,setMedia] = useState(false);
   const [donate, setDonate] = useState(false);
   const [home, setHome] = useState(false);
   const [prayer, setPrayer] = useState(false);
@@ -33,6 +34,10 @@ function Donation() {
 
   function onShare(){
     setShare(true)
+  }
+
+  function onShareMedia(){
+    setMedia(true)
   }
 
   function onDonate() {
@@ -50,6 +55,8 @@ function Donation() {
   return (
     <div>
       {
+        media?
+        (<List/>):
         home?
         (
           <Healthy/>
@@ -179,7 +186,9 @@ function Donation() {
             />
             {
             share?
-              <Share/>:
+              <Share
+                onShareMedia={onShareMedia}
+              />:
               null
             }
           </div>

@@ -1471,29 +1471,17 @@
 .story{
   margin: 1rem;
   text-align: left;
-  /* display: flex; */
-  /* align-items: flex-end; */
-  /* overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;   */
 }
 
 .story-more{
-  /* background-color: red; */
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;  
 }
-/* 
-.story-less{
-  background-color: blue;
-} */
 
 .more{
   color: #1EBA60;
-  /* background-color: #f02828; */
   width: 50%;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1501,7 +1489,6 @@
 }
 
 .less{
-  /* background-color: red; */
   color: red;
 }
 
@@ -1686,16 +1673,11 @@
 .share{
   border-radius: 1rem 1rem 0 0;
   width: 100%;
-  /* position: static; */
   position: absolute;
   bottom: 0px;
-  /* top: 200%; */
-  /* height: 40vh; */
   padding: 2rem 0;
-  
   background-color: white;
   z-index: 1;
-  
 }
 
 .share-main{
@@ -1705,8 +1687,30 @@
   padding: 20px;
 }
 
-.share-end button{
+.share-main button{
   padding: 5px;
   border-radius: 5px;
-  border: 1px solid transparent;
+  border: none;
+}
+
+.btn1{
+  background-color: #1EBA60;
+}
+
+.btn2{
+  /* background-color: #100ce9; */
+  /* background: linear-gradient(to right,#3949ab 0%,#2196f3 100%); */
+  background: linear-gradient(to right,#00bcd4 0%,#2196f3 100%);
+}
+
+.btn3{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.btn4{
+  background-color: purple;
+}
+
+.btn5{
+  background-color: black;
 }
