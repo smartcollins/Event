@@ -1714,3 +1714,9 @@
 .btn5{
   background-color: black;
 }
+
+.donators{
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+}
