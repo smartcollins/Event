@@ -60,13 +60,7 @@ function Donation() {
       ) : back ? (
         <Homepage />
       ) : (
-        <div>
-          {
-            share?
-            <Share/>:
-            null
-          }
-          <div className={share?"sucess":"donation"}>
+          <div className={share?"success":"donation"}>
             <div className="donation-img">
               <div className="home-top">
                 <div className="back">
@@ -183,8 +177,12 @@ function Donation() {
               txt="Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends."
               txt2="You and 48 others sent this prayer"
             />
+            {
+            share?
+              <Share/>:
+              null
+            }
           </div>
-        </div>
       )}
     </div>
   );

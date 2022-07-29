@@ -58,7 +58,7 @@ function Healthy() {
           <div className="home-top">
             <div className="back">
               <ArrowLeft size={30} color="#1EBA60" onClick={onBack} />
-              <h1>Payment</h1>
+              <h1>Profile</h1>
             </div>
             <button className="dot">
               <DotsThreeVertical size={30} color="#1EBA60" />
