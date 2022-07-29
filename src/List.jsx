@@ -30,9 +30,35 @@ function List(){
                         name= "Kathyrn Murphy"
                     />
                     <Donators
-                        anym={true}
-                        name= "Kathyrn Murphy"
+                        img= "prayer-img"
+                        name= "Wade Warren"
                     />
+                    <Donators
+                        anym={true}
+                    />
+                    <Donators
+                        img= "prayer-img3"
+                        name= "Jane Cooper"
+                    />
+                    <Donators
+                        anym={true}
+                    />
+                    <Donators
+                        anym={true}
+                    />
+                    <Donators
+                        img= "prayer-img4"
+                        name= "Guy Hawkins"
+                    />
+                    <Donators
+                        img= "prayer-img"
+                        name= "Leslie Alexander"
+                    />
+                    <Donators
+                        anym={true}
+                    />
+                    
+                    
                 </div>
             }
         </div>
