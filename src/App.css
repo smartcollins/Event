@@ -1721,6 +1721,10 @@
   margin: 1rem auto;
 }
 
+.list .dot{
+  padding: 5px;
+}
+
 .donator-ayms{
   display: flex;
   align-items: center;

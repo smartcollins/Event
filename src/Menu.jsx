@@ -1,7 +1,7 @@
 import React from "react";
 import {House,Notepad,ListDashes,ChatText,User} from "phosphor-react";
 
-function Menu({onDonation}){
+function Menu({ onDonation, onCalender}){
 	
 	return(
         <div className="menu">
@@ -11,7 +11,7 @@ function Menu({onDonation}){
             <button onClick={onDonation}>
             <Notepad size={30} color="#1EBA60"/>
             </button>
-            <button>
+            <button onClick={onCalender}>
             <ListDashes size={30} color="#1EBA60" weight="bold"/>
             </button>
             <button>

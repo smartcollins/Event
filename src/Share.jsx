@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import {ChatText,Chats,TiktokLogo,EnvelopeSimple,FacebookLogo,WhatsappLogo,TwitterLogo,InstagramLogo} from "phosphor-react"
 
 function Share({onShareMedia}){

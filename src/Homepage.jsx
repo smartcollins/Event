@@ -12,6 +12,7 @@ import WatchList from "./WatchList";
 import Prayer from "./Prayer";
 import Prayers from "./Prayers";
 import Donation from "./Donation";
+import Calender from "./Calender";
 import Menu from "./Menu";
 
 function Home(){
@@ -27,6 +28,7 @@ function Home(){
 	const [watch,setWatch] = useState(false);
 	const [prayer,setPrayer] = useState(false);
 	const [donation,setDonation] = useState(false);
+	const [calender,setCalender] = useState(false);
 
 
 	function onLogo(){
@@ -88,11 +90,18 @@ function Home(){
 		setDonation(true)
 	}
 
+	function onCalender(){
+		setCalender(true)
+	}
+
+
 	return(
 		<div>	
 			{
 				donation?
 				<Donation/>:
+				calender?
+				<Calender/>:
 				prayer?
 				<Prayers/>:
 				watch?
@@ -249,6 +258,7 @@ function Home(){
 					</div>
 					<Menu
 						onDonation={onDonation}
+						onCalender={onCalender}
 					/>
 				</div>
 			}

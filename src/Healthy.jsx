@@ -10,7 +10,6 @@ import {
   CircleWavyCheck,
   UserPlus,
   ChatText,
-  SelectionForeground,
 } from "phosphor-react";
 
 function Healthy() {
