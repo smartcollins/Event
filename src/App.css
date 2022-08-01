@@ -593,6 +593,15 @@
   /* padding-bottom: 10vh; */
 }
 
+/* .logo{
+  background-color: #1EBA60;
+  border: none;
+  padding: 1rem;
+  padding: 5px;
+  width: 30%;
+  border-radius: 50%;
+} */
+
 .home-top{
   display: flex;
   justify-content: space-between;
