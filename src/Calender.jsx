@@ -26,57 +26,65 @@ function Calender(){
                         </div>
 					</div>
                     <div className="calender">
-						<div className="calender-date">
+						<div className="search-txt">
 							<h3>December 2023</h3>
 							<div>
 								<CaretLeft size={20} color="#121212"/>
 								<CaretRight size={20} color="#1EBA60" weight="bold" />
 							</div>
 						</div>
-						<div className="calender-top">
-							<h4>Mo</h4>
-							<h4>Tu</h4>
-							<h4>We</h4>
-							<h4>Th</h4>
-							<h4>Fr</h4>
-							<h4>Sa</h4>
-							<h4>Su</h4>
-							<p>1</p>
-							<p>2</p>
-							<p>3</p>
-							<p>4</p>
-							<p>5</p>
-							<p>6</p>
-							<p>7</p>
-
-							<p>8</p>
-							<p>9</p>
-							<p>10</p>
-							<p>11</p>
-							<p>12</p>
-							<p>13</p>
-							<p>14</p>
-
-							<p>15</p>
-							<p>16</p>
-							<p>17</p>
-							<p>18</p>
-							<p>19</p>
-							<p>20</p>
-							<p>21</p>
-
-							<p>22</p>
-							<p className="diff">23</p>
-							<p>24</p>
-							<p>25</p>
-							<p>26</p>
-							<p>27</p>
-							<p>28</p>
-
-							<p>29</p>
-							<p>30</p>
-							<p>31</p>
-						</div>
+						<table>
+							<tr>
+								<th>Mon</th>
+								<th>Tue</th>
+								<th>Wed</th>
+								<th>Thu</th>
+								<th>Fri</th>
+								<th>Sat</th>
+								<th>Sun</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>9</td>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+								<td>14</td>
+							</tr>
+							<tr>
+								<td>15</td>
+								<td>16</td>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+								<td>20</td>
+								<td>21</td>
+							</tr>
+							<tr>
+								<td>22</td>
+								<td>23</td>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+								<td>27</td>
+								<td>28</td>
+							</tr>
+							<tr>
+								<td>29</td>
+								<td>30</td>
+								<td>31</td>
+							</tr>
+						</table>
 					</div>
                 </div>
             }
