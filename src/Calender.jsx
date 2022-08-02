@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import Homepage from "./Homepage";
+import SearchItem from "./SearchItem";
 import Menu from "./Menu";
 import {UsersThree,DotsThreeVertical,CaretRight,CaretLeft, SmileySad} from "phosphor-react";
 
@@ -16,6 +17,10 @@ function Calender(){
 		setLogo(true)
 	}
 
+	function onDate(){
+		setDate(true)
+	}
+
     return(
         <div>
             {
@@ -30,7 +35,7 @@ function Calender(){
 							<h1>My Donation</h1>
 						</div>
 						<div className="home-top">
-                            <button className="dot">
+                            <button onClick={onDate} className="dot">
                                 <DotsThreeVertical size={30} color="#1EBA60" weight="duotone"/>
                             </button>
                         </div>
@@ -83,11 +88,11 @@ function Calender(){
 								</tr>
 								<tr>
 									<td>22</td>
-									<td>23</td>
+									<td className={!date ? "marked" : null}>23</td>
 									<td>24</td>
 									<td>25</td>
 									<td>26</td>
-									<td>27</td>
+									<td className={date ? "marked" : null}>27</td>
 									<td>28</td>
 								</tr>
 								<tr>
@@ -101,21 +106,45 @@ function Calender(){
 					<div className="calender-end">
 						{
 							date?
-							<div className="search-txt">
-								<h1>My Donation (7)</h1>
-								<p>See all</p>
+							<div>
+								<div className="search-txt">
+									<h1>My Donation (7)</h1>
+									<p>See all</p>
+								</div>
+								<SearchItem
+									img="search-img"
+									title="Help Little Baby Surgery"
+									amt="$2,275"
+									info="fund raised from $10,310"
+									num="4,471"
+									txt="Donators"
+									num2="9"
+									txt2="days left"
+								/>
+								<SearchItem
+									img="search-img2"
+									title="Help Overcome Malnutrition"
+									amt="$8, 775"
+									info="fund raised from $7,310"
+									num="2,471"
+									txt="Donators"
+									num2="21"
+									txt2="days left"
+								/>
 							</div>:
-							<div className="search-txt">
-								<h1>My Donation (0)</h1>
+							<div>
+								<div className="search-txt">
+									<h1>My Donation (0)</h1>
+								</div>
+								<div className="great">
+									<button>
+									<SmileySad size={30} color="#ffffff" weight="fill" />
+									</button>
+									<p>You have not made a donation</p>
+									<button className="nxt">Make a Donation Now</button>
+								</div>
 							</div>
 						}
-						<div className="great">
-							<button>
-							<SmileySad size={30} color="#ffffff" weight="fill" />
-							</button>
-							<p>You have not made a donation</p>
-							<button className="nxt">Make a Donation Now</button>
-						</div>
 					</div>
 					<Menu
 						calender={true}

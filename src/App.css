@@ -1789,3 +1789,8 @@ td{
 .calender-end .great p{
   margin: 1rem;
 }
+
+.marked{
+  background-color: #1EBA60;
+  padding: 1rem;
+}
