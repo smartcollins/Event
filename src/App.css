@@ -791,12 +791,20 @@
 }
 
 .menu button{
-  background-color: #e8f8ef;
+  /* background-color: #e8f8ef; */
   padding: 1rem;
   width: auto;
   border-radius: 10px;
   margin: 1rem auto;
   border: none;
+}
+
+.menu-clicked{
+  background-color: #1EBA60;
+}
+
+.menu-unclicked{
+  background-color: #e8f8ef;
 }
 
 .null{
@@ -1775,9 +1783,7 @@ td{
 .calender-end{
   margin-top: 1rem;
   position: relative;
-  /* height: 100%; */
   height: 50vh;
-  /* background-color: #285AEB; */
 }
 
 .calender-end .great p{

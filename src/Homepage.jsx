@@ -27,7 +27,6 @@ function Home(){
 	const [coming,setComing] = useState(false);
 	const [watch,setWatch] = useState(false);
 	const [prayer,setPrayer] = useState(false);
-	const [donation,setDonation] = useState(false);
 	const [calender,setCalender] = useState(false);
 
 
@@ -86,20 +85,30 @@ function Home(){
 		setPrayer(true)
 	}
 
-	function onDonation(){
-		setDonation(true)
-	}
 
 	function onCalender(){
 		setCalender(true)
+	}
+
+	function onHome(){
+		setLogo(false)
+		setSearch(false)
+		setSearchMain(false)
+		setNotify(false)
+		setNotifyMain(false)
+		setBook(false)
+		setBookMain(false)
+		setUrgent(false)
+		setComing(false)
+		setWatch(false)
+		setPrayer(false)
+		setCalender(false)
 	}
 
 
 	return(
 		<div>	
 			{
-				donation?
-				<Calender/>:
 				calender?
 				<Calender/>:
 				logo?
@@ -259,7 +268,7 @@ function Home(){
 						/>
 					</div>
 					<Menu
-						onDonation={onDonation}
+						home={true}
 						onCalender={onCalender}
 					/>
 				</div>
