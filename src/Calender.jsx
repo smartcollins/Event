@@ -1,22 +1,30 @@
 import React,{useState} from "react";
+import Homepage from "./Homepage";
 import {UsersThree,DotsThreeVertical,CaretRight,CaretLeft} from "phosphor-react";
 
 function Calender(){
     const [all,setAll] = useState(false);
+	const [logo,setLogo] = useState(false);
     
     function onAll(){
         setAll(true)
     }
+
+	function onLogo(){
+		setLogo(true)
+	}
 
     return(
         <div>
             {
                 all?
                 <div>sdfg</div>:
+				logo?
+				<Homepage/>:
                 <div className="Home">
                     <div className="home-top">
 						<div className="back">
-							<UsersThree size={40} color="#1EBA60" weight="duotone"/>
+							<UsersThree size={40} color="#1EBA60" weight="duotone" onClick={onLogo}/>
 							<h1>My Donation</h1>
 						</div>
 						<div className="home-top">

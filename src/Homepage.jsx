@@ -16,7 +16,7 @@ import Calender from "./Calender";
 import Menu from "./Menu";
 
 function Home(){
-	// const [logo,setLogo] = useState(false)
+	const [logo,setLogo] = useState(false)
 	const [search,setSearch] = useState(false);
 	const [searchMain,setSearchMain] = useState(false);
 	const [notify,setNotify] = useState(false)
@@ -32,7 +32,7 @@ function Home(){
 
 
 	function onLogo(){
-	// 	setLogo(true)
+		setLogo(true)
 	}
 
 	function onSearch(){
@@ -99,9 +99,11 @@ function Home(){
 		<div>	
 			{
 				donation?
-				<Donation/>:
+				<Calender/>:
 				calender?
 				<Calender/>:
+				logo?
+				<Donation/>:
 				prayer?
 				<Prayers/>:
 				watch?
