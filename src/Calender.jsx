@@ -1,11 +1,12 @@
 import React,{useState} from "react";
 import Homepage from "./Homepage";
-import {UsersThree,DotsThreeVertical,CaretRight,CaretLeft} from "phosphor-react";
+import {UsersThree,DotsThreeVertical,CaretRight,CaretLeft, SmileySad} from "phosphor-react";
 
 function Calender(){
-    const [all,setAll] = useState(false);
 	const [logo,setLogo] = useState(false);
-    
+    const [all,setAll] = useState(false);
+    const [date,setDate] = useState(false);
+
     function onAll(){
         setAll(true)
     }
@@ -93,6 +94,25 @@ function Calender(){
 								<td>31</td>
 							</tr>
 						</table>
+					</div>
+					<div className="calender-end">
+						{
+							date?
+							<div className="search-txt">
+								<h1>My Donation (7)</h1>
+								<p>See all</p>
+							</div>:
+							<div className="search-txt">
+								<h1>My Donation (0)</h1>
+							</div>
+						}
+						<div className="great">
+							<button>
+							<SmileySad size={30} color="#ffffff" weight="fill" />
+							</button>
+							<p>You have not made a donation</p>
+							<button className="nxt">Make a Donation Now</button>
+						</div>
 					</div>
                 </div>
             }
