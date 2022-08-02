@@ -103,7 +103,7 @@ function Calender(){
 							</tbody>
 						</table>
 					</div>
-					<div className="calender-end">
+					<div className={date ? null : "calender-end"}>
 						{
 							date?
 							<div>
@@ -112,6 +112,7 @@ function Calender(){
 									<p>See all</p>
 								</div>
 								<SearchItem
+									again={true}
 									img="search-img"
 									title="Help Little Baby Surgery"
 									amt="$2,275"
@@ -120,8 +121,10 @@ function Calender(){
 									txt="Donators"
 									num2="9"
 									txt2="days left"
+									txt3= "$22"
 								/>
 								<SearchItem
+									again={true}
 									img="search-img2"
 									title="Help Overcome Malnutrition"
 									amt="$8, 775"
@@ -130,6 +133,7 @@ function Calender(){
 									txt="Donators"
 									num2="21"
 									txt2="days left"
+									txt3= "$12"
 								/>
 							</div>:
 							<div>
