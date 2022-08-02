@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import Homepage from "./Homepage";
 import SearchItem from "./SearchItem";
 import Menu from "./Menu";
-import {UsersThree,DotsThreeVertical,CaretRight,CaretLeft, SmileySad} from "phosphor-react";
+import {UsersThree,DotsThreeVertical,CaretRight,CaretLeft, SmileySad, ArrowLeft} from "phosphor-react";
 
 function Calender(){
 	const [logo,setLogo] = useState(false);
@@ -21,11 +21,76 @@ function Calender(){
 		setDate(true)
 	}
 
+	function onBack(){
+		setDate(false)
+		setAll(false)
+	}
+
     return(
         <div>
             {
                 all?
-                <div>sdfg</div>:
+                <div className="Home">
+					<div className="home-top">
+						<div className="back">
+							<ArrowLeft size={30} color="#1EBA60" weight="duotone" onClick={onBack}/>
+							<h1>My Donation (7)</h1>
+						</div>
+						<div className="home-top">
+                            <button className="dot">
+                                <DotsThreeVertical size={30} color="#1EBA60" weight="duotone"/>
+                            </button>
+                        </div>
+					</div>
+					<SearchItem
+						again={true}
+						img="search-img"
+						title="Help Little Baby Surgery"
+						amt="$2,275"
+						info="fund raised from $10,310"
+						num="4,471"
+						txt="Donators"
+						num2="9"
+						txt2="days left"
+						txt3= "$22"
+					/>
+					<SearchItem
+						again={true}
+						img="search-img6"
+						title="Help Improve Child Health"
+						amt="$2, 277"
+						info="fund raised from $6,310"
+						num="938"
+						txt="Donators"
+						num2="29"
+						txt2="days left"
+						txt3= "$26"
+					/>
+					<SearchItem
+						again={true}
+						img="search-img8"
+						title="Help Victims of Earthquake"
+						amt="$2,275"
+						info="fund raised from $10,310"
+						num="2,475"
+						txt="Donators"
+						num2="21"
+						txt2="days left"
+						txt3= "$18"
+					/>
+					<SearchItem
+						again={true}
+						img="search-img2"
+						title="Help Overcome Malnutrition"
+						amt="$8, 775"
+						info="fund raised from $7,310"
+						num="2,471"
+						txt="Donators"
+						num2="21"
+						txt2="days left"
+						txt3= "$30"
+					/>
+				</div>:
 				logo?
 				<Homepage/>:
                 <div className="Home">
@@ -109,7 +174,7 @@ function Calender(){
 							<div>
 								<div className="search-txt">
 									<h1>My Donation (7)</h1>
-									<p>See all</p>
+									<p onClick={onAll}>See all</p>
 								</div>
 								<SearchItem
 									again={true}
