@@ -1,7 +1,7 @@
 import React from "react";
-import { BookmarkSimple } from "phosphor-react";
+import { BookmarkSimple, PencilSimple, ShareNetwork } from "phosphor-react";
 
-function SearchItem({img,title,amt,info,txt,num,txt2,num2, again, txt3}){
+function SearchItem({img,title,amt,info,txt,num,txt2,num2, again, txt3, edit}){
     return(
         <div className={again ? "donations" : null}>
             <div className="search-result">
@@ -27,6 +27,22 @@ function SearchItem({img,title,amt,info,txt,num,txt2,num2, again, txt3}){
                 <div className="again">
                     <h3>You have donated <span>{txt3}</span></h3>
                     <button>Donate Again</button>
+                </div>
+            }
+            {
+                edit&&
+                <div className="again">
+                    <div className="edit-share">
+                        <div>
+                            <PencilSimple size={20} color="#1EBA60 " weight="duotone" />
+                            <p>Edit</p>
+                        </div>
+                        <div>
+                            <ShareNetwork size={20} color="#1EBA60" weight="duotone" />
+                            <p>Share</p>
+                        </div>
+                    </div>
+                    <button>See Results</button>
                 </div>
             }
         </div>

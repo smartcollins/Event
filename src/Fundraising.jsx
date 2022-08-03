@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import Homepage from "./Homepage";
 import Menu from "./Menu";
 import {UsersThree,ArchiveBox,PlusCircle} from "phosphor-react"
+import SearchItem from "./SearchItem";
 
 
 function Fundraising() {
@@ -72,6 +73,32 @@ function Fundraising() {
                         <button onClick={onPast} className={past?"clicked":"unclicked"}>Past(22)</button>
                         <button onClick={onPend} className={pend?"clicked":"unclicked"}>Pending(1)</button>
                     </div>
+                    <SearchItem
+						edit={true}
+						img="search-img8"
+						title="Help Victims of Earthquake"
+						amt="$2,275"
+						info="fund raised from $10,310"
+						num="2,475"
+						txt="Donators"
+						num2="21"
+						txt2="days left"
+						txt3= "$18"
+					/>
+                    <SearchItem
+						edit={true}
+						img="search-img2"
+						title="Help Improve Child Health"
+						amt="$2,775"
+						info="fund raised from $6,310"
+						num="938"
+						txt="Donators"
+						num2="21"
+						txt2="days left"
+						txt3= "$18"
+					/>
+					
+					
                 </div>
             }
         </div>
