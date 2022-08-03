@@ -7,13 +7,44 @@ import {UsersThree,ArchiveBox,PlusCircle} from "phosphor-react"
 function Fundraising() {
     const [home,setHome] = useState(false);
     const [top,setTop] = useState(false);
+    const [all,setAll] = useState(false);
+    const [go, setGo] = useState(false);
+    const [past, setPast] = useState(false);
+    const [pend, setPend] = useState(false);
     
     function onHome(){
         setHome(true)
     }
 
     function onTop(){
-        setTop(true)
+        setTop(oldTop => !top)
+    }
+
+    function onAll(){
+        setAll(true)
+        setGo(false)
+        setPast(false)
+        setPend(false)
+    }
+
+    function onGo(){
+        setGo(true)
+        setAll(false)
+        setPend(false)
+        setPast(false)
+    }
+    function onPast(){
+        setPast(true)
+        setAll(false)
+        setGo(false)
+        setPend(false)
+    }
+
+    function onPend(){
+        setPend(true)
+        setAll(false)
+        setGo(false)
+        setPast(false)
     }
 
     return(
@@ -34,6 +65,12 @@ function Fundraising() {
                     <div className="fundraising-top">
                         <h3 onClick={onTop} className={!top ? "fundraising-top-click" : "fundraising-top-unclick"}>My Fundraising</h3>
                         <h3 onClick={onTop} className={top ? "fundraising-top-click" : "fundraising-top-unclick"}>Activity</h3>
+                    </div>
+                    <div className="fundraising-btn">
+                        <button onClick={onAll} className={all?"clicked":"unclicked"}>All(25)</button>
+                        <button onClick={onGo} className={!go?"clicked":"unclicked"}>Ongoing(3)</button>
+                        <button onClick={onPast} className={past?"clicked":"unclicked"}>Past(22)</button>
+                        <button onClick={onPend} className={pend?"clicked":"unclicked"}>Pending(1)</button>
                     </div>
                 </div>
             }

@@ -1845,3 +1845,12 @@ td{
 .fundraising-top-unclick{
   border-bottom: 2px solid #DADEE3;
 }
+
+.fundraising-btn{
+  display: flex;
+  /* margin: 1rem; */
+}
+
+.fundraising-btn *{
+  margin: 1rem;
+}
