@@ -9,7 +9,7 @@ function Fundraising() {
     const [home,setHome] = useState(false);
     const [top,setTop] = useState(false);
     const [all,setAll] = useState(false);
-    const [go, setGo] = useState(false);
+    const [go, setGo] = useState(true);
     const [past, setPast] = useState(false);
     const [pend, setPend] = useState(false);
     
@@ -69,7 +69,7 @@ function Fundraising() {
                     </div>
                     <div className="fundraising-btn">
                         <button onClick={onAll} className={all?"clicked":"unclicked"}>All(25)</button>
-                        <button onClick={onGo} className={!go?"clicked":"unclicked"}>Ongoing(3)</button>
+                        <button onClick={onGo} className={go?"clicked":"unclicked"}>Ongoing(3)</button>
                         <button onClick={onPast} className={past?"clicked":"unclicked"}>Past(22)</button>
                         <button onClick={onPend} className={pend?"clicked":"unclicked"}>Pending(1)</button>
                     </div>

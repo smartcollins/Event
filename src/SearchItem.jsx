@@ -3,7 +3,7 @@ import { BookmarkSimple, PencilSimple, ShareNetwork } from "phosphor-react";
 
 function SearchItem({img,title,amt,info,txt,num,txt2,num2, again, txt3, edit}){
     return(
-        <div className={again ? "donations" : null}>
+        <div className={again||edit ? "donations" : null}>
             <div className="search-result">
                 <div className={img}>
                     <div className="bookmark-mark">
