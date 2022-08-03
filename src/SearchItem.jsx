@@ -1,9 +1,9 @@
 import React from "react";
 import { BookmarkSimple, PencilSimple, ShareNetwork } from "phosphor-react";
 
-function SearchItem({img,title,amt,info,txt,num,txt2,num2, again, txt3, edit}){
+function SearchItem({img,title,amt,info,txt,num,txt2,num2, again, txt3, edit, wait}){
     return(
-        <div className={again||edit ? "donations" : null}>
+        <div className={again||edit||wait ? "donations" : null}>
             <div className="search-result">
                 <div className={img}>
                     <div className="bookmark-mark">
@@ -43,6 +43,12 @@ function SearchItem({img,title,amt,info,txt,num,txt2,num2, again, txt3, edit}){
                         </div>
                     </div>
                     <button>See Results</button>
+                </div>
+            }
+            {
+                wait&&
+                <div className="wait">
+                    <p>Waiting for review ....</p>
                 </div>
             }
         </div>

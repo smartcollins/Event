@@ -1858,13 +1858,6 @@ td{
   margin: 5px;
 }
 
-.fundraising-btn .clicked, .fundraising-btn .unclicked{
-  /* background-color: blue; */
-  /* margin: 5px; */
-  /* width: 25%; */
-  /* width: 30%; */
-}
-
 .edit-share{
   display: flex;
 }
@@ -1878,4 +1871,12 @@ td{
   width: 100%;
   display: flex;
   align-items: center;
+}
+.fundraising .search-note{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.wait p{
+  color: #1EBA60;
 }
