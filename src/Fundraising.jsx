@@ -1,8 +1,9 @@
 import React,{useState} from "react";
 import Homepage from "./Homepage";
 import Menu from "./Menu";
-import {UsersThree,ArchiveBox,PlusCircle} from "phosphor-react"
 import SearchItem from "./SearchItem";
+import See from "./See";
+import {UsersThree,ArchiveBox,PlusCircle} from "phosphor-react"
 
 
 function Fundraising() {
@@ -64,7 +65,7 @@ function Fundraising() {
                 edit?
                 <div>Edit fund...</div>:
                 see?
-                <div>See result</div>:
+                <See/>:
                 home?
                 <Homepage/>:
                 <div className="fundraising">
