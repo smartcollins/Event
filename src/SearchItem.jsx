@@ -1,7 +1,7 @@
 import React from "react";
 import { BookmarkSimple, PencilSimple, ShareNetwork } from "phosphor-react";
 
-function SearchItem({img,title,amt,info,txt,num,txt2,num2, again, txt3, edit, wait}){
+function SearchItem({img,title,amt,info,txt,num,txt2,num2, again, txt3, edit, onEdit, onSee, wait}){
     return(
         <div className={again||edit||wait ? "donations" : null}>
             <div className="search-result">
@@ -34,15 +34,15 @@ function SearchItem({img,title,amt,info,txt,num,txt2,num2, again, txt3, edit, wa
                 <div className="again">
                     <div className="edit-share">
                         <div>
-                            <PencilSimple size={20} color="#1EBA60 " weight="duotone" />
-                            <p>Edit</p>
+                            <PencilSimple size={20} color="#1EBA60 " weight="duotone" onClick={onEdit}/>
+                            <p onClick={onEdit}>Edit</p>
                         </div>
                         <div>
                             <ShareNetwork size={20} color="#1EBA60" weight="duotone" />
                             <p>Share</p>
                         </div>
                     </div>
-                    <button>See Results</button>
+                    <button onClick={onSee}>See Results</button>
                 </div>
             }
             {

@@ -12,6 +12,8 @@ function Fundraising() {
     const [go, setGo] = useState(true);
     const [past, setPast] = useState(false);
     const [pend, setPend] = useState(false);
+    const [see,setSee] = useState(false);
+    const [edit, setEdit] = useState(false)
     
     function onHome(){
         setHome(true)
@@ -48,9 +50,21 @@ function Fundraising() {
         setPast(false)
     }
 
+    function onSee(){
+        setSee(true)
+    }
+
+    function onEdit(){
+        setEdit(true)
+    }
+
     return(
         <div>
             {
+                edit?
+                <div>Edit fund...</div>:
+                see?
+                <div>See result</div>:
                 home?
                 <Homepage/>:
                 <div className="fundraising">
@@ -99,6 +113,8 @@ function Fundraising() {
                                     num2="21"
                                     txt2="days left"
                                     txt3= "$18"
+                                    onEdit={onEdit}
+                                    onSee={onSee}
                                 />
                                 <SearchItem
                                     edit={true}
@@ -111,6 +127,8 @@ function Fundraising() {
                                     num2="21"
                                     txt2="days left"
                                     txt3= "$18"
+                                    onEdit={onEdit}
+                                    onSee={onSee}
                                 />
                             </div>
                         }
