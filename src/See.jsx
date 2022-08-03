@@ -1,7 +1,7 @@
-import React from "react";
+import React,{useState} from "react";
 import Fundraising from "./Fundraising";
+import SearchItem from "./SearchItem";
 import { ArrowLeft,DotsThree, DotsThreeVertical} from "phosphor-react";
-import { useState } from "react";
 
 function See(){
     const [back,setBack] = useState(false);
@@ -25,6 +25,17 @@ function See(){
                             <DotsThreeVertical size={30} color="#1EBA60" weight="duotone"/>
                         </button>
                     </div>
+                    <SearchItem
+                        img="search-img8"
+                        title="Help Victims of Earthquake"
+                        amt="$2,275"
+                        info="fund raised from $10,310"
+                        num="2,475"
+                        txt="Donators"
+                        num2="21"
+                        txt2="days left"
+                        txt3= "$18"
+                    />
                 </div>
             }
         </div>
