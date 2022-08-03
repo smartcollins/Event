@@ -1819,3 +1819,29 @@ td{
   border-radius: 2rem;
   color: #1EBA60;
 }
+
+.fundraising{
+  margin: 1rem;
+}
+
+.fundraising .dot{
+  padding: 5px;
+}
+
+.fundraising-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.fundraising-top h3{
+  width: 50%;
+}
+
+.fundraising-top-click{
+  border-bottom: 3px solid #1EBA60;
+  border-radius: 3px;
+}
+
+.fundraising-top-unclick{
+  border-bottom: 2px solid #DADEE3;
+}
