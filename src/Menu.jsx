@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import {House,Notepad,ListDashes,ChatText,User} from "phosphor-react";
 
-function Menu({ home, onHome, calender, onCalender}){
+function Menu({ home, onHome, calender, onCalender, fund, onFund}){
 
     function onHouse(){
         onHome()
@@ -9,6 +9,10 @@ function Menu({ home, onHome, calender, onCalender}){
 
     function onDonation(){
         onCalender()
+    }
+
+    function onFundraising(){
+        onFund()
     }
 	
 	return(
@@ -31,9 +35,16 @@ function Menu({ home, onHome, calender, onCalender}){
                     <Notepad size={30} color="#1EBA60"/>
                 </button>
             }
-            <button onClick={onCalender}>
-            <ListDashes size={30} color="#1EBA60" weight="bold"/>
-            </button>
+            {
+                fund?
+                <button onClick={onFundraising} className="menu-clicked" >
+                    <ListDashes size={30} color="#ffffff"/>
+                </button>:
+                <button onClick={onFundraising} className="menu-unclicked" >
+                    <ListDashes size={30} color="#1EBA60"/>
+                </button>
+            }
+
             <button>
             <ChatText size={30} color="#1EBA60"/>
             </button>

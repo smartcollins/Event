@@ -4,7 +4,6 @@ import Null from "./Null";
 import Search from "./Search";
 import Notification from "./Notification"
 import Bookmark from "./Bookmark";
-import {UsersThree,MagnifyingGlass,Bell,BookmarkSimple,Wallet,Circle,PlayCircle} from "phosphor-react";
 import BookMarkItem from "./BookMarkItem";
 import UrgentItems from "./UrgentItems";
 import ComingItems from "./ComingItems";
@@ -13,7 +12,9 @@ import Prayer from "./Prayer";
 import Prayers from "./Prayers";
 import Donation from "./Donation";
 import Calender from "./Calender";
+import Fundraising from "./Fundraising";
 import Menu from "./Menu";
+import {UsersThree,MagnifyingGlass,Bell,BookmarkSimple,Wallet,Circle,PlayCircle} from "phosphor-react";
 
 function Home(){
 	const [logo,setLogo] = useState(false)
@@ -28,6 +29,7 @@ function Home(){
 	const [watch,setWatch] = useState(false);
 	const [prayer,setPrayer] = useState(false);
 	const [calender,setCalender] = useState(false);
+	const [fund,setFund] = useState(false);
 
 
 	function onLogo(){
@@ -90,6 +92,10 @@ function Home(){
 		setCalender(true)
 	}
 
+	function onFund(){
+		setFund(true)
+	}
+
 	function onHome(){
 		setLogo(false)
 		setSearch(false)
@@ -109,6 +115,8 @@ function Home(){
 	return(
 		<div>	
 			{
+				fund?
+				<Fundraising/>:
 				calender?
 				<Calender/>:
 				logo?
@@ -270,6 +278,7 @@ function Home(){
 					<Menu
 						home={true}
 						onCalender={onCalender}
+						onFund={onFund}
 					/>
 				</div>
 			}
