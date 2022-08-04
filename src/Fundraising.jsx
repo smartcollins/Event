@@ -91,7 +91,7 @@ function Fundraising() {
                         <h3 onClick={onTop} className={!top ? "fundraising-top-click" : "fundraising-top-unclick"}>My Fundraising</h3>
                         <h3 onClick={onTop} className={top ? "fundraising-top-click" : "fundraising-top-unclick"}>Activity</h3>
                     </div>
-                    <PlusCircle className={pend?"plus":"plus-top"} size={50} color="#1EBA60" weight="fill"/>
+                    <PlusCircle className="plus" size={50} color="#1EBA60" weight="fill"/>
                     <div className="fundraising-btn">
                         <button onClick={onAll} className={all?"clicked":"unclicked"}>All(25)</button>
                         <button onClick={onGo} className={go?"clicked":"unclicked"}>Ongoing(3)</button>
@@ -101,7 +101,7 @@ function Fundraising() {
                     <div>
                         {
                             pend?
-                            <div>
+                            <div className={pend&&"pend"}>
                                 <SearchItem
                                     wait={true}
                                     img="search-img2"

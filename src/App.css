@@ -1842,19 +1842,14 @@ td{
 }
 
 .plus{
-  position: fixed;
-  bottom: 25%;
-  right: 1rem;
   z-index: 2;
+  position: fixed;
+  bottom: 12%;
+  right: 1rem;
 }
 
-.plus-top{
-  /* background-color: red; */
-  z-index: 2;
-  position: fixed;
-  bottom: 5rem;
-  /* bottom: 0%; */
-  right: 1rem;
+.pend{
+  height: 50vh;
 }
 
 .fundraising-top h3{
