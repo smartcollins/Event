@@ -1823,7 +1823,13 @@ td{
 }
 
 .fundraising{
-  margin: 1rem;
+  margin: 0 1rem;
+  height: 100%;
+}
+
+.fundraising .menu{
+  /* position: absolute; */
+  width: 100%;
 }
 
 .fundraising .dot{
@@ -1837,7 +1843,17 @@ td{
 
 .plus{
   position: fixed;
-  bottom: 1rem;
+  bottom: 25%;
+  right: 1rem;
+  z-index: 2;
+}
+
+.plus-top{
+  /* background-color: red; */
+  z-index: 2;
+  position: fixed;
+  bottom: 5rem;
+  /* bottom: 0%; */
   right: 1rem;
 }
 

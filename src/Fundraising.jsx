@@ -1,11 +1,11 @@
 import React,{useState} from "react";
 import Homepage from "./Homepage";
-import Calendar from "phosphor-react";
+import Calender from "./Calender";
 import Menu from "./Menu";
 import SearchItem from "./SearchItem";
 import See from "./See";
 import {UsersThree,ArchiveBox,PlusCircle} from "phosphor-react"
-import Calender from "./Calender";
+
 
 
 function Fundraising() {
@@ -91,7 +91,7 @@ function Fundraising() {
                         <h3 onClick={onTop} className={!top ? "fundraising-top-click" : "fundraising-top-unclick"}>My Fundraising</h3>
                         <h3 onClick={onTop} className={top ? "fundraising-top-click" : "fundraising-top-unclick"}>Activity</h3>
                     </div>
-                    <PlusCircle className="plus" size={50} color="#1EBA60" weight="fill"/>
+                    <PlusCircle className={pend?"plus":"plus-top"} size={50} color="#1EBA60" weight="fill"/>
                     <div className="fundraising-btn">
                         <button onClick={onAll} className={all?"clicked":"unclicked"}>All(25)</button>
                         <button onClick={onGo} className={go?"clicked":"unclicked"}>Ongoing(3)</button>
