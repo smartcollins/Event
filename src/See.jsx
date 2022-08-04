@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import Fundraising from "./Fundraising";
 import SearchItem from "./SearchItem";
-import { ArrowLeft,DotsThree, DotsThreeVertical} from "phosphor-react";
+import { ArrowLeft,DotsThreeVertical} from "phosphor-react";
 
 function See(){
     const [back,setBack] = useState(false);

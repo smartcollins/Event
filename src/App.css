@@ -1835,6 +1835,12 @@ td{
   justify-content: space-between;
 }
 
+.plus{
+  position: fixed;
+  bottom: 0;
+  right: 1rem;
+}
+
 .fundraising-top h3{
   width: 50%;
 }
@@ -1872,6 +1878,7 @@ td{
   display: flex;
   align-items: center;
 }
+
 .fundraising .search-note{
   display: flex;
   flex-direction: column;
@@ -1882,7 +1889,7 @@ td{
 }
 
 .result{
-  border-top: 1px solid seagreen;
+  border-top: 1px solid #DADEE3;
   margin-top: 2rem;
 }
 
