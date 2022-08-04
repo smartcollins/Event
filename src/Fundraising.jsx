@@ -4,6 +4,7 @@ import Calender from "./Calender";
 import Menu from "./Menu";
 import SearchItem from "./SearchItem";
 import See from "./See";
+import Edit from "./Edit";
 import {UsersThree,ArchiveBox,PlusCircle} from "phosphor-react"
 
 
@@ -70,7 +71,7 @@ function Fundraising() {
         <div>
             {
                 edit?
-                <div>Edit fund...</div>:
+                <Edit/>:
                 see?
                 <See/>:
                 home?
