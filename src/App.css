@@ -700,9 +700,9 @@
   background-color: #D8FDE1;
   border: transparent;
   border-radius: 5px;
-  /* padding: 5px; */
-  padding: 1rem;
-  border-radius: 1rem;
+  padding: 5px;
+  /* padding: 1rem;
+  border-radius: 1rem; */
 }
 
 .bookmark-btn{
@@ -1909,8 +1909,12 @@ td{
 
 .edit .dot{
   background-color: #FBE4ED;
-  /* padding: 1rem;
-  border-radius: 1rem; */
+  /* padding: 1rem; */
+  /* border-radius: 1rem; */
+}
+
+.edit-main{
+  background-color: red;
 }
 
 .result{

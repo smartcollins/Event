@@ -22,8 +22,17 @@ function Edit(){
                             <h1>Edit Fundrasing</h1>
                         </div>
                         <button className="dot">
-                            <Trash size={30} color="#1EBA60" weight="duotone"/>
+                            <Trash size={20} color="#f02828" weight="duotone"/>
                         </button>
+                        <div className="edit-main">
+                            <div></div>
+                            <div className="edit-grid">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
