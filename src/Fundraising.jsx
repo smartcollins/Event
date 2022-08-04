@@ -1,13 +1,16 @@
 import React,{useState} from "react";
 import Homepage from "./Homepage";
+import Calendar from "phosphor-react";
 import Menu from "./Menu";
 import SearchItem from "./SearchItem";
 import See from "./See";
 import {UsersThree,ArchiveBox,PlusCircle} from "phosphor-react"
+import Calender from "./Calender";
 
 
 function Fundraising() {
     const [home,setHome] = useState(false);
+    const [calender,setCalender] = useState(false);
     const [top,setTop] = useState(false);
     const [all,setAll] = useState(false);
     const [go, setGo] = useState(true);
@@ -18,6 +21,10 @@ function Fundraising() {
     
     function onHome(){
         setHome(true)
+    }
+
+    function onCalender(){
+        setCalender(true)
     }
 
     function onTop(){
@@ -68,6 +75,8 @@ function Fundraising() {
                 <See/>:
                 home?
                 <Homepage/>:
+                calender?
+                <Calender/>:
                 <div className="fundraising">
                     <div className="home-top">
 						<div className="back">
@@ -134,7 +143,12 @@ function Fundraising() {
                                 />
                             </div>
                         }
-                    </div>    
+                    </div>
+                    <Menu
+                        fund={true}
+                        onHome={onHome}
+                        onCalender={onCalender}
+                    />
                 </div>
             }
         </div>
