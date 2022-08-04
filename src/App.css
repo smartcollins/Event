@@ -701,6 +701,8 @@
   border: transparent;
   border-radius: 5px;
   /* padding: 5px; */
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .bookmark-btn{
@@ -1895,8 +1897,20 @@ td{
   flex-direction: column;
   align-items: flex-start;
 }
+
 .wait p{
   color: #1EBA60;
+}
+
+.edit{
+  /* background-color: red; */
+  margin: 0 1rem;
+}
+
+.edit .dot{
+  background-color: #FBE4ED;
+  /* padding: 1rem;
+  border-radius: 1rem; */
 }
 
 .result{

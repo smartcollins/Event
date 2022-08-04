@@ -28,6 +28,11 @@ function Fundraising() {
         setCalender(true)
     }
 
+    function onFund(){
+        setCalender(false)
+        setHome(false)
+    }
+
     function onTop(){
         setTop(oldTop => !top)
     }
@@ -149,6 +154,7 @@ function Fundraising() {
                         fund={true}
                         onHome={onHome}
                         onCalender={onCalender}
+                        onFund={onFund}
                     />
                 </div>
             }
