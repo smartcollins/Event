@@ -1,11 +1,13 @@
 import React,{useState} from "react";
 import Homepage from "./Homepage";
+import Fundraising from "./Fundraising";
 import SearchItem from "./SearchItem";
 import Menu from "./Menu";
-import {UsersThree,DotsThreeVertical,CaretRight,CaretLeft, SmileySad, ArrowLeft} from "phosphor-react";
+import {UsersThree,DotsThreeVertical,CaretRight,CaretLeft, SmileySad, ArrowLeft, SelectionForeground} from "phosphor-react";
 
 function Calender(){
 	const [logo,setLogo] = useState(false);
+	const [fund,setFund] = useState(false);
     const [all,setAll] = useState(false);
     const [date,setDate] = useState(false);
 
@@ -15,6 +17,10 @@ function Calender(){
 
 	function onLogo(){
 		setLogo(true)
+	}
+
+	function onFund(){
+		setFund(true)
 	}
 
 	function onDate(){
@@ -91,6 +97,8 @@ function Calender(){
 						txt3= "$30"
 					/>
 				</div>:
+				fund?
+				<Fundraising/>:
 				logo?
 				<Homepage/>:
                 <div className="Home">
@@ -218,6 +226,7 @@ function Calender(){
 					<Menu
 						calender={true}
 						onHome={onLogo}
+						onFund={onFund}
 					/>
                 </div>
             }
