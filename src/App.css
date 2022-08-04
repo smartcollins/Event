@@ -466,7 +466,7 @@
   margin: 1rem;
   display: grid;
   grid-template: auto/auto auto auto;
-  grid-gap: 1rem;
+  gap: 1rem;
 }
 
 .joy,.sad{
@@ -1137,13 +1137,13 @@
 .watch-video{
   display: grid;
   grid-template: auto/auto auto;
-  grid-gap: 10px;
+  gap: 10px;
 }
 
 .watch-main-video{
   display: grid;
   grid-template: auto/auto auto;
-  grid-gap: 1.5rem;
+  gap: 1.5rem;
 }
 
 .watch-play{
@@ -1541,7 +1541,7 @@
 .amount{
   display: grid;
   grid-template: auto/auto auto auto;
-  grid-gap: 1.5rem;
+  gap: 1.5rem;
   border: 2px solid #f0f0f0;
   border-style: solid none;
   padding: 2rem 1rem;
@@ -1704,7 +1704,7 @@
 .share-main{
   display: grid;
   grid-template: auto/auto auto auto auto;
-  grid-gap: 1.5rem;
+  gap: 1.5rem;
   padding: 2rem;
 }
 
@@ -1914,8 +1914,49 @@ td{
 }
 
 .edit-main{
-  background-color: red;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #DADEE3;
 }
+
+.edit-main-img {
+  background-image: url(./image/flood1.jpg);
+  height: 30vh;
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+.edit-grid{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.edit-grid > div{
+  height: 20vh;
+  /* width: 20vw; */
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+.edit1{
+  background-image: url(./image/can.jpg);
+}
+.edit2{
+  background-image: url(./image/volcano.jpg);
+}
+.edit3{
+  background-image: url(./image/mal.jpg);
+}
+.edit4{
+  background-image: url(./image/flood2.jpg);
+}
+
 
 .result{
   border-top: 1px solid #DADEE3;
@@ -1929,7 +1970,7 @@ td{
 .result-btn{
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-gap: 5px;
+  gap: 5px;
   margin-bottom: 1rem;
   /* grid-template-rows: repeat(3, minmax(0, 1fr)); */
   /* grid-template: auto/ auto auto auto; */

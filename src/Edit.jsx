@@ -24,16 +24,16 @@ function Edit(){
                         <button className="dot">
                             <Trash size={20} color="#f02828" weight="duotone"/>
                         </button>
-                        <div className="edit-main">
-                            <div></div>
+                    </div>
+                    <div className="edit-main">
+                            <div className="edit-main-img"></div>
                             <div className="edit-grid">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                                <div className="edit1"></div>
+                                <div className="edit2"></div>
+                                <div className="edit3"></div>
+                                <div className="edit4"></div>
                             </div>
                         </div>
-                    </div>
                 </div>
                 
             }
