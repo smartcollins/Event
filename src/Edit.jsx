@@ -25,6 +25,7 @@ function Edit(){
                     {
                         update&&
                         <Success
+                            del={true}
                             top="Stop Publishing Fundrasing"
                             txt="Afteryou stop this publication, youcannot republish it"
                         />
