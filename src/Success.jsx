@@ -1,12 +1,18 @@
 import React from "react";
-import { CheckCircle } from "phosphor-react";
+import { CheckCircle,Trash } from "phosphor-react";
 
-function Success({ top, txt, txt2, onGo }) {
+function Success({ top, txt, txt2, onGo, del }) {
   return (
     <div className="great">
-      <button>
-        <CheckCircle size={30} color="#ffffff" weight="fill" />
-      </button>
+      {
+        del?
+        <button>
+          {React.createElement(Trash, { size: 30, color:"#ffffff", weight:"fill"})}
+        </button>:
+        <button>
+          <CheckCircle size={30} color="#ffffff" weight="fill" />
+        </button>
+      }
       <h2>{top}</h2>
       <p>{txt}</p>
       <button className="nxt" onClick={onGo}>{txt2}</button>
