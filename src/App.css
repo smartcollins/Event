@@ -1786,7 +1786,7 @@ td{
 
 .calender-end{
   margin-top: 1rem;
-  position: relative;
+;  position: relative;
   height: 60vh;
 }
 
@@ -1915,8 +1915,6 @@ td{
 
 .edit-main{
   margin-top: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid #DADEE3;
 }
 
 .edit-main-img {
@@ -1955,6 +1953,45 @@ td{
 }
 .edit4{
   background-image: url(./image/flood2.jpg);
+}
+
+.edit-end{
+  margin-top: 2rem;
+  border-top: 1px solid #DADEE3;
+}
+
+.edit-end h1{
+  text-align: left;
+  margin: 1rem 0;
+}
+
+.edit-end p{
+  margin: 1rem;
+  text-align: left;
+}
+
+.edit-end span{
+  color: red;
+}
+
+.edit-end input {
+  margin-bottom: 2rem;
+  border: 2px solid #1EBA60;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.edit-end input:focus{
+  outline: 2px solid #1EBA60;
+}
+
+.edit .Send{
+  margin: 0 -1rem;
+}
+
+.edit .nxt{
+  width: 95vw;
 }
 
 

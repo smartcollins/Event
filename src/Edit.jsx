@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import Fundraising from "./Fundraising";
-import {ArrowLeft,Trash} from "phosphor-react";
+import {ArrowLeft,Trash,CurrencyDollar,CaretDown} from "phosphor-react";
 
 function Edit(){
     const [back,setBack] = useState(false);
@@ -26,14 +26,26 @@ function Edit(){
                         </button>
                     </div>
                     <div className="edit-main">
-                            <div className="edit-main-img"></div>
-                            <div className="edit-grid">
-                                <div className="edit1"></div>
-                                <div className="edit2"></div>
-                                <div className="edit3"></div>
-                                <div className="edit4"></div>
-                            </div>
+                        <div className="edit-main-img"></div>
+                        <div className="edit-grid">
+                            <div className="edit1"></div>
+                            <div className="edit2"></div>
+                            <div className="edit3"></div>
+                            <div className="edit4"></div>
                         </div>
+                    </div>
+                    <div className="edit-end">
+                        <h1>Fundaraising Details</h1>
+                        <p>Title<span>*</span></p>
+                        <input type="txt" placeholder="Title"/>
+                        <p>Category<span>*</span></p>
+                        <input type="txt" placeholder="Category"/>
+                        <p>Total Donation Required<span>*</span></p>
+                        <input type="txt" placeholder="Required"/>
+                    </div>
+                    <div className="Send">
+                        <button className="nxt">Update and Submit</button>
+                    </div>
                 </div>
                 
             }
