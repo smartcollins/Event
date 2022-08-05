@@ -1,13 +1,19 @@
 import React,{useState} from "react";
 import Fundraising from "./Fundraising";
+import Success from "./Success";
 import {ArrowLeft,Trash,CurrencyDollar,CaretDown} from "phosphor-react";
 
 function Edit(){
     const [back,setBack] = useState(false);
     const [del,setDel] = useState(false);
+    const [update,setUpdate] =useState(false);
 
     function onBack(){
         setBack(true)
+    }
+
+    function onUpdate(){
+        setUpdate(true)
     }
 
     return(
@@ -15,7 +21,14 @@ function Edit(){
             {
                 back?
                 <Fundraising/>:
-                <div className="edit">
+                <div className={update?"success":"edit"}>
+                    {
+                        update&&
+                        <Success
+                            top="Stop Publishing Fundrasing"
+                            txt="Afteryou stop this publication, youcannot republish it"
+                        />
+                    }
                     <div className="home-top">
                         <div className="back">
                             <ArrowLeft size={30} color="#1EBA60" weight="duotone" onClick={onBack}/>
@@ -44,7 +57,7 @@ function Edit(){
                         <input type="txt" placeholder="Required"/>
                     </div>
                     <div className="Send">
-                        <button className="nxt">Update and Submit</button>
+                        <button onClick={onUpdate} className="nxt">Update and Submit</button>
                     </div>
                 </div>
                 
