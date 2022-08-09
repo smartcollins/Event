@@ -16,6 +16,10 @@ function Edit(){
         setUpdate(true)
     }
 
+    function onCancel(){
+        setUpdate(false)
+    }
+
     return(
         <div>
             {
@@ -27,7 +31,10 @@ function Edit(){
                         <Success
                             del={true}
                             top="Stop Publishing Fundrasing"
-                            txt="Afteryou stop this publication, youcannot republish it"
+                            txt="After you stop this publication, you cannot republish it"
+                            txt2="Are you sure ?"
+                            onBtn1={onCancel}
+                            onBtn2={onBack}
                         />
                     }
                     <div className="home-top">

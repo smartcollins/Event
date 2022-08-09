@@ -542,12 +542,11 @@
   border: none;
 }
 
-.great button:first-child{
+.great-top{
   background-color: #1EBA60;
   padding: 2rem;
   border-radius: 50%;
-  border: none;
-  
+  border: none;  
 }
 
 .great p:last-child{
@@ -575,6 +574,14 @@
   color: white;
   background-color: #1EBA60;
   border: none;
+}
+
+.del .remove-main {
+  display: flex;
+}
+
+.del .remove-main button{
+  width: 50%;
 }
 
 /* .success { */
