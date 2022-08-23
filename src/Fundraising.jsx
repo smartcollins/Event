@@ -138,6 +138,24 @@ function Fundraising() {
                     name="Jake Sparrow"
                     amt= "$25"
                 />
+                <Donators 
+                    thanks={true} 
+                    img="prayer-img"
+                    name="Jenny Wilson"
+                    amt= "$17"
+                />
+                <Donators 
+                    thanks={true} 
+                    img="prayer-img2"
+                    name="Robert Hawkins"
+                    amt= "$19"
+                />
+                <Donators 
+                    thanks={true} 
+                    img="prayer-img3"
+                    name="Kritin Watson"
+                    amt= "$15"
+                />
               </div>
             ) : (
               <div>
