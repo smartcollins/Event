@@ -1881,6 +1881,11 @@ td{
   justify-content: space-between;
 }
 
+/* .fundraising h3{
+  text-align: left;
+  color: red;
+} */
+
 .plus{
   z-index: 2;
   position: fixed;

@@ -144,6 +144,9 @@ function Fundraising() {
                     name="Jenny Wilson"
                     amt= "$17"
                 />
+                <div className="donators">
+                  <h3>Yesterday, December 24 2023</h3>
+                </div>
                 <Donators 
                     thanks={true} 
                     img="prayer-img2"
