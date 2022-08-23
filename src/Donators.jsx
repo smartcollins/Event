@@ -9,9 +9,7 @@ function Donators({img,name,anym, thanks, amt}){
             <div>
               <div className={img}></div>
               <p>
-                <strong>
-                  {name} has donated <span>{amt}</span>
-                </strong>
+                <b>{name}</b> has donated <span>{amt}</span>
               </p>
             </div>
             <button className="unclicked">Say Thanks</button>

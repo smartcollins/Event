@@ -1770,16 +1770,35 @@
 }
 
 .thanks{
-  background-color: red;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #D8FDE1;
+  border-radius: 1rem;
 }
 
 .thanks >  div{
-  background-color: blue;
   display: flex;
   align-items: center;
+  width: 80%;
 }
+
+.thanks p{
+  width: 70%;
+  text-align: left;
+}
+
+.thanks span{
+  color: #1EBA60;
+}
+
+.thanks button{
+  width: 40%;
+}
+
 
 .calender{
   background-color: #f5f5f5;

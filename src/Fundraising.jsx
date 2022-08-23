@@ -135,7 +135,7 @@ function Fundraising() {
                 <Donators 
                     thanks={true} 
                     img="prayer-img4"
-                    name="jake Sparrow"
+                    name="Jake Sparrow"
                     amt= "$25"
                 />
               </div>
