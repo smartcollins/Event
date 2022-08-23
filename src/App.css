@@ -1769,6 +1769,18 @@
   margin-right: 1rem;
 }
 
+.thanks{
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.thanks >  div{
+  background-color: blue;
+  display: flex;
+  align-items: center;
+}
+
 .calender{
   background-color: #f5f5f5;
   border-radius: 2rem;
