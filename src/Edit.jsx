@@ -12,12 +12,12 @@ function Edit(){
         setBack(true)
     }
 
-    function onUpdate(){
-        setUpdate(true)
+    function onDel(){
+        setDel(true)
     }
 
     function onCancel(){
-        setUpdate(false)
+        setDel(false)
     }
 
     return(
@@ -27,7 +27,7 @@ function Edit(){
                 <Fundraising/>:
                 <div className={update?"success":"edit"}>
                     {
-                        update&&
+                        del&&
                         <Success
                             del={true}
                             top="Stop Publishing Fundrasing"
@@ -42,7 +42,7 @@ function Edit(){
                             <ArrowLeft size={30} color="#1EBA60" weight="duotone" onClick={onBack}/>
                             <h1>Edit Fundrasing</h1>
                         </div>
-                        <button className="dot">
+                        <button onClick={onDel} className="dot">
                             <Trash size={20} color="#f02828" weight="duotone"/>
                         </button>
                     </div>
@@ -65,7 +65,7 @@ function Edit(){
                         <input type="txt" placeholder="Required"/>
                     </div>
                     <div className="Send">
-                        <button onClick={onUpdate} className="nxt">Update and Submit</button>
+                        <button className="nxt">Update and Submit</button>
                     </div>
                 </div>
                 
