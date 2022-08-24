@@ -139,9 +139,19 @@ function Fundraising() {
                     amt= "$25"
                 />
                 <Donators 
+                    thanks={true}
+                    anym={true}
+                    amt= "$27"
+                />
+                <Donators 
                     thanks={true} 
                     img="prayer-img"
                     name="Jenny Wilson"
+                    amt= "$17"
+                />
+                <Donators 
+                    thanks={true}
+                    anym={true}
                     amt= "$17"
                 />
                 <div className="donators">

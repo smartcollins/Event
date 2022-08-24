@@ -7,9 +7,12 @@ function Donators({img,name,anym, thanks, amt}){
         {thanks ? (
           <div className="thanks">
             <div>
-              <div className={img}></div>
+              {thanks&&anym?
+                <SmileyWink className="ayms" size={30} color="#ffffff" />:
+                <div className={img}></div>
+              }
               <p>
-                <b>{name}</b> has donated <span>{amt}</span>
+                <b>{thanks&&anym?"Anonymous":name}</b> has donated <span>{amt}</span>
               </p>
             </div>
             <button className="unclicked">Say Thanks</button>
