@@ -1779,6 +1779,10 @@
   border-radius: 1rem;
 }
 
+.thanks .ayms{
+  width: 22%;
+}
+
 .thanks >  div{
   display: flex;
   align-items: center;
