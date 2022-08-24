@@ -15,13 +15,9 @@ function Donators({img,name,anym, thanks, amt}){
             <button className="unclicked">Say Thanks</button>
           </div>
         ) : anym ? (
-          <div>
-            <div className="donator-ayms">
-              <div>
-                <SmileyWink size={30} color="#ffffff" />
-              </div>
-              <h3>Anonymous</h3>
-            </div>
+          <div className="donator-ayms">
+            <SmileyWink className="ayms" size={30} color="#ffffff" />
+            <h3>Anonymous</h3>
           </div>
         ) : (
           <div>
