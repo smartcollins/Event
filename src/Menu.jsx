@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import {House,Notepad,ListDashes,ChatText,User} from "phosphor-react";
 
 function Menu({ home, onHome, calender, onCalender, fund, onFund}){

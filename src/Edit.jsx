@@ -60,9 +60,15 @@ function Edit(){
                         <p>Title<span>*</span></p>
                         <input type="txt" placeholder="Title"/>
                         <p>Category<span>*</span></p>
-                        <input type="txt" placeholder="Category"/>
+                        <div>
+                            <input type="txt" placeholder="Category"/>
+                            <CaretDown size={20} color="#1EBA60" weight="duotone"/>
+                        </div>
                         <p>Total Donation Required<span>*</span></p>
-                        <input type="txt" placeholder="Required"/>
+                        <div>
+                            <input type="txt" placeholder="Required"/>
+                               <CurrencyDollar size={20} color="#1EBA60" weight="duotone"/>
+                            </div>
                     </div>
                     <div className="Send">
                         <button className="nxt">Update and Submit</button>

@@ -3,7 +3,7 @@ import Homepage from "./Homepage";
 import Fundraising from "./Fundraising";
 import SearchItem from "./SearchItem";
 import Menu from "./Menu";
-import {UsersThree,DotsThreeVertical,CaretRight,CaretLeft, SmileySad, ArrowLeft, SelectionForeground} from "phosphor-react";
+import {UsersThree,DotsThreeVertical,CaretRight,CaretLeft, SmileySad, ArrowLeft} from "phosphor-react";
 
 function Calender(){
 	const [logo,setLogo] = useState(false);

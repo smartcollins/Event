@@ -1,5 +1,5 @@
 import React from "react";
-import {SmileyWink,Smiley} from "phosphor-react";
+import {SmileyWink} from "phosphor-react";
 
 function Donators({img,name,anym, thanks, amt}){
     return (

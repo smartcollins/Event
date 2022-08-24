@@ -2020,20 +2020,40 @@ td{
   color: red;
 }
 
-.edit-end input {
-  margin-bottom: 2rem;
+.edit-end > input {
   border: 2px solid #1EBA60;
   width: 100%;
   padding: 1rem;
   border-radius: 2rem;
+  /* background-color: red; */
 }
 
-.edit-end input:focus{
-  outline: 2px solid #1EBA60;
+.edit-end > div{
+  border: 2px solid  #1eba60;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 5rem;
 }
+
+.edit-end > div > input{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.edit-end > input:focus{
+  /* outline: 1px solid #1EBA60; */
+  outline: none;
+}
+
+.edit-end > div > input:focus{
+  outline: none;
+}
+
 
 .edit .Send{
-  margin: 0 -1rem;
+  margin: 2rem -1rem -1rem 0;
 }
 
 .edit .nxt{
