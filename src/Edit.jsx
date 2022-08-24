@@ -70,18 +70,18 @@ function Edit() {
             </p>
             <div>
               <input type="txt" placeholder="Category" />
-              <CaretDown size={20} color="#1EBA60" weight="duotone" />
+              <CaretDown size={20} color="#858C94" weight="duotone" />
             </div>
             <p>
               Total Donation Required<span>*</span>
             </p>
             <div>
               <input type="txt" placeholder="Required" />
-              <CurrencyDollar size={20} color="#1EBA60" weight="duotone" />
+              <CurrencyDollar size={20} color="#858C94" weight="duotone" />
             </div>
           </div>
           <div className="Send">
-            <button className="nxt">Update and Submit</button>
+            <button onClick={onBack} className="nxt">Update and Submit</button>
           </div>
         </div>
       )}
