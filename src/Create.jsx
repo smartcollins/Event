@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import Fundraising from "./Fundraising";
-import { ArrowLeft, CalendarCheck, CurrencyDollar, CaretDown, ArchiveBox, CloudArrowUp } from "phosphor-react";
+import { ArrowLeft, CalendarCheck, CurrencyDollar, CaretDown, ArchiveBox, CloudArrowUp, CloudArrowDown } from "phosphor-react";
 
 function Create() {
     const [back, setBack] = useState(false);
@@ -52,6 +52,32 @@ function Create() {
               <div>
                 <input type="txt" placeholder="Required" />
                 <CurrencyDollar size={20} color="#858C94" weight="duotone" />
+              </div>
+              <p>Chose Donation Expiration Date<span>*</span></p>
+              <div>
+                <input type="txt" placeholder="Category" />
+                <CalendarCheck size={20} color="#858C94" weight="duotone" />
+              </div>
+            </div>
+            <div className="edit-end">
+              <h1>Donation Recipient Details</h1>
+              <p>
+                Name of Recipenit (People/Organisation)<span>*</span>
+              </p>
+              <input type="txt" placeholder="Name" />
+              <p>
+                Upload Doantion Proposal Documents<span>*</span>
+              </p>
+              <div>
+                <input type="txt" placeholder="Select Document" />
+                <CloudArrowDown size={20} color="#858C94" weight="duotone" />
+              </div>
+              <p>
+                Upload Medical Documents (optional for medical)<span>*</span>
+              </p>
+              <div>
+                <input type="txt" placeholder="Select Document" />
+                <CloudArrowDown size={20} color="#858C94" weight="duotone" />
               </div>
               <p>Chose Donation Expiration Date<span>*</span></p>
               <div>
