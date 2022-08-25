@@ -156,7 +156,7 @@ function Fundraising() {
               <div className="donators">
                 <h3>Yesterday, December 24 2023</h3>
               </div>
-              <Donators
+              :<Donators
                 thanks={true}
                 img="prayer-img2"
                 name="Robert Hawkins"
