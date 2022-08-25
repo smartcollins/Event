@@ -36,7 +36,9 @@ function Thanks(){
                 <p>Thank you very much Jane, God bless your kindness</p>
                 <p>09:41</p>
             </div>
-            <Send/>
+            <Send
+                title="Type message ..."
+            />
         </div>
     )
 }

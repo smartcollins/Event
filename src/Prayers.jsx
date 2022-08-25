@@ -57,7 +57,9 @@ function Prayers() {
                     txt="Hopefully the orphans in Africa can get treatment and nurtriton improvement soon.."
                     txt2="You and 118 others sent this prayer"
                 />
-                <Send/>
+                <Send
+                    title="Send your prayers ..."
+                />
             </div>
         }
     </div>

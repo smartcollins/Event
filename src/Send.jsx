@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { PaperPlaneRight } from "phosphor-react";
 
-function Send() {
+function Send({title}) {
   const [send, setSend] = useState(false);
 
   function onSend() {
@@ -15,7 +15,7 @@ function Send() {
   return (
     <div className="Send">
       <div className="send" onClick={onSend} style={style}>
-        <input placeholder="Send your prayers..." />
+        <input placeholder={title} />
         <PaperPlaneRight size={25} color="#0da542" weight="bold" />
       </div>
     </div>
