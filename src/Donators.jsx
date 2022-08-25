@@ -1,7 +1,7 @@
 import React from "react";
 import {SmileyWink} from "phosphor-react";
 
-function Donators({img,name,anym, thanks, amt}){
+function Donators({img,name,anym, thanks, amt, onThanks}){
     return (
       <div>
         {thanks ? (
@@ -15,7 +15,7 @@ function Donators({img,name,anym, thanks, amt}){
                 <b>{thanks&&anym?"Anonymous":name}</b> has donated <span>{amt}</span>
               </p>
             </div>
-            <button className="unclicked">Say Thanks</button>
+            <button onClick={onThanks} className="unclicked">Say Thanks</button>
           </div>
         ) : (
           <div>

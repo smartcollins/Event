@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import Edit from "./Edit";
 import Donators from "./Donators";
 import {ArrowLeft, DotsThreeVertical, PaperPlaneRight } from "phosphor-react";
-import { useState } from "react";
 
 function Thanks(){
     const [back,setBack] = useState(false);
