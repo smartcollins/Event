@@ -85,6 +85,13 @@ function Create() {
                 <CalendarCheck size={20} color="#858C94" weight="duotone" />
               </div>
             </div>
+            <div className="edit-end-btn">
+                <button className="unclicked">
+                <ArchiveBox size={20} color="#1EBA60" weight="duotone" />
+                    Draft
+                </button>
+                <button className="clicked">Create & Submit</button>
+            </div>
           </div>
         )}
       </div>

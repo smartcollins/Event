@@ -2084,6 +2084,24 @@ td{
   outline: none;
 }
 
+.edit-end-btn{
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.edit-end-btn button{
+  width: 50%;
+}
+
+.edit-end-btn .unclicked{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+}
+
 
 .edit .Send{
   margin: 2rem -1rem 0 -1rem;
