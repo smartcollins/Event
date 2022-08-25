@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import Edit from "./Edit";
 import Donators from "./Donators";
-import {ArrowLeft, DotsThreeVertical, PaperPlaneRight } from "phosphor-react";
+import Send from "./Send";
+import {ArrowLeft, DotsThreeVertical } from "phosphor-react";
 
 function Thanks(){
     const [back,setBack] = useState(false);
@@ -35,6 +36,7 @@ function Thanks(){
                 <p>Thank you very much Jane, God bless your kindness</p>
                 <p>09:41</p>
             </div>
+            <Send/>
         </div>
     )
 }
