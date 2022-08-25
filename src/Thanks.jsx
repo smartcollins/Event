@@ -24,11 +24,13 @@ function Thanks(){
                 </div>
             </div>
             <button>Today</button>
-            <Donators 
+            <Donators
                 thanks={true}
-                name= "Jane Cooper"
-                amt= "$27"
-            />
+                none={true}
+                img="prayer-img2"
+                name="Robert Hawkins"
+                amt="$19"
+              />
             <div>
                 <p>Thank you very much Jane, God bless your kindness</p>
                 <p>09:41</p>
