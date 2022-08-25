@@ -31,7 +31,7 @@ function Thanks(){
                 name="Robert Hawkins"
                 amt="$19"
               />
-            <div>
+            <div className="thank-end">
                 <p>Thank you very much Jane, God bless your kindness</p>
                 <p>09:41</p>
             </div>

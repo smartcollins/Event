@@ -1803,8 +1803,29 @@
 }
 
 .thank{
-  background-color: red;
-  height: 100%;
+  /* background-color: red; */
+  /* height: 100%; */
+  padding: 1rem;
+}
+
+.thank > button{
+  width: 20%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #EBEEF2;
+  background-color: #EBEEF2;
+}
+
+.thank-end{
+  margin-top: 1rem;
+  margin-left: 20vw;
+  padding: 1.5rem 1rem;
+  background-color: #1EBA60;
+  text-align: left;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 1rem 0 1rem 1rem;
+  color: white;
 }
 
 
