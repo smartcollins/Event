@@ -8,6 +8,7 @@ import Edit from "./Edit";
 import Donators from "./Donators";
 import Thanks from "./Thanks";
 import { UsersThree, ArchiveBox, PlusCircle } from "phosphor-react";
+import Create from "./Create";
 
 function Fundraising() {
   const [home, setHome] = useState(false);
@@ -21,6 +22,7 @@ function Fundraising() {
   const [see, setSee] = useState(false);
   const [edit, setEdit] = useState(false);
   const [thanks, setThanks] = useState(false);
+  const [plus, setPlus] = useState(false);
 
   function onHome() {
     setHome(true);
@@ -84,9 +86,15 @@ function Fundraising() {
     setThanks(true);
   }
 
+  function onPlus() {
+    setPlus(true);
+  }
+
   return (
     <div>
-      {thanks ? (
+      {plus ? (
+        <Create />
+      ) : thanks ? (
         <Thanks />
       ) : edit ? (
         <Edit />
@@ -132,6 +140,7 @@ function Fundraising() {
           </div>
           <PlusCircle
             className="plus"
+            onClick={onPlus}
             size={50}
             color="#1EBA60"
             weight="fill"
@@ -156,7 +165,8 @@ function Fundraising() {
               <div className="donators">
                 <h3>Yesterday, December 24 2023</h3>
               </div>
-              :<Donators
+              :
+              <Donators
                 thanks={true}
                 img="prayer-img2"
                 name="Robert Hawkins"
