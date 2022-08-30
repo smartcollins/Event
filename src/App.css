@@ -1992,6 +1992,24 @@ td{
   /* border-radius: 1rem; */
 }
 
+.create-main-dashed{
+  background-color: #f4f6f9;
+  border: 2px dashed lightgray;
+  border-radius: 1rem;
+  padding: 20%;
+  margin: 1rem auto;
+}
+
+.create-dashed{
+  background-color: #f4f6f9;
+  border: 2px dashed lightgray;
+  border-radius: 1rem;
+  padding: 20%;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+
 .edit-main{
   margin-top: 1rem;
 }

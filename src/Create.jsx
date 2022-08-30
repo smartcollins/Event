@@ -4,9 +4,14 @@ import { ArrowLeft, CalendarCheck, CurrencyDollar, CaretDown, ArchiveBox, CloudA
 
 function Create() {
     const [back, setBack] = useState(false);
+    const [alter,setAlter] = useState(false);
   
     function onBack() {
       setBack(true);
+    }
+
+    function onAlter(){
+      setAlter(true)
     }
   
     return (
@@ -25,12 +30,12 @@ function Create() {
                 <h1>Create New Fundraising</h1>
             </div>
             <div className="edit-main">
-              <div className="edit-main-img"></div>
+              <div onClick={onAlter} className={alter?"edit-main-img":"create-main-dashed"}></div>
               <div className="edit-grid">
-                <div className="edit1"></div>
-                <div className="edit2"></div>
-                <div className="edit3"></div>
-                <div className="edit4"></div>
+                <div className={alter?"edit1":"create-dashed"}></div>
+                <div className={alter?"edit2":"create-dashed"}></div>
+                <div className={alter?"edit3":"create-dashed"}></div>
+                <div className={alter?"edit4":"create-dashed"}></div>
               </div>
             </div>
             <div className="edit-end">
