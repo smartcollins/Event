@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import Fundraising from "./Fundraising";
-import { ArrowLeft, CalendarCheck, CurrencyDollar, CaretDown, ArchiveBox, CloudArrowUp, CloudArrowDown } from "phosphor-react";
+import { ArrowLeft, Plus, CalendarCheck, CurrencyDollar, CaretDown, ArchiveBox, CloudArrowUp, CloudArrowDown } from "phosphor-react";
 
 function Create() {
     const [back, setBack] = useState(false);
@@ -30,12 +30,28 @@ function Create() {
                 <h1>Create New Fundraising</h1>
             </div>
             <div className="edit-main">
-              <div onClick={onAlter} className={alter?"edit-main-img":"create-main-dashed"}></div>
+              <div onClick={onAlter} className={alter?"edit-main-img":"create-main-dashed"}>
+                {
+                  !alter &&
+                  <div>
+                    <Plus size={20} color="#1ab75d" weight="duotone" />
+								    <p>Add Cover Photos</p>
+                  </div>
+                }
+              </div>
               <div className="edit-grid">
-                <div className={alter?"edit1":"create-dashed"}></div>
-                <div className={alter?"edit2":"create-dashed"}></div>
-                <div className={alter?"edit3":"create-dashed"}></div>
-                <div className={alter?"edit4":"create-dashed"}></div>
+                <div className={alter?"edit1":"create-dashed"}>
+                  {!alter&&<Plus size={20} color="#1ab75d" weight="duotone" />}
+                </div>
+                <div className={alter?"edit2":"create-dashed"}>
+                {!alter&&<Plus size={20} color="#1ab75d" weight="duotone" />}
+                </div>
+                <div className={alter?"edit3":"create-dashed"}>
+                {!alter&&<Plus size={20} color="#1ab75d" weight="duotone" />}
+                </div>
+                <div className={alter?"edit4":"create-dashed"}>
+                {!alter&&<Plus size={20} color="#1ab75d" weight="duotone" />}
+                </div>
               </div>
             </div>
             <div className="edit-end">
