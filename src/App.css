@@ -1992,6 +1992,16 @@ td{
   /* border-radius: 1rem; */
 }
 
+.edit textarea{
+  /* padding: 20px 10px; */
+  padding: 1rem;
+  height: 20vh;
+  resize: none;
+  border: 2px solid #1EBA60;
+  border-radius: 1rem;
+  width: 100%;
+}
+
 .create-main-dashed{
   color: lightgray;
   background-color: #f4f6f9;
