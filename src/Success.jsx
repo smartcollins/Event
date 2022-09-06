@@ -1,7 +1,7 @@
 import React from "react";
-import { CheckCircle,Trash } from "phosphor-react";
+import { CheckCircle,Trash, GlobeHemisphereEast } from "phosphor-react";
 
-function Success({ top, txt, txt2, onGo, del, onBtn1, onBtn2 }) {
+function Success({ top, txt, txt2, onGo, del, onBtn1, onBtn2, congrat }) {
   return (
     <div className="great">
       {
@@ -21,12 +21,25 @@ function Success({ top, txt, txt2, onGo, del, onBtn1, onBtn2 }) {
           </div>
         </div>:
         <div>
-          <button className="great-top">
-            <CheckCircle size={30} color="#ffffff" weight="fill" />
-          </button>
+          {
+            congrat?
+            <button className="great-top">
+              <GlobeHemisphereEast size={30} color="#ffffff" weight="fill" />
+            </button>:
+            <button className="great-top">
+              <CheckCircle size={30} color="#ffffff" weight="fill" />
+            </button>
+          }
           <h2>{top}</h2>
           <p>{txt}</p>
-          <button className="nxt" onClick={onGo}>{txt2}</button>
+          {
+            congrat?
+            <div className="remove-main">
+              <button onClick={onBtn1}>Cancel</button>
+              <button onClick={onBtn2}>Yes,See Fundrasing</button>
+            </div>:
+            <button className="nxt" onClick={onGo}>{txt2}</button>
+          }
         </div>
        } 
     </div>

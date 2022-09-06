@@ -15,6 +15,7 @@ function Create() {
   const [back, setBack] = useState(false);
   const [alter, setAlter] = useState(false);
   const [submit, setSubmit] = useState(false);
+  const [ok,setOk] = useState(false);
 
   function onBack() {
     setBack(true);
@@ -26,6 +27,10 @@ function Create() {
 
   function onSubmit(){
     setSubmit(true)
+  }
+
+  function onOk(){
+    setOk(true)
   }
 
   return (
@@ -40,6 +45,7 @@ function Create() {
                     top="Submit Successful"
                     txt="We are currently reviewing a fundraising proposal for your donation. We will tell you the result soon"
                     txt2="OK"
+                    onGo={onOk}
                 />
             }
           <div className="back">
