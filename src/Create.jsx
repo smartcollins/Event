@@ -10,10 +10,12 @@ import {
   CloudArrowUp,
   CloudArrowDown,
 } from "phosphor-react";
+import Success from "./Success";
 
 function Create() {
   const [back, setBack] = useState(false);
   const [alter, setAlter] = useState(false);
+  const [submit, setSubmit] = useState(false);
 
   function onBack() {
     setBack(true);
@@ -23,12 +25,24 @@ function Create() {
     setAlter(true);
   }
 
+  function onSubmit(){
+    setSubmit(true)
+  }
+
   return (
     <div>
       {back ? (
         <Fundraising />
       ) : (
-        <div className="edit">
+        <div className={submit?"success":"edit"}>
+            {
+                submit&&
+                <Success
+                    top="Submit Successful"
+                    txt="We are currently reviewing a fundraising proposal for your donation. We will tell you the result soon"
+                    txt2="OK"
+                />
+            }
           <div className="back">
             <ArrowLeft
               size={30}
@@ -133,14 +147,14 @@ function Create() {
           </div>
           <div className="apply">
             <input name="apply" type="checkbox"/>
-            <label for="apply">By checking this, you agree to the terms & conditions thak apply to us.</label>
+            <label htmlFor="apply">By checking this, you agree to the terms & conditions thak apply to us.</label>
           </div>
           <div className="edit-end-btn">
             <button className="unclicked">
               <ArchiveBox size={20} color="#1EBA60" weight="duotone" />
               Draft
             </button>
-            <button className="clicked">Create & Submit</button>
+            <button onClick={onSubmit} className="clicked">Create & Submit</button>
           </div>
         </div>
       )}
