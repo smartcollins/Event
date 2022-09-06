@@ -37,7 +37,7 @@ function Success({ top, txt, txt2, onGo, del, onBtn1, onBtn2, congrat }) {
             <div className="del">
               <div className="remove-main">
                 <button onClick={onBtn1}>Cancel</button>
-                <button onClick={onBtn2}>Yes,See Fundrasing</button>
+                <button onClick={onBtn2}>See Fundrasing</button>
               </div>
             </div>:
             <button className="nxt" onClick={onGo}>{txt2}</button>

@@ -516,7 +516,8 @@
 }
 
 .great{
-  background-color: red;
+  /* background-color: red; */
+  background-color: white;
   z-index: 1;
   /* padding: 3rem; */
   width: 85vw;
@@ -581,19 +582,11 @@
 
 .del .remove-main {
   display: flex;
-  background-color: blue;
-  /* width: 100%; */
 }
 
-.del .remove-main button{
-  /* width:40%; */
-  /* width: 10%; */
-}
-/* 
 .del .remove-main button:last-child{
-  color: red;
   width: 100%;
-} */
+}
 
 /* .success { */
   /* position: relative; */
