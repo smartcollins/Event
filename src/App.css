@@ -518,7 +518,7 @@
 .great{
   background-color: red;
   z-index: 1;
-  padding: 3rem;
+  /* padding: 3rem; */
   width: 85vw;
   border-radius: 1.5rem;
   position: absolute;
@@ -529,6 +529,9 @@
   /* left: 50%; */
   /* transform: translate(-50%,50%); */
   /* transform: translateX(-50%); */
+  
+  padding:3rem 1rem;
+  /* height: 60%; */
   
 }
 
@@ -563,8 +566,8 @@
 
 .great-btn button{
   width: 45%;
-  padding: 10px;
-  border-radius: 25px;
+  padding: 1rem;
+  border-radius: 2.5rem;
   border: 1px solid #1EBA60;
   background-color: transparent;
   color: #1eba60;
@@ -578,11 +581,19 @@
 
 .del .remove-main {
   display: flex;
+  background-color: blue;
+  /* width: 100%; */
 }
 
 .del .remove-main button{
-  width: 50%;
+  /* width:40%; */
+  /* width: 10%; */
 }
+/* 
+.del .remove-main button:last-child{
+  color: red;
+  width: 100%;
+} */
 
 /* .success { */
   /* position: relative; */
