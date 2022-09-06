@@ -79,6 +79,11 @@ function Create() {
                 <input type="txt" placeholder="Category" />
                 <CalendarCheck size={20} color="#858C94" weight="duotone" />
               </div>
+              <p>
+                <label for="mytext">Fund Usage:</label>
+                <span>*</span>
+              </p>
+								<textarea id="mytext" name="mytext" rows="2" cols="50"></textarea>
             </div>
             <div className="edit-end">
               <h1>Donation Recipient Details</h1>
@@ -105,10 +110,11 @@ function Create() {
                 <input type="txt" placeholder="Category" />
                 <CalendarCheck size={20} color="#858C94" weight="duotone" />
               </div>
-              <p><label for="mytext">Fund Usage:</label></p>
-								<textarea id="mytext" name="mytext" rows="2" cols="50">
-								
-								</textarea>
+              <p>
+                <label for="mytext">Fund Usage:</label>
+                <span>*</span>
+              </p>
+								<textarea id="mytext" name="mytext" rows="2" cols="50"></textarea>
             </div>
             <div className="edit-end-btn">
                 <button className="unclicked">
