@@ -2002,6 +2002,17 @@ td{
   width: 100%;
 }
 
+.apply{
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.apply label{
+  text-align: left;
+  margin-left: 1rem;
+}
+
 .create-main-dashed{
   color: lightgray;
   background-color: #f4f6f9;

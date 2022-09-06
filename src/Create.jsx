@@ -130,6 +130,8 @@ function Create() {
               <span>*</span>
             </p>
             <textarea id="mytext" name="mytext" rows="2" cols="50"></textarea>
+          </div>
+          <div className="apply">
             <input name="apply" type="checkbox"/>
             <label for="apply">By checking this, you agree to the terms & conditions thak apply to us.</label>
           </div>
