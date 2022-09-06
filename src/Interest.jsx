@@ -150,7 +150,7 @@ function Interest() {
       ) : go ? (
         <Homepage />
       ) : (
-        <div className="interest">
+        <div className={success?"success":"interest"}>
           {success && pin && (
             <Success
               top="Great!"

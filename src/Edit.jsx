@@ -6,7 +6,7 @@ import { ArrowLeft, Trash, CurrencyDollar, CaretDown } from "phosphor-react";
 function Edit() {
   const [back, setBack] = useState(false);
   const [del, setDel] = useState(false);
-  const [update, setUpdate] = useState(false);
+  // const [update, setUpdate] = useState(false);
 
   function onBack() {
     setBack(true);
@@ -25,7 +25,7 @@ function Edit() {
       {back ? (
         <Fundraising />
       ) : (
-        <div className={update ? "success" : "edit"}>
+        <div className={del ? "success" : "edit"}>
           {del && (
             <Success
               del={true}
