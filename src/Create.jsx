@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Fundraising from "./Fundraising";
+import Homepage from "./Homepage";
 import {
   ArrowLeft,
   Plus,
@@ -15,39 +16,58 @@ function Create() {
   const [back, setBack] = useState(false);
   const [alter, setAlter] = useState(false);
   const [submit, setSubmit] = useState(false);
-  const [ok,setOk] = useState(false);
+  const [ok, setOk] = useState(false);
 
   function onBack() {
     setBack(true);
+    setAlter(false)
+    setSubmit(false)
+    setOk(false)
   }
 
   function onAlter() {
     setAlter(true);
   }
 
-  function onSubmit(){
-    setSubmit(true)
+  function onSubmit() {
+    setSubmit(true);
   }
 
-  function onOk(){
-    setOk(true)
+  function onOk() {
+    setOk(true);
   }
+
+  function onCancel(){
+    setOk(false)
+    setSubmit(false)
+  }
+
 
   return (
-    <div className={submit&&"success"}>
-      {back ? (
+    <div className={submit && "success"}>
+      { ok ?
+      <div>
+        <Homepage/>
+        <Success
+            congrat={true}
+              top="Submit Successful"
+              txt="We are currently reviewing a fundraising proposal for your donation. We will tell you the result soon"
+              onBtn1={onCancel}
+              onBtn2={onBack}
+            />
+      </div>:
+      back ? (
         <Fundraising />
       ) : (
         <div className="edit">
-            {
-                submit&&
-                <Success
-                    top="Submit Successful"
-                    txt="We are currently reviewing a fundraising proposal for your donation. We will tell you the result soon"
-                    txt2="OK"
-                    onGo={onOk}
-                />
-            }
+          {submit && (
+            <Success
+              top="Submit Successful"
+              txt="We are currently reviewing a fundraising proposal for your donation. We will tell you the result soon"
+              txt2="OK"
+              onGo={onOk}
+            />
+          )}
           <div className="back">
             <ArrowLeft
               size={30}
@@ -151,15 +171,20 @@ function Create() {
             <textarea id="mytext" name="mytext" rows="2" cols="50"></textarea>
           </div>
           <div className="apply">
-            <input name="apply" type="checkbox"/>
-            <label htmlFor="apply">By checking this, you agree to the terms & conditions thak apply to us.</label>
+            <input name="apply" type="checkbox" />
+            <label htmlFor="apply">
+              By checking this, you agree to the terms & conditions thak apply
+              to us.
+            </label>
           </div>
           <div className="edit-end-btn">
             <button className="unclicked">
               <ArchiveBox size={20} color="#1EBA60" weight="duotone" />
               Draft
             </button>
-            <button onClick={onSubmit} className="clicked">Create & Submit</button>
+            <button onClick={onSubmit} className="clicked">
+              Create & Submit
+            </button>
           </div>
         </div>
       )}
