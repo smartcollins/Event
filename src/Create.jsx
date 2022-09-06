@@ -8,7 +8,6 @@ import {
   CaretDown,
   ArchiveBox,
   CloudArrowUp,
-  CloudArrowDown,
 } from "phosphor-react";
 import Success from "./Success";
 
@@ -30,11 +29,11 @@ function Create() {
   }
 
   return (
-    <div>
+    <div className={submit&&"success"}>
       {back ? (
         <Fundraising />
       ) : (
-        <div className={submit?"success":"edit"}>
+        <div className="edit">
             {
                 submit&&
                 <Success
@@ -123,14 +122,14 @@ function Create() {
             </p>
             <div>
               <input type="txt" placeholder="Select Document" />
-              <CloudArrowDown size={20} color="#858C94" weight="duotone" />
+              <CloudArrowUp size={20} color="#858C94" weight="duotone" />
             </div>
             <p>
               Upload Medical Documents (optional for medical)<span>*</span>
             </p>
             <div>
               <input type="txt" placeholder="Select Document" />
-              <CloudArrowDown size={20} color="#858C94" weight="duotone" />
+              <CloudArrowUp size={20} color="#858C94" weight="duotone" />
             </div>
             <p>
               Chose Donation Expiration Date<span>*</span>
