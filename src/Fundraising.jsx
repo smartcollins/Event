@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Homepage from "./Homepage";
 import Calender from "./Calender";
+import Inbox from "./Inbox";
 import Menu from "./Menu";
 import SearchItem from "./SearchItem";
 import See from "./See";
@@ -13,6 +14,7 @@ import Create from "./Create";
 function Fundraising() {
   const [home, setHome] = useState(false);
   const [calender, setCalender] = useState(false);
+  const [inbox,setInbox]  =useState(false);
   const [top, setTop] = useState(true);
   const [activity, setActivity] = useState(false);
   const [all, setAll] = useState(false);
@@ -30,6 +32,10 @@ function Fundraising() {
 
   function onCalender() {
     setCalender(true);
+  }
+
+  function onInbox() {
+    setInbox(true);
   }
 
   function onFund() {
@@ -104,6 +110,8 @@ function Fundraising() {
         <Homepage />
       ) : calender ? (
         <Calender />
+      ) : inbox ?(
+        <Inbox/>
       ) : (
         <div className="fundraising">
           <div className="home-top">
@@ -257,6 +265,7 @@ function Fundraising() {
             onHome={onHome}
             onCalender={onCalender}
             onFund={onFund}
+            onInbox={onInbox}
           />
         </div>
       )}
