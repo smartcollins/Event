@@ -13,6 +13,7 @@ import Prayers from "./Prayers";
 import Donation from "./Donation";
 import Calender from "./Calender";
 import Fundraising from "./Fundraising";
+import Inbox from "./Inbox";
 import Menu from "./Menu";
 import {UsersThree,MagnifyingGlass,Bell,BookmarkSimple,Wallet,Circle,PlayCircle} from "phosphor-react";
 
@@ -30,6 +31,7 @@ function Home(){
 	const [prayer,setPrayer] = useState(false);
 	const [calender,setCalender] = useState(false);
 	const [fund,setFund] = useState(false);
+	const [inbox,setInbox] = useState(false);
 
 
 	function onLogo(){
@@ -94,6 +96,10 @@ function Home(){
 
 	function onFund(){
 		setFund(true)
+	}
+
+	function onInbox(){
+		setInbox(true)
 	}
 
 	function onHome(){
@@ -279,6 +285,7 @@ function Home(){
 						home={true}
 						onCalender={onCalender}
 						onFund={onFund}
+						onInbox={onInbox}
 					/>
 				</div>
 			}
