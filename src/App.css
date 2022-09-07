@@ -598,7 +598,7 @@
 
 .Home{
   /* background-color: red; */
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
   padding: 1rem;
   /* padding-bottom: 10vh; */
@@ -2193,4 +2193,9 @@ td{
   /* font-weight: bold; */
   margin-top: 2rem;
 
+}
+
+.inbox{
+  padding: 1rem;
+  background-color: red;
 }
