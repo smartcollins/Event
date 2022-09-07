@@ -102,25 +102,27 @@ function Home(){
 		setInbox(true)
 	}
 
-	function onHome(){
-		setLogo(false)
-		setSearch(false)
-		setSearchMain(false)
-		setNotify(false)
-		setNotifyMain(false)
-		setBook(false)
-		setBookMain(false)
-		setUrgent(false)
-		setComing(false)
-		setWatch(false)
-		setPrayer(false)
-		setCalender(false)
-	}
+	// function onHome(){
+	// 	setLogo(false)
+	// 	setSearch(false)
+	// 	setSearchMain(false)
+	// 	setNotify(false)
+	// 	setNotifyMain(false)
+	// 	setBook(false)
+	// 	setBookMain(false)
+	// 	setUrgent(false)
+	// 	setComing(false)
+	// 	setWatch(false)
+	// 	setPrayer(false)
+	// 	setCalender(false)
+	// }
 
 
 	return(
 		<div>	
 			{
+				inbox?
+				<Inbox/>:
 				fund?
 				<Fundraising/>:
 				calender?
