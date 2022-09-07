@@ -81,7 +81,9 @@ function Edit() {
             </div>
           </div>
           <div className="Send">
-            <button onClick={onBack} className="nxt">Update and Submit</button>
+            <button onClick={onBack} className="nxt">
+              Update and Submit
+            </button>
           </div>
         </div>
       )}

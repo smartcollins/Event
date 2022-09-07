@@ -20,9 +20,9 @@ function Create() {
 
   function onBack() {
     setBack(true);
-    setAlter(false)
-    setSubmit(false)
-    setOk(false)
+    setAlter(false);
+    setSubmit(false);
+    setOk(false);
   }
 
   function onAlter() {
@@ -44,14 +44,14 @@ function Create() {
 
 
   return (
-    <div className={submit && "success"}>
+    <div className={submit&& "success"}>
       { ok ?
-      <div>
+      <div className="success">
         <Homepage/>
         <Success
-            congrat={true}
-              top="Submit Successful"
-              txt="We are currently reviewing a fundraising proposal for your donation. We will tell you the result soon"
+              congrat={true}
+              top="Congratulations !"
+              txt="Your Fundrasing proposal has been published."
               onBtn1={onCancel}
               onBtn2={onBack}
             />
