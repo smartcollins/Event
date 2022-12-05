@@ -1819,7 +1819,6 @@ td{
 }
 
 .fundraising .menu{
-  /* position: absolute; */
   width: 100%;
 }
 
@@ -1831,11 +1830,6 @@ td{
   display: flex;
   justify-content: space-between;
 }
-
-/* .fundraising h3{
-  text-align: left;
-  color: red;
-} */
 
 .plus{
   z-index: 2;
@@ -1897,7 +1891,6 @@ td{
 }
 
 .edit{
-  /* background-color: red; */
   margin: 0 1rem;
 }
 
@@ -2018,7 +2011,6 @@ td{
   width: 100%;
   padding: 1rem;
   border-radius: 2rem;
-  /* background-color: red; */
 }
 
 .edit-end > div{
@@ -2036,7 +2028,6 @@ td{
 }
 
 .edit-end > input:focus{
-  /* outline: 1px solid #1EBA60; */
   outline: none;
 }
 
@@ -2045,7 +2036,6 @@ td{
 }
 
 .edit-end-btn{
-  /* background-color: red; */
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
@@ -2086,10 +2076,6 @@ td{
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 5px;
   margin-bottom: 1rem;
-  /* grid-template-rows: repeat(3, minmax(0, 1fr)); */
-  /* grid-template: auto/ auto auto auto; */
-  /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
-  /* grid-template-rows: repeat(auto-fill, minmax(100px, 1fr)); */
 }
 
 .result-btn button{
@@ -2100,9 +2086,7 @@ td{
 }
 
 .result-btn p{
-  /* font-weight: bold; */
   margin-top: 2rem;
-
 }
 
 .inbox{
@@ -2112,7 +2096,6 @@ td{
 
 .modal{
   z-index: 3;
-  /* display: none; */
   padding-top: 100px;
   position: fixed;
   left: 0;
