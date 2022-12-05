@@ -37,26 +37,25 @@ function Create() {
     setOk(true);
   }
 
-  function onCancel(){
-    setOk(false)
-    setSubmit(false)
+  function onCancel() {
+    setOk(false);
+    setSubmit(false);
   }
 
-
   return (
-    <div className={submit&& "success"}>
-      { ok ?
-      <div className="success">
-        <Homepage/>
-        <Success
-              congrat={true}
-              top="Congratulations !"
-              txt="Your Fundrasing proposal has been published."
-              onBtn1={onCancel}
-              onBtn2={onBack}
-            />
-      </div>:
-      back ? (
+    <div className={submit && "success"}>
+      {ok ? (
+        <div className="success">
+          <Homepage />
+          <Success
+            congrat={true}
+            top="Congratulations !"
+            txt="Your Fundrasing proposal has been published."
+            onBtn1={onCancel}
+            onBtn2={onBack}
+          />
+        </div>
+      ) : back ? (
         <Fundraising />
       ) : (
         <div className="edit">
