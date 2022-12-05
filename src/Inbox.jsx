@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Homepage from "./Homepage";
 import Fundraising from "./Fundraising";
 import Calender from "./Calender";
+import Donators from "./Donators";
 import Menu from "./Menu";
 import { UsersThree, MagnifyingGlass, DotsThreeVertical, FunnelSimple } from "phosphor-react";
 
@@ -51,6 +52,13 @@ function Inbox(){
                             <FunnelSimple size={20} color="#1EBA60" weight="fill" />
                         </button>
                     </div>
+                    <Donators
+                        thanks={true}
+                        none={true}
+                        img="prayer-img2"
+                        name="Robert Hawkins"
+                        amt="$19"
+                    />
                 </div>
             }
             <Menu
