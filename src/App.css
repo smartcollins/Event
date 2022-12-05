@@ -47,10 +47,6 @@
   padding: 3rem 2rem;
   height: 100vh;
 }
-/* 
-.intro-main{
-  background-color: blue;
-} */
 
 .intro-img,.intro2-img,.intro3-img{
   margin: 0 auto;
@@ -199,18 +195,11 @@
 .signup-img{
   background-image: url(./image/wecare.webp);
 }
-/* 
-.signup{
-  font-size: 1.5rem;
-} */
 
 .signup h1{
   color: #1EBA60;
 }
 
-/* .form-container {
-  background-color: blue;
-} */
 
 .form-container h2{
   color: black;
@@ -236,7 +225,6 @@
 
 .form--input {
   width: 100%;
-  /*margin-bottom: 2rem;*/
   margin: 1rem;
   padding: 2rem;
   border-radius: 5px;
@@ -410,8 +398,6 @@
 
 
 .dp{
-  /* in tablet mode-- width: 20vw;
-  height: 25vh; */
   position: relative;
   width: 30vw;
   height: 25vh;
@@ -420,8 +406,6 @@
   object-fit: contain;
   background-position: 50% 50%;
   background-size: cover;
-  /* background-repeat: no-repeat; */
-  /* background-size: contain; */
   border-radius: 50%; 
 }
 
@@ -430,7 +414,6 @@
   background-color: #1EBA60;
   position: absolute;
   right: 30%;
-  /* bottom: 10px; */
   transform: translate(-50%,-50%);
   margin-top: -2rem;
   padding: 5px;
