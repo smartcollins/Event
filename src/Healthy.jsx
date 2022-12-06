@@ -116,7 +116,6 @@ function Healthy() {
               Prayers
             </button>
           </div>
-          {/* {!fund&&!prayer<h3>About</h3>} */}
           {!fund && !prayer ? <h3>About</h3> : null}
           {fund ? (
             <div>
