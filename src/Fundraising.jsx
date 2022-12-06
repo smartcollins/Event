@@ -14,7 +14,7 @@ import Create from "./Create";
 function Fundraising() {
   const [home, setHome] = useState(false);
   const [calender, setCalender] = useState(false);
-  const [inbox,setInbox]  =useState(false);
+  const [inbox, setInbox] = useState(false);
   const [top, setTop] = useState(true);
   const [activity, setActivity] = useState(false);
   const [all, setAll] = useState(false);
@@ -110,8 +110,8 @@ function Fundraising() {
         <Homepage />
       ) : calender ? (
         <Calender />
-      ) : inbox ?(
-        <Inbox/>
+      ) : inbox ? (
+        <Inbox />
       ) : (
         <div className="fundraising">
           <div className="home-top">
