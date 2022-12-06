@@ -6,7 +6,6 @@ import { ArrowLeft, Trash, CurrencyDollar, CaretDown } from "phosphor-react";
 function Edit() {
   const [back, setBack] = useState(false);
   const [del, setDel] = useState(false);
-  // const [update, setUpdate] = useState(false);
 
   function onBack() {
     setBack(true);
