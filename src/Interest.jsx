@@ -129,11 +129,6 @@ function Interest() {
     setGo(true);
   }
 
-  // const style = (selected)=> ({
-  // 	backgroundColor: selected ? "#1EBA60" : "red"
-  // style={style(interest.selected)}
-  // })
-
   return (
     <div>
       {back ? (
@@ -150,7 +145,7 @@ function Interest() {
       ) : go ? (
         <Homepage />
       ) : (
-        <div className={success?"success":"interest"}>
+        <div className={success ? "success" : "interest"}>
           {success && pin && (
             <Success
               top="Great!"
