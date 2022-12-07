@@ -54,7 +54,7 @@ function Null({ top, onBack, txt, onMain, book, search }) {
               <h1>{top}</h1>
             </div>
             <button className="dot" onClick={onMain}>
-              <DotsThreeVertical size={20} color="#1EBA60" weight="fill"/>
+              <DotsThreeVertical size={20} color="#1EBA60" weight="fill" />
             </button>
           </div>
           <div className="bookmark-btn">
