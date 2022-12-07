@@ -17,7 +17,6 @@ function Payment() {
   const [back, setBack] = useState(false);
   const [nxt, setNxt] = useState(false);
   const [confirm, setConfirm] = useState(false);
-  // const [method,setMethod] = useState(false)
 
   function onBack() {
     setBack(true);
@@ -31,10 +30,7 @@ function Payment() {
     setConfirm(true);
   }
 
-  // function onMethod(){
-  // 	setMethod(true)
-  // }
-
+  
   return (
     <div>
       {back ? (
