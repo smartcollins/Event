@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { PaperPlaneRight } from "phosphor-react";
 
-function Send({title}) {
+function Send({ title }) {
   const [send, setSend] = useState(false);
 
   function onSend() {
