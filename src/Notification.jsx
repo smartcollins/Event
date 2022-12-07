@@ -11,12 +11,7 @@ import {
 } from "phosphor-react";
 
 function Notification() {
-  // const [bell,setBell] = useState(false)
   const [back, setBack] = useState(false);
-
-  // function onBell(){
-  // 	setBell(true)
-  // }
 
   function onBack() {
     setBack(true);
