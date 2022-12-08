@@ -2,7 +2,6 @@ import React from "react";
 import { PlayCircle } from "phosphor-react";
 
 function WatchItem({ img, txt, onPlay }) {
-  
   return (
     <div className="watch2-main">
       <div>
