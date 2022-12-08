@@ -1,12 +1,11 @@
 import React from "react";
-import { CheckCircle,Trash, GlobeHemisphereEast } from "phosphor-react";
+import { CheckCircle, Trash, GlobeHemisphereEast } from "phosphor-react";
 
 function Success({ top, txt, txt2, onGo, del, onBtn1, onBtn2, congrat }) {
   return (
     <div className="modal">
       <div className="great">
-        {
-          del?
+        {del ? (
           <div>
             <button className="great-top">
               <Trash size={30} color="#ffffff" weight="fill" />
@@ -20,31 +19,34 @@ function Success({ top, txt, txt2, onGo, del, onBtn1, onBtn2, congrat }) {
                 <button onClick={onBtn2}>Yes,Remove</button>
               </div>
             </div>
-          </div>:
+          </div>
+        ) : (
           <div>
-            {
-              congrat?
+            {congrat ? (
               <button className="great-top">
                 <GlobeHemisphereEast size={30} color="#ffffff" weight="fill" />
-              </button>:
+              </button>
+            ) : (
               <button className="great-top">
                 <CheckCircle size={30} color="#ffffff" weight="fill" />
               </button>
-            }
+            )}
             <h2>{top}</h2>
             <p>{txt}</p>
-            {
-              congrat?
+            {congrat ? (
               <div className="del">
                 <div className="remove-main">
                   <button onClick={onBtn1}>Cancel</button>
                   <button onClick={onBtn2}>See Fundrasing</button>
                 </div>
-              </div> :
-              <button className="nxt" onClick={onGo}>{txt2}</button>
-            }
+              </div>
+            ) : (
+              <button className="nxt" onClick={onGo}>
+                {txt2}
+              </button>
+            )}
           </div>
-        } 
+        )}
       </div>
     </div>
   );
