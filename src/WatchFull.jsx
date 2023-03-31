@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import WatchList from "./WatchList";
 import {
   ArrowLeft,
   PlayCircle,
@@ -7,7 +8,6 @@ import {
   ArrowCounterClockwise,
   SpeakerHigh,
 } from "phosphor-react";
-import WatchList from "./WatchList";
 
 function Watchfull() {
   const [back, setBack] = useState(false);
