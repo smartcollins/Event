@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Homepage from "./Homepage";
 import WatchItem from "./WatchItem";
-import { ArrowLeft, DotsThreeVertical } from "phosphor-react";
 import Watchfull from "./WatchFull";
+import { ArrowLeft, DotsThreeVertical } from "phosphor-react";
 
 function WatchList({ img, txt }) {
   const [back, setBack] = useState(false);
