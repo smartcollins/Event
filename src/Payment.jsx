@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Donate from "./Donate";
 import Pin from "./Pin";
 import Success from "./Success";
+import Null from "./Null";
 import {
   ArrowLeft,
   QrCode,
@@ -11,7 +12,6 @@ import {
   AppleLogo,
   CreditCard,
 } from "phosphor-react";
-import Null from "./Null";
 
 function Payment() {
   const [back, setBack] = useState(false);
