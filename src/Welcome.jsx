@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { AppleLogo, GoogleLogo, FacebookLogo } from "phosphor-react";
 import SignUp from "./SignUp";
 import Forgot from "./Forgot";
 import Account from "./Account";
+import { AppleLogo, GoogleLogo, FacebookLogo } from "phosphor-react";
 
 function Welcome() {
   const [sign, setSign] = useState(false);
