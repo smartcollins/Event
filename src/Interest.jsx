@@ -1,4 +1,9 @@
 import React, { useState, useEffect } from "react";
+import Pin from "./Pin";
+import Success from "./Success";
+import Profile from "./Profile";
+import Homepage from "./Homepage";
+// import Welcome from "./Welcome";
 import {
   ArrowLeft,
   GraduationCap,
@@ -14,11 +19,6 @@ import {
   YinYang,
   Heartbeat,
 } from "phosphor-react";
-import Pin from "./Pin";
-import Success from "./Success";
-import Profile from "./Profile";
-import Homepage from "./Homepage";
-// import Welcome from "./Welcome";
 
 function Interest() {
   const [next, setNext] = useState(false);
