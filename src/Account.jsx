@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import CountryDropdown from "country-dropdown-with-flags-for-react";
-import { ArrowLeft } from "phosphor-react";
 import Welcome from "./Welcome";
 import Profile from "./Profile";
+import { ArrowLeft } from "phosphor-react";
 
 function Account() {
   const [profile, setProfile] = useState(false);
