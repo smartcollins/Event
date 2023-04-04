@@ -96,6 +96,8 @@ function Calender() {
   }
   ]
 
+  const items = itemsAry.map((item,idx)=><SearchItem key={idx} {...item}/>)
+
   return (
     <div>
       {all ? (
@@ -116,7 +118,7 @@ function Calender() {
               </button>
             </div>
           </div>
-          <SearchItem
+          {/* <SearchItem
             again={true}
             img="search-img"
             title="Help Little Baby Surgery"
@@ -163,7 +165,8 @@ function Calender() {
             num2="21"
             txt2="days left"
             txt3="$30"
-          />
+          /> */}
+          {items}
         </div>
       ) : inbox ? (
         <Inbox />
