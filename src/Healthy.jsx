@@ -48,6 +48,48 @@ function Healthy() {
     setFund(false);
   }
 
+  const itemAry = [
+    {
+      img:"search-img",
+    title:"Help Little Baby Surgery",
+    amt:"$2,275",
+    info:"fund raised from $10,310",
+    num:"4,471",
+    txt:"Donators",
+    num2:"9",
+    txt2:"days left"
+    },
+    
+  {
+    img:"search-img2",
+    title:"Help Overcome Malnutrition",
+    amt:"$8, 775",
+    info:"fund raised from $7,310",
+    num:"2,471",
+    txt:"Donators",
+    num2:"21",
+    txt2:"days left",
+  }
+    
+  ]
+
+  const item2Ary = [
+    {
+      img:"prayer-img",
+                name:"Esther Howard",
+                day:"Today",
+                txt:"Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends.",
+                txt2:"You and 48 others sent this prayer"
+    },
+              {
+                img:"prayer-img2",
+                name:"Cameroon Williams",
+                day:"Today",
+                txt:"Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends.",
+                txt2:"You and 158 others sent this prayer"
+              }
+  ]
+
   return (
     <div>
       {back ? (
