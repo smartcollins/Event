@@ -26,7 +26,8 @@ function Bookmark() {
     info2:"days left",
   }]
 
-  
+  const item = bookmarks.slice(0,1).map((item,idx)=><BookMarkItem key={idx} {...item}/>)
+  const item2 = bookmarks.slice(1,2).map((item,idx)=><BookMarkItem key={idx} {...item}/>)
 
   function onBack() {
     setBack(true);
@@ -65,7 +66,7 @@ function Bookmark() {
             <button>Music</button>
             <button>Sport</button>
           </div>
-          <BookMarkItem
+          {/* <BookMarkItem
             img="bookmark-img"
             title="Help Dilan Brain Turmor Surgery"
             amt="$7,379"
@@ -74,9 +75,10 @@ function Bookmark() {
             info="Donators"
             num2={12}
             info2="days left"
-          />
+          /> */}
+          {item}
           <div className={dot && "remove"}>
-            <BookMarkItem
+            {/* <BookMarkItem
               img="bookmark-img2"
               title="Help Orphange Children to Buy Study Books"
               amt="$2,379"
@@ -85,7 +87,8 @@ function Bookmark() {
               info="Donators"
               num2={22}
               info2="days left"
-            />
+            /> */}
+            {item2}
             <div>
               {dot && (
                 <div className="remove-main">
