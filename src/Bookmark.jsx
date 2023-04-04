@@ -7,27 +7,27 @@ function Bookmark() {
   const [back, setBack] = useState(false);
   const [dot, setDot] = useState(false);
   const bookmarks = [{
-    img:"bookmark-img",
-    title:"Help Dilan Brain Turmor Surgery",
-    amt:"$7,379",
-    txt:"fund rasied from $8,200",
-    num:"3,274",
-    info:"Donators",
-    num2:12,
-    info2:"days left"
-  },{
-    img:"bookmark-img2",
-    title:"Help Orphange Children to Buy Study Books",
-    amt:"$2,379",
-    txt:"fund rasied from $4,200",
-    num:"1,038",
-    info:"Donators",
-    num2:22,
-    info2:"days left",
+    img: "bookmark-img",
+    title: "Help Dilan Brain Turmor Surgery",
+    amt: "$7,379",
+    txt: "fund rasied from $8,200",
+    num: "3,274",
+    info: "Donators",
+    num2: 12,
+    info2: "days left"
+  }, {
+    img: "bookmark-img2",
+    title: "Help Orphange Children to Buy Study Books",
+    amt: "$2,379",
+    txt: "fund rasied from $4,200",
+    num: "1,038",
+    info: "Donators",
+    num2: 22,
+    info2: "days left",
   }]
 
-  const item = bookmarks.slice(0,1).map((item,idx)=><BookMarkItem key={idx} {...item}/>)
-  const item2 = bookmarks.slice(1,2).map((item,idx)=><BookMarkItem key={idx} {...item}/>)
+  const item = bookmarks.slice(0, 1).map((item, idx) => <BookMarkItem key={idx} {...item} />)
+  const item2 = bookmarks.slice(1, 2).map((item, idx) => <BookMarkItem key={idx} {...item} />)
 
   function onBack() {
     setBack(true);
