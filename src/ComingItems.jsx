@@ -62,6 +62,8 @@ function ComingItems() {
              
   ]
 
+  const items = itemsAry.map((item,idx)=><SearchItem key={idx} {...item}/>)
+
   return (
     <div>
       {back ? (
@@ -93,7 +95,7 @@ function ComingItems() {
               <button>Music</button>
               <button>Sport</button>
             </div>
-            <SearchItem
+            {/* <SearchItem
               img="search-img"
               title="Help Overcome Malnutrition"
               amt="$8,775"
@@ -132,7 +134,8 @@ function ComingItems() {
               txt="Donators"
               num2="4"
               txt2="days left"
-            />
+            /> */}
+            {items}
           </div>
         </div>
       )}
