@@ -20,6 +20,9 @@ function Donate() {
     setBack(true);
   }
 
+  const itemsAry = ['$5','$10','$25','$50','$100','$200']
+  const items = itemsAry.map((item,idx)=><button key={idx}>{item}</button>)
+
   return (
     <div>
       {back ? (
@@ -41,12 +44,13 @@ function Donate() {
             <h3>Enter the Amount</h3>
             <button className="donated">{anonymus ? "$200" : "$0"}</button>
             <div className="amount">
-              <button>$5</button>
+              {/* <button>$5</button>
               <button>$10</button>
               <button>$25</button>
               <button>$50</button>
               <button>$100</button>
-              <button>$200</button>
+              <button>$200</button> */}
+              {items}
             </div>
           </div>
           <div className="anonymus">
