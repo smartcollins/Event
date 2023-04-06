@@ -130,6 +130,7 @@ function Home() {
 
   const nullItem = nullAry.slice(0,1).map((item,idx)=><Null key={idx} {...item}/>)
   const nullItem2 = nullAry.slice(1,2).map((item,idx)=><Null key={idx} {...item}/>)
+  const nullItem3 = nullAry.slice(2,3).map((item,idx)=><Null key={idx} {...item}/>)
 
   const bookAry = [
     
@@ -196,13 +197,14 @@ function Home() {
         // />
         {nullItem2}
       ) : book ? (
-        <Null
-          book={true}
-          top="Bookmark"
-          onBack={onBack}
-          txt="You have no Bookmark"
-          onMain={onBookMain}
-        />
+        // <Null
+        //   book={true}
+        //   top="Bookmark"
+        //   onBack={onBack}
+        //   txt="You have no Bookmark"
+        //   onMain={onBookMain}
+        // />
+        {nullItem3}
       ) : bookMain ? (
         <Bookmark />
       ) : (
