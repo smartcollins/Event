@@ -42,6 +42,8 @@ function Prayers() {
           
   ]
 
+  const prayer = prayAry.map((item,idx)=><Prayer key={idx} {...item}/>)
+
   return (
     <div>
       {back ? (
@@ -65,7 +67,7 @@ function Prayers() {
               <DotsThreeVertical size={16} color="#13B157" weight="fill" />
             </button>
           </div>
-          <Prayer
+          {/* <Prayer
             img="prayer-img"
             name="Esther Howard"
             day="Today"
@@ -92,7 +94,8 @@ function Prayers() {
             day="Today"
             txt="Hopefully the orphans in Africa can get treatment and nurtriton improvement soon.."
             txt2="You and 118 others sent this prayer"
-          />
+          /> */}
+          {prayer}
           <Send title="Send your prayers ..." />
         </div>
       )}
