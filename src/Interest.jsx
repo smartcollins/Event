@@ -177,15 +177,15 @@ function Interest() {
                 >
                   {interest.selected
                     ? React.createElement(interest.icon, {
-                        size: 30,
-                        color: "#ffffff",
-                        weight: "fill",
-                      })
+                      size: 30,
+                      color: "#ffffff",
+                      weight: "fill",
+                    })
                     : React.createElement(interest.icon, {
-                        size: 30,
-                        color: "#1EBA60",
-                        weight: "fill",
-                      })}
+                      size: 30,
+                      color: "#1EBA60",
+                      weight: "fill",
+                    })}
                   <p>{interest.tittle} </p>
                 </button>
               );
