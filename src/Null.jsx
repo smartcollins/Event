@@ -12,12 +12,12 @@ import {
 
 const btnAry = [
   "All",
-            "Art",
-            "Music",
-            "Sport"
+  "Art",
+  "Music",
+  "Sport"
 ]
 
-const btn = btnAry.map((item,idx)=><button key={idx}>{item}</button>)
+const btn = btnAry.map((item, idx) => <button key={idx}>{item}</button>)
 
 function Null({ top, onBack, txt, onMain, book, search }) {
   return (
