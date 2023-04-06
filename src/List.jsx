@@ -22,6 +22,8 @@ function List() {
           { anym:true}
   ];
 
+  const don = donAry.map((item,idx)=><Donators key={idx} {...item}/>)
+
   return (
     <div className="list">
       {back ? (
@@ -42,7 +44,7 @@ function List() {
               <MagnifyingGlass size={30} color="#1EBA60" />
             </button>
           </div>
-          <Donators img="prayer-img2" name="Kathyrn Murphy" />
+          {/* <Donators img="prayer-img2" name="Kathyrn Murphy" />
           <Donators img="prayer-img" name="Wade Warren" />
           <Donators anym={true} />
           <Donators img="prayer-img3" name="Jane Cooper" />
@@ -50,7 +52,8 @@ function List() {
           <Donators anym={true} />
           <Donators img="prayer-img4" name="Guy Hawkins" />
           <Donators img="prayer-img" name="Leslie Alexander" />
-          <Donators anym={true} />
+          <Donators anym={true} /> */}
+          {don}
         </div>
       )}
     </div>
