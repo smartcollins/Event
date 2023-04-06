@@ -107,58 +107,61 @@ function Home() {
   }
 
   const nullAry = [
-          {search: true,
-          top: "Search",
-          onBack: {onBack},
-          txt: "No results found",
-          onMain: {onSearchMain}
-        },
-        
-          {top: "Notification",
-          onBack: {onBack},
-          txt: "You have no notification",
-          onMain: {onNotifyMain}
-        },
+    {
+      search: true,
+      top: "Search",
+      onBack: { onBack },
+      txt: "No results found",
+      onMain: { onSearchMain }
+    },
 
-          {book: true,
-          top: "Bookmark",
-          onBack: {onBack},
-          txt: "You have no Bookmark",
-          onMain: {onBookMain}
-        }
+    {
+      top: "Notification",
+      onBack: { onBack },
+      txt: "You have no notification",
+      onMain: { onNotifyMain }
+    },
+
+    {
+      book: true,
+      top: "Bookmark",
+      onBack: { onBack },
+      txt: "You have no Bookmark",
+      onMain: { onBookMain }
+    }
   ]
 
-  const nullItem = nullAry.slice(0,1).map((item,idx)=><Null key={idx} {...item}/>)
-  const nullItem2 = nullAry.slice(1,2).map((item,idx)=><Null key={idx} {...item}/>)
-  const nullItem3 = nullAry.slice(2,3).map((item,idx)=><Null key={idx} {...item}/>)
+  const nullItem = nullAry.slice(0, 1).map((item, idx) => <Null key={idx} {...item} />)
+  const nullItem2 = nullAry.slice(1, 2).map((item, idx) => <Null key={idx} {...item} />)
+  const nullItem3 = nullAry.slice(2, 3).map((item, idx) => <Null key={idx} {...item} />)
 
   const bookAry = [
-    
-              {
-              img: "bookmark-img2",
-              title: "Help Orphange Children to Buy Study Books",
-              amt: "$2,379",
-              txt: "fund rasied from $4,200",
-              num: "1,280",
-              info: "Donators",
-              num2: "19",
-              info2: "days left"
-            },
-          
-              {
-              img: "bookmark-img8",
-              title: "Helping Earthquake victims",
-              amt: "$4,359",
-              txt: "fund rasied from $8,000",
-              num: "2,367",
-              info: "Donators",
-              num2: "4",
-              info2: "days left"
-            }
+
+    {
+      img: "bookmark-img2",
+      title: "Help Orphange Children to Buy Study Books",
+      amt: "$2,379",
+      txt: "fund rasied from $4,200",
+      num: "1,280",
+      info: "Donators",
+      num2: "19",
+      info2: "days left"
+    },
+
+    {
+      img: "bookmark-img8",
+      title: "Helping Earthquake victims",
+      amt: "$4,359",
+      txt: "fund rasied from $8,000",
+      num: "2,367",
+      info: "Donators",
+      num2: "4",
+      info2: "days left"
+    }
   ]
-  
-  const bookItem = bookAry.slice(0,1).map((item,idx)=><BookMarkItem key={idx} {...item}/>)
-  const bookItem2 = bookAry.slice(1,2).map((item,idx)=><BookMarkItem key={idx} {...item}/>)
+
+  const bookItem = bookAry.slice(0, 1).map((item, idx) => <BookMarkItem key={idx} {...item} />)
+  const bookItem2 = bookAry.slice(1, 2).map((item, idx) => <BookMarkItem key={idx} {...item} />)
 
   return (
     <div>
@@ -186,7 +189,7 @@ function Home() {
         //   txt="No results found"
         //   onMain={onSearchMain}
         // />
-        {nullItem}
+        { nullItem }
       ) : searchMain ? (
         <Search />
       ) : notifyMain ? (
@@ -198,7 +201,7 @@ function Home() {
         //   txt="You have no notification"
         //   onMain={onNotifyMain}
         // />
-        {nullItem2}
+        { nullItem2 }
       ) : book ? (
         // <Null
         //   book={true}
@@ -207,7 +210,7 @@ function Home() {
         //   txt="You have no Bookmark"
         //   onMain={onBookMain}
         // />
-        {nullItem3}
+        { nullItem3 }
       ) : bookMain ? (
         <Bookmark />
       ) : (
