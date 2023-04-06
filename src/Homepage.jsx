@@ -143,7 +143,7 @@ function Home() {
               info: "Donators",
               num2: "19",
               info2: "days left"
-            }
+            },
           
               {
               img: "bookmark-img8",
@@ -156,6 +156,9 @@ function Home() {
               info2: "days left"
             }
   ]
+  
+  const bookItem = bookAry.slice(0,1).map((item,idx)=><BookMarkItem key={idx} {...item}/>)
+  const bookItem2 = bookAry.slice(1,2).map((item,idx)=><BookMarkItem key={idx} {...item}/>)
 
   return (
     <div>
@@ -265,7 +268,7 @@ function Home() {
               <h1>Urgent Fundraising</h1>
               <p onClick={onUrgent}>See all</p>
             </div>
-            <BookMarkItem
+            {/* <BookMarkItem
               img="bookmark-img2"
               title="Help Orphange Children to Buy Study Books"
               amt="$2,379"
@@ -274,14 +277,15 @@ function Home() {
               info="Donators"
               num2="19"
               info2="days left"
-            />
+            /> */}
+            {bookItem}
           </div>
           <div className="urgent">
             <div className="search-txt">
               <h1>Coming to an end</h1>
               <p onClick={onComing}>See all</p>
             </div>
-            <BookMarkItem
+            {/* <BookMarkItem
               img="bookmark-img8"
               title="Helping Earthquake victims"
               amt="$4,359"
@@ -290,7 +294,8 @@ function Home() {
               info="Donators"
               num2="4"
               info2="days left"
-            />
+            /> */}
+            {bookItem2}
           </div>
           <div className="urgent">
             <div className="search-txt">
