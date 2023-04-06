@@ -128,6 +128,9 @@ function Home() {
         }
   ]
 
+  const nullItem = nullAry.slice(0,1).map((item,idx)=><Null key={idx} {...item}/>)
+  const nullItem2 = nullAry.slice(1,2).map((item,idx)=><Null key={idx} {...item}/>)
+
   const bookAry = [
     
               {
@@ -172,24 +175,26 @@ function Home() {
       ) : urgent ? (
         <UrgentItems />
       ) : search ? (
-        <Null
-          search={true}
-          top="Search"
-          onBack={onBack}
-          txt="No results found"
-          onMain={onSearchMain}
-        />
+        // <Null
+        //   search={true}
+        //   top="Search"
+        //   onBack={onBack}
+        //   txt="No results found"
+        //   onMain={onSearchMain}
+        // />
+        {nullItem}
       ) : searchMain ? (
         <Search />
       ) : notifyMain ? (
         <Notification />
       ) : notify ? (
-        <Null
-          top="Notification"
-          onBack={onBack}
-          txt="You have no notification"
-          onMain={onNotifyMain}
-        />
+        // <Null
+        //   top="Notification"
+        //   onBack={onBack}
+        //   txt="You have no notification"
+        //   onMain={onNotifyMain}
+        // />
+        {nullItem2}
       ) : book ? (
         <Null
           book={true}
