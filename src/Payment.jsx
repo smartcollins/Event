@@ -30,7 +30,7 @@ function Payment() {
     setConfirm(true);
   }
 
-  
+
   return (
     <div>
       {back ? (
