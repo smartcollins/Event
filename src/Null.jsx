@@ -10,6 +10,15 @@ import {
   SmileySad,
 } from "phosphor-react";
 
+const btnAry = [
+  "All",
+            "Art",
+            "Music",
+            "Sport"
+]
+
+const btn = btnAry.map((item,idx)=><button key={idx}>{item}</button>)
+
 function Null({ top, onBack, txt, onMain, book, search }) {
   return (
     <div>
@@ -29,10 +38,11 @@ function Null({ top, onBack, txt, onMain, book, search }) {
             </button>
           </div>
           <div className="bookmark-btn">
-            <button>All</button>
+            {/* <button>All</button>
             <button>Art</button>
             <button>Music</button>
-            <button>Sport</button>
+            <button>Sport</button> */}
+            {btn}
           </div>
           <div className="search-txt">
             <p>Search Result</p>
@@ -58,10 +68,11 @@ function Null({ top, onBack, txt, onMain, book, search }) {
             </button>
           </div>
           <div className="bookmark-btn">
-            <button>All</button>
+            {/* <button>All</button>
             <button>Art</button>
             <button>Music</button>
-            <button>Sport</button>
+            <button>Sport</button> */}
+            {btn}
           </div>
           <div className="great">
             <button>
