@@ -128,6 +128,31 @@ function Home() {
         }
   ]
 
+  const bookAry = [
+    
+              {
+              img: "bookmark-img2",
+              title: "Help Orphange Children to Buy Study Books",
+              amt: "$2,379",
+              txt: "fund rasied from $4,200",
+              num: "1,280",
+              info: "Donators",
+              num2: "19",
+              info2: "days left"
+            }
+          
+              {
+              img: "bookmark-img8",
+              title: "Helping Earthquake victims",
+              amt: "$4,359",
+              txt: "fund rasied from $8,000",
+              num: "2,367",
+              info: "Donators",
+              num2: "4",
+              info2: "days left"
+            }
+  ]
+
   return (
     <div>
       {inbox ? (
