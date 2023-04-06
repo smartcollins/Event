@@ -11,18 +11,18 @@ function List() {
   }
 
   const donAry = [
-    { img:"prayer-img2", name:"Kathyrn Murphy" },
-          { img:"prayer-img", name:"Wade Warren" },
-          { anym:true },
-          { img:"prayer-img3",name:"Jane Cooper" },
-          { anym:true },
-          { anym:true },
-          { img:"prayer-img4", name:"Guy Hawkins" },
-          { img:"prayer-img", name:"Leslie Alexander" },
-          { anym:true}
+    { img: "prayer-img2", name: "Kathyrn Murphy" },
+    { img: "prayer-img", name: "Wade Warren" },
+    { anym: true },
+    { img: "prayer-img3", name: "Jane Cooper" },
+    { anym: true },
+    { anym: true },
+    { img: "prayer-img4", name: "Guy Hawkins" },
+    { img: "prayer-img", name: "Leslie Alexander" },
+    { anym: true }
   ];
 
-  const don = donAry.map((item,idx)=><Donators key={idx} {...item}/>)
+  const don = donAry.map((item, idx) => <Donators key={idx} {...item} />)
 
   return (
     <div className="list">
