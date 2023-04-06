@@ -13,7 +13,7 @@ function Intro({ txt, img, nxt, skip, nxt2, nxt3 }) {
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam
       </p>
-      <div className="circle">
+      {/* <div className="circle">
         {nxt3 ? (
           <div>
             <Circle size={10} color={"#EBEEF2"} weight="duotone" />
@@ -33,6 +33,13 @@ function Intro({ txt, img, nxt, skip, nxt2, nxt3 }) {
             <Circle size={10} color={"#EBEEF2"} weight="duotone" />
           </div>
         )}
+      </div> */}
+      <div className="circle">
+      <div>
+            <Circle size={10} color={nxt3?"#1EBA60":"#EBEEF2"} weight="duotone" />
+            <Circle size={10} color={nxt2?"#1EBA60":"#EBEEF2"} weight="duotone" />
+            <Circle size={10} color={nxt2||nxt3?"#EBEEF2":"#1EBA60"} weight="fill" />
+          </div>
       </div>
       <div className="end">
         <button className="nxt" onClick={nxt}>
