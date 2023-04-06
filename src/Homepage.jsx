@@ -106,6 +106,28 @@ function Home() {
     setInbox(true);
   }
 
+  const nullAry = [
+          {search: true,
+          top: "Search",
+          onBack: {onBack},
+          txt: "No results found",
+          onMain: {onSearchMain}
+        },
+        
+          {top: "Notification",
+          onBack: {onBack},
+          txt: "You have no notification",
+          onMain: {onNotifyMain}
+        },
+
+          {book: true,
+          top: "Bookmark",
+          onBack: {onBack},
+          txt: "You have no Bookmark",
+          onMain: {onBookMain}
+        }
+  ]
+
   return (
     <div>
       {inbox ? (
