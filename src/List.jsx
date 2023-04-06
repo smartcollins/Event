@@ -10,6 +10,18 @@ function List() {
     setBack(true);
   }
 
+  const donAry = [
+    { img:"prayer-img2", name:"Kathyrn Murphy" },
+          { img:"prayer-img", name:"Wade Warren" },
+          { anym:true },
+          { img:"prayer-img3",name:"Jane Cooper" },
+          { anym:true },
+          { anym:true },
+          { img:"prayer-img4", name:"Guy Hawkins" },
+          { img:"prayer-img", name:"Leslie Alexander" },
+          { anym:true}
+  ];
+
   return (
     <div className="list">
       {back ? (
