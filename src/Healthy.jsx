@@ -73,6 +73,8 @@ function Healthy() {
 
   ]
 
+  const item = itemAry.map((item,idx)=><SearchItem key={idx} {...item}/>)
+
   const item2Ary = [
     {
       img: "prayer-img",
@@ -89,6 +91,8 @@ function Healthy() {
       txt2: "You and 158 others sent this prayer"
     }
   ]
+
+  const item2 = itemAry.map((item,idx)=><Prayer key={idx} {...item}/>)
 
   return (
     <div>
@@ -165,7 +169,7 @@ function Healthy() {
                 <p>Fundrasing (4,365)</p>
                 <p>See all</p>
               </div>
-              <SearchItem
+              {/* <SearchItem
                 img="search-img"
                 title="Help Little Baby Surgery"
                 amt="$2,275"
@@ -184,7 +188,8 @@ function Healthy() {
                 txt="Donators"
                 num2="21"
                 txt2="days left"
-              />
+              /> */}
+              {item}
             </div>
           ) : prayer ? (
             <div>
@@ -192,7 +197,7 @@ function Healthy() {
                 <p>Prayer (3,279)</p>
                 <p>See all</p>
               </div>
-              <Prayer
+              {/* <Prayer
                 img="prayer-img"
                 name="Esther Howard"
                 day="Today"
@@ -205,7 +210,8 @@ function Healthy() {
                 day="Today"
                 txt="Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends."
                 txt2="You and 158 others sent this prayer"
-              />
+              /> */}
+              {item2}
             </div>
           ) : (
             <Story />
