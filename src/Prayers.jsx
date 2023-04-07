@@ -12,37 +12,45 @@ function Prayers() {
   }
 
   const prayAry = [
-    
-            {img:"prayer-img",
-            name:"Esther Howard",
-            day:"Today",
-            txt:"Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends.",
-            txt2:"You and 48 others sent this prayer"},
-    
-          
-            {img:"prayer-img2",
-            name:"Cameroon Williams",
-            day:"Today",
-            txt:"Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends.",
-            txt2:"You and 158 others sent this prayer"},
-          
-          
-            {img:"prayer-img3",
-            name:"Jane Copper",
-            day:"Today",
-            txt:"Hopefully the victims affected by flash flood disaster in Surabaya will soon get better and be healthy",
-            txt2:"You and 126 others sent this prayer"},
-          
-          
-            {img:"prayer-img4",
-            name:"Jenny Willson",
-            day:"Today",
-            txt:"Hopefully the orphans in Africa can get treatment and nurtriton improvement soon..",
-            txt2:"You and 118 others sent this prayer"}
-          
+
+    {
+      img: "prayer-img",
+      name: "Esther Howard",
+      day: "Today",
+      txt: "Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends.",
+      txt2: "You and 48 others sent this prayer"
+    },
+
+
+    {
+      img: "prayer-img2",
+      name: "Cameroon Williams",
+      day: "Today",
+      txt: "Hopefully Audrey can get surgrey soon, recover from her illness, and play with her friends.",
+      txt2: "You and 158 others sent this prayer"
+    },
+
+
+    {
+      img: "prayer-img3",
+      name: "Jane Copper",
+      day: "Today",
+      txt: "Hopefully the victims affected by flash flood disaster in Surabaya will soon get better and be healthy",
+      txt2: "You and 126 others sent this prayer"
+    },
+
+
+    {
+      img: "prayer-img4",
+      name: "Jenny Willson",
+      day: "Today",
+      txt: "Hopefully the orphans in Africa can get treatment and nurtriton improvement soon..",
+      txt2: "You and 118 others sent this prayer"
+    }
+
   ]
 
-  const prayer = prayAry.map((item,idx)=><Prayer key={idx} {...item}/>)
+  const prayer = prayAry.map((item, idx) => <Prayer key={idx} {...item} />)
 
   return (
     <div>
