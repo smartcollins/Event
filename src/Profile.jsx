@@ -85,6 +85,10 @@ function Profile() {
                 placeholder:"Phone Number"}
   ]
 
+  const input = inputAry.slice(0,1).map((item,idx)=><input key={idx} {...item}/>)
+  const input2 = inputAry.slice(1,2).map((item,idx)=><input key={idx} {...item}/>)
+  const input3 = inputAry.slice(2,3).map((item,idx)=><input key={idx} {...item}/>)
+
   return (
     <div>
       {back ? (
@@ -135,38 +139,41 @@ function Profile() {
               Full Name <span>*</span>
             </p>
             <div className="user-input">
-              <input
+              {/* <input
                 type="text"
                 name="name"
                 value={form.name}
                 onChange={handle}
                 placeholder="Full name"
-              />
+              /> */}
+              {input}
             </div>
             <p>
               Email <span>*</span>
             </p>
             <div className="user-input">
-              <input
+              {/* <input
                 type="email"
                 name="email"
                 value={form.email}
                 onChange={handle}
                 placeholder="Email"
-              />
+              /> */}
+              {input2}
               <Envelope size={20} color="#858C94" weight="fill" />
             </div>
             <p>
               Phone <span>*</span>
             </p>
             <div className="user-input">
-              <input
+              {/* <input
                 type="tel"
                 name="number"
                 value={form.number}
                 onChange={handle}
                 placeholder="Phone Number"
-              />
+              /> */}
+              {input3}
               <Phone size={20} color="#858C94" weight="duotone" />
             </div>
             <p>
