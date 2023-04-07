@@ -62,6 +62,9 @@ function Profile() {
                   weight:"duotone"}
   ]
 
+  const user = userAry.slice(0,1).map((item,idx)=><User key={idx} {...item}/>)
+  const user2 = userAry.slice(1,2).map((item,idx)=><User key={idx} {...item}/>)
+
   return (
     <div>
       {back ? (
@@ -82,22 +85,24 @@ function Profile() {
           <div>
             {edit ? (
               <div className="dp">
-                <User
+                {/* <User
                   style={{ visibility: "hidden" }}
                   className="user-icon"
                   size={30}
                   color="#858C94"
                   weight="duotone"
-                />
+                /> */}
+                {user}
               </div>
             ) : (
               <div className="user">
-                <User
+                {/* <User
                   className="user-icon"
                   size={30}
                   color="#DADADD"
                   weight="duotone"
-                />
+                /> */}
+                {user2}
               </div>
             )}
             <div className="user-pen" onClick={onEdit}>
