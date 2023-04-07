@@ -37,40 +37,48 @@ function Reset() {
   }
 
   const inputAry = [
-    
-                {type:"email",
-                placeholder:"Email address",
-                className:"form--input",
-                name:"email",
-                value:form.email,
-                onChange:handle},
-              
-                {type:"password",
-                placeholder:"Password",
-                className:"form--input",
-                name:"password",
-                value:form.password,
-                onChange:handle},
-              
-                {type:"password",
-                placeholder:"Confirm password",
-                className:"form--input",
-                name:"password2",
-                value:form.password2,
-                onChange:handle},
-              
-                  {id:"okayToEmail",
-                  type:"checkbox",
-                  name:"join",
-                  checked:form.join,
-                  onChange:handle},
+
+    {
+      type: "email",
+      placeholder: "Email address",
+      className: "form--input",
+      name: "email",
+      value: form.email,
+      onChange: handle
+    },
+
+    {
+      type: "password",
+      placeholder: "Password",
+      className: "form--input",
+      name: "password",
+      value: form.password,
+      onChange: handle
+    },
+
+    {
+      type: "password",
+      placeholder: "Confirm password",
+      className: "form--input",
+      name: "password2",
+      value: form.password2,
+      onChange: handle
+    },
+
+    {
+      id: "okayToEmail",
+      type: "checkbox",
+      name: "join",
+      checked: form.join,
+      onChange: handle
+    },
 
   ]
 
-  const input = inputAry.slice(0,1).map((item,idx)=><input key={idx} {...item} />)
-  const input2 = inputAry.slice(1,2).map((item,idx)=><input key={idx} {...item} />)
-  const input3 = inputAry.slice(2,3).map((item,idx)=><input key={idx} {...item} />)
-  const input4 = inputAry.slice(3,4).map((item,idx)=><input key={idx} {...item} />)
+  const input = inputAry.slice(0, 1).map((item, idx) => <input key={idx} {...item} />)
+  const input2 = inputAry.slice(1, 2).map((item, idx) => <input key={idx} {...item} />)
+  const input3 = inputAry.slice(2, 3).map((item, idx) => <input key={idx} {...item} />)
+  const input4 = inputAry.slice(3, 4).map((item, idx) => <input key={idx} {...item} />)
 
   return (
     <div>
