@@ -9,6 +9,38 @@ function Search() {
   function onBack() {
     setBack(true);
   }
+
+  const searchAry = [
+    
+            {img:"search-img",
+            title:"Help Little Baby Surgery",
+            amt:"$2,275",
+            info:"fund raised from $10,310",
+            num:"4,471",
+            txt:"Donators",
+            num2:"9",
+            txt2:"days left"},
+          
+            {img:"search-img2",
+            title:"Help Overcome Malnutrition",
+            amt:"$8, 775",
+            info:"fund raised from $7,310",
+            num:"2,471",
+            txt:"Donators",
+            num2:"21",
+            txt2:"days left"},
+          
+            {img:"search-img3",
+            title:"Help Little Baby Surgery",
+            amt:"$2,205",
+            info:"fund raised from $5,310",
+            num:"1,171",
+            txt:"Donators",
+            num2:"5",
+            txt2:"days left"},
+
+  ]
+
   return (
     <div>
       {back ? (
