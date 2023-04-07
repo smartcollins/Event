@@ -36,6 +36,37 @@ function Reset() {
     event.preventDefault();
   }
 
+  const inputAry = [
+    
+                {type:"email",
+                placeholder:"Email address",
+                className:"form--input",
+                name:"email",
+                value:form.email,
+                onChange:handle},
+              
+                {type:"password",
+                placeholder:"Password",
+                className:"form--input",
+                name:"password",
+                value:form.password,
+                onChange:handle},
+              
+                {type:"password",
+                placeholder:"Confirm password",
+                className:"form--input",
+                name:"password2",
+                value:form.password2,
+                onChange:handle},
+              
+                  {id:"okayToEmail",
+                  type:"checkbox",
+                  name:"join",
+                  checked:form.join,
+                  onChange:handle},
+
+  ]
+
   return (
     <div>
       {back ? (
