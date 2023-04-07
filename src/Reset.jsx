@@ -67,6 +67,11 @@ function Reset() {
 
   ]
 
+  const input = inputAry.slice(0,1).map((item,idx)=><input key={idx} {...item} />)
+  const input2 = inputAry.slice(1,2).map((item,idx)=><input key={idx} {...item} />)
+  const input3 = inputAry.slice(2,3).map((item,idx)=><input key={idx} {...item} />)
+  const input4 = inputAry.slice(3,4).map((item,idx)=><input key={idx} {...item} />)
+
   return (
     <div>
       {back ? (
@@ -93,45 +98,49 @@ function Reset() {
               <p>
                 Email <span>*</span>
               </p>
-              <input
+              {/* <input
                 type="email"
                 placeholder="Email address"
                 className="form--input"
                 name="email"
                 value={form.email}
                 onChange={handle}
-              />
+              /> */}
+              {input}
               <p>
                 Password <span>*</span>
               </p>
-              <input
+              {/* <input
                 type="password"
                 placeholder="Password"
                 className="form--input"
                 name="password"
                 value={form.password}
                 onChange={handle}
-              />
+              /> */}
+              {input2}
               <p>
                 Confirm Password <span>*</span>
               </p>
-              <input
+              {/* <input
                 type="password"
                 placeholder="Confirm password"
                 className="form--input"
                 name="password2"
                 value={form.password2}
                 onChange={handle}
-              />
+              /> */}
+              {input3}
 
               <div className="form--marketing">
-                <input
+                {/* <input
                   id="okayToEmail"
                   type="checkbox"
                   name="join"
                   checked={form.join}
                   onChange={handle}
-                />
+                /> */}
+                {input4}
                 <label htmlFor="okayToEmail">Keep me always logged in</label>
               </div>
               <button onClick={onSave} className="form--submit nxt">
