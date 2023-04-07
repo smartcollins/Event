@@ -49,45 +49,55 @@ function Profile() {
   }
 
   const userAry = [
-    
-                  {style:{ visibility: "hidden" },
-                  className:"user-icon",
-                  size:30,
-                  color:"#858C94",
-                  weight:"duotone"},
-                
-                  {className:"user-icon",
-                  size:30,
-                  color:"#DADADD",
-                  weight:"duotone"}
+
+    {
+      style: { visibility: "hidden" },
+      className: "user-icon",
+      size: 30,
+      color: "#858C94",
+      weight: "duotone"
+    },
+
+    {
+      className: "user-icon",
+      size: 30,
+      color: "#DADADD",
+      weight: "duotone"
+    }
   ]
 
-  const user = userAry.slice(0,1).map((item,idx)=><User key={idx} {...item}/>)
-  const user2 = userAry.slice(1,2).map((item,idx)=><User key={idx} {...item}/>)
+  const user = userAry.slice(0, 1).map((item, idx) => <User key={idx} {...item} />)
+  const user2 = userAry.slice(1, 2).map((item, idx) => <User key={idx} {...item} />)
 
   const inputAry = [
-                {type:"text",
-                name:"name",
-                value:form.name,
-                onChange:handle,
-                placeholder:"Full name"},
-              
-                {type:"email",
-                name:"email",
-                value:form.email,
-                onChange:handle,
-                placeholder:"Email"},
-              
-                {type:"tel",
-                name:"number",
-                value:form.number,
-                onChange:handle,
-                placeholder:"Phone Number"}
+    {
+      type: "text",
+      name: "name",
+      value: form.name,
+      onChange: handle,
+      placeholder: "Full name"
+    },
+
+    {
+      type: "email",
+      name: "email",
+      value: form.email,
+      onChange: handle,
+      placeholder: "Email"
+    },
+
+    {
+      type: "tel",
+      name: "number",
+      value: form.number,
+      onChange: handle,
+      placeholder: "Phone Number"
+    }
   ]
 
-  const input = inputAry.slice(0,1).map((item,idx)=><input key={idx} {...item}/>)
-  const input2 = inputAry.slice(1,2).map((item,idx)=><input key={idx} {...item}/>)
-  const input3 = inputAry.slice(2,3).map((item,idx)=><input key={idx} {...item}/>)
+  const input = inputAry.slice(0, 1).map((item, idx) => <input key={idx} {...item} />)
+  const input2 = inputAry.slice(1, 2).map((item, idx) => <input key={idx} {...item} />)
+  const input3 = inputAry.slice(2, 3).map((item, idx) => <input key={idx} {...item} />)
 
   return (
     <div>
