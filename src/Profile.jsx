@@ -65,6 +65,26 @@ function Profile() {
   const user = userAry.slice(0,1).map((item,idx)=><User key={idx} {...item}/>)
   const user2 = userAry.slice(1,2).map((item,idx)=><User key={idx} {...item}/>)
 
+  const inputAry = [
+                {type:"text",
+                name:"name",
+                value:form.name,
+                onChange:handle,
+                placeholder:"Full name"},
+              
+                {type:"email",
+                name:"email",
+                value:form.email,
+                onChange:handle,
+                placeholder:"Email"},
+              
+                {type:"tel",
+                name:"number",
+                value:form.number,
+                onChange:handle,
+                placeholder:"Phone Number"}
+  ]
+
   return (
     <div>
       {back ? (
