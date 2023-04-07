@@ -48,6 +48,20 @@ function Profile() {
     setBack(true);
   }
 
+  const userAry = [
+    
+                  {style:{ visibility: "hidden" },
+                  className:"user-icon",
+                  size:30,
+                  color:"#858C94",
+                  weight:"duotone"},
+                
+                  {className:"user-icon",
+                  size:30,
+                  color:"#DADADD",
+                  weight:"duotone"}
+  ]
+
   return (
     <div>
       {back ? (
