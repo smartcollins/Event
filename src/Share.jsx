@@ -12,70 +12,86 @@ import {
 
 function Share({ onShareMedia }) {
 
-  
+
   const itemsAry = [
-        
-          {class:"btn1",
-            logo:"WhatsappLogo",
-            weight:"fill",
-            txt:"Whatsapp"},
 
-        
-          {class:"btn2",
-            logo:"TwitterLogo",
-            weight:"fill",
-            txt:"Twitter"},
+    {
+      class: "btn1",
+      logo: "WhatsappLogo",
+      weight: "fill",
+      txt: "Whatsapp"
+    },
 
-        
-          {class:"btn2",
-            logo:"FacebookLogo",
-            weight:"fill",
-            txt:"Facebook"},
 
-        
-          {class:"btn3",
-            logo:"InstagramLogo",
-            txt:"Instagram"},
+    {
+      class: "btn2",
+      logo: "TwitterLogo",
+      weight: "fill",
+      txt: "Twitter"
+    },
 
-        
-          {class:"btn4",
-            logo:"EnvelopeSimple",
-            weight:"fill",
-            txt:"Yahoo"},
 
-        
-          {class:"btn5",
-            logo:"TiktokLogo",
-            weight:"duotone",
-            txt:"Tiktok"},
+    {
+      class: "btn2",
+      logo: "FacebookLogo",
+      weight: "fill",
+      txt: "Facebook"
+    },
 
-        
-          {class:"btn2",
-            logo:"ChatText",
-            weight:"fill",
-            txt:"Chat"},
 
-        
-          {class:"btn1",
-            logo:"Chats",
-            weight:"fill",
-            txt:"WeChat"}
+    {
+      class: "btn3",
+      logo: "InstagramLogo",
+      txt: "Instagram"
+    },
+
+
+    {
+      class: "btn4",
+      logo: "EnvelopeSimple",
+      weight: "fill",
+      txt: "Yahoo"
+    },
+
+
+    {
+      class: "btn5",
+      logo: "TiktokLogo",
+      weight: "duotone",
+      txt: "Tiktok"
+    },
+
+
+    {
+      class: "btn2",
+      logo: "ChatText",
+      weight: "fill",
+      txt: "Chat"
+    },
+
+
+    {
+      class: "btn1",
+      logo: "Chats",
+      weight: "fill",
+      txt: "WeChat"
+    }
 
   ]
 
-  const items =  itemsAry.map((item,idx)=>(
+  const items = itemsAry.map((item, idx) => (
     <div key={idx}>
       <button key={idx} onClick={onShareMedia} className={item.class}>
-      {/* <{item.logo} size={25} color="#ffffff" weight="fill" /> */}
-      {
-        React.createElement(item.logo,{
-          size: 25,
-          color: '#ffffff',
-          weight: item.weight
-        })
-      }
-    </button>
-    <p>{item.txt}</p>
+        {/* <{item.logo} size={25} color="#ffffff" weight="fill" /> */}
+        {
+          React.createElement(item.logo, {
+            size: 25,
+            color: '#ffffff',
+            weight: item.weight
+          })
+        }
+      </button>
+      <p>{item.txt}</p>
     </div>
   ))
 
@@ -130,9 +146,9 @@ function Share({ onShareMedia }) {
             <Chats size={25} color="#ffffff" weight="fill" />
           </button>
           <p>WeChat</p>
-        </div>
-      </div> */}
-      {items}
+  </div> */}
+        {items}
+      </div>
     </div>
   );
 }
