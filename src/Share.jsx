@@ -63,7 +63,7 @@ function Share({ onShareMedia }) {
 
   ]
 
-  const item1 =  itemsAry.slice(0,1).map((item,idx)=>(
+  const items =  itemsAry.map((item,idx)=>(
     <div key={idx}>
       <button key={idx} onClick={onShareMedia} className={item.class}>
       {/* <{item.logo} size={25} color="#ffffff" weight="fill" /> */}
@@ -78,7 +78,6 @@ function Share({ onShareMedia }) {
     <p>{item.txt}</p>
     </div>
   ))
-  
 
   return (
     <div className="share">
@@ -89,8 +88,7 @@ function Share({ onShareMedia }) {
             <WhatsappLogo size={25} color="#ffffff" weight="fill" />
           </button>
           <p>Whatsapp</p>
-        </div> */}
-        {item1}
+        </div>
         <div>
           <button onClick={onShareMedia} className="btn2">
             <TwitterLogo size={25} color="#ffffff" weight="fill" />
@@ -133,7 +131,8 @@ function Share({ onShareMedia }) {
           </button>
           <p>WeChat</p>
         </div>
-      </div>
+      </div> */}
+      {items}
     </div>
   );
 }
