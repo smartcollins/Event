@@ -41,6 +41,8 @@ function Search() {
 
   ]
 
+  const items = searchAry.map((item,idx)=><SearchItem key={idx} {...item}/>)
+
   return (
     <div>
       {back ? (
@@ -70,7 +72,7 @@ function Search() {
             <p>Search Results</p>
             <p>3,459 found</p>
           </div>
-          <SearchItem
+          {/* <SearchItem
             img="search-img"
             title="Help Little Baby Surgery"
             amt="$2,275"
@@ -99,7 +101,8 @@ function Search() {
             txt="Donators"
             num2="5"
             txt2="days left"
-          />
+          /> */}
+          {items}
         </div>
       )}
     </div>
