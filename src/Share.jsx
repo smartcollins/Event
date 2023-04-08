@@ -63,18 +63,34 @@ function Share({ onShareMedia }) {
 
   ]
 
+  const item1 =  itemsAry.slice(0,1).map((item,idx)=>(
+    <div key={idx}>
+      <button key={idx} onClick={onShareMedia} className={item.class}>
+      {/* <{item.logo} size={25} color="#ffffff" weight="fill" /> */}
+      {
+        React.createElement(item.logo,{
+          size: 25,
+          color: '#ffffff',
+          weight: item.weight
+        })
+      }
+    </button>
+    <p>{item.txt}</p>
+    </div>
+  ))
   
 
   return (
     <div className="share">
       <h3>Share</h3>
       <div className="share-main">
-        <div>
+        {/* <div>
           <button onClick={onShareMedia} className="btn1">
             <WhatsappLogo size={25} color="#ffffff" weight="fill" />
           </button>
           <p>Whatsapp</p>
-        </div>
+        </div> */}
+        {item1}
         <div>
           <button onClick={onShareMedia} className="btn2">
             <TwitterLogo size={25} color="#ffffff" weight="fill" />
