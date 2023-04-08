@@ -10,6 +10,27 @@ function See() {
     setBack(true);
   }
 
+  const itemsAry = [
+    
+                {top:"$8,775",
+                detail:"Funds gained",},
+              
+                {top:"$1,765",
+                detail:"Funds left",},
+              
+                {top:"4.471",
+                detail:"Donators",},
+              
+                {top:"9",
+                detail:"Days left",},
+              
+                {top:"82%",
+                detail:"Funds reached",},
+              
+                {top:"2.389",
+                detail:"Prayers",}
+  ]
+
   return (
     <div>
       {back ? (
