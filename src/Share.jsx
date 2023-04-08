@@ -17,16 +17,19 @@ function Share({ onShareMedia }) {
         
           {class:"btn1",
             logo:"WhatsappLogo",
+            weight:"fill",
             txt:"Whatsapp"},
 
         
           {class:"btn2",
             logo:"TwitterLogo",
+            weight:"fill",
             txt:"Twitter"},
 
         
           {class:"btn2",
             logo:"FacebookLogo",
+            weight:"fill",
             txt:"Facebook"},
 
         
@@ -37,24 +40,30 @@ function Share({ onShareMedia }) {
         
           {class:"btn4",
             logo:"EnvelopeSimple",
+            weight:"fill",
             txt:"Yahoo"},
 
         
           {class:"btn5",
             logo:"TiktokLogo",
+            weight:"duotone",
             txt:"Tiktok"},
 
         
           {class:"btn2",
             logo:"ChatText",
+            weight:"fill",
             txt:"Chat"},
 
         
           {class:"btn1",
             logo:"Chats",
+            weight:"fill",
             txt:"WeChat"}
 
   ]
+
+  
 
   return (
     <div className="share">
