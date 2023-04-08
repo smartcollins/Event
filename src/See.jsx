@@ -31,6 +31,13 @@ function See() {
                 detail:"Prayers",}
   ]
 
+  const items = itemsAry.map((item,idx)=>(
+    <button key={idx}>
+      <h3>{item.top}</h3>
+      <p>{item.detail}</p>
+    </button>
+  ))
+
   return (
     <div>
       {back ? (
@@ -65,7 +72,7 @@ function See() {
           <div className="result">
             <h1>Fundrasing Results</h1>
             <div className="result-btn">
-              <button>
+              {/* <button>
                 <h3>$8,775</h3>
                 <p>Funds gained</p>
               </button>
@@ -88,7 +95,8 @@ function See() {
               <button>
                 <h3>2.389</h3>
                 <p>Prayers</p>
-              </button>
+              </button> */}
+              {items}
             </div>
             <button className="nxt">Withdraw Funds ($8,775)</button>
           </div>
