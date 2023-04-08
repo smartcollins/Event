@@ -11,27 +11,39 @@ function See() {
   }
 
   const itemsAry = [
-    
-                {top:"$8,775",
-                detail:"Funds gained",},
-              
-                {top:"$1,765",
-                detail:"Funds left",},
-              
-                {top:"4.471",
-                detail:"Donators",},
-              
-                {top:"9",
-                detail:"Days left",},
-              
-                {top:"82%",
-                detail:"Funds reached",},
-              
-                {top:"2.389",
-                detail:"Prayers",}
+
+    {
+      top: "$8,775",
+      detail: "Funds gained",
+    },
+
+    {
+      top: "$1,765",
+      detail: "Funds left",
+    },
+
+    {
+      top: "4.471",
+      detail: "Donators",
+    },
+
+    {
+      top: "9",
+      detail: "Days left",
+    },
+
+    {
+      top: "82%",
+      detail: "Funds reached",
+    },
+
+    {
+      top: "2.389",
+      detail: "Prayers",
+    }
   ]
 
-  const items = itemsAry.map((item,idx)=>(
+  const items = itemsAry.map((item, idx) => (
     <button key={idx}>
       <h3>{item.top}</h3>
       <p>{item.detail}</p>
