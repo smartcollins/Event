@@ -11,6 +11,51 @@ import {
 } from "phosphor-react";
 
 function Share({ onShareMedia }) {
+
+  
+  const itemsAry = [
+        
+          {class:"btn1",
+            logo:"WhatsappLogo",
+            txt:"Whatsapp"},
+
+        
+          {class:"btn2",
+            logo:"TwitterLogo",
+            txt:"Twitter"},
+
+        
+          {class:"btn2",
+            logo:"FacebookLogo",
+            txt:"Facebook"},
+
+        
+          {class:"btn3",
+            logo:"InstagramLogo",
+            txt:"Instagram"},
+
+        
+          {class:"btn4",
+            logo:"EnvelopeSimple",
+            txt:"Yahoo"},
+
+        
+          {class:"btn5",
+            logo:"TiktokLogo",
+            txt:"Tiktok"},
+
+        
+          {class:"btn2",
+            logo:"ChatText",
+            txt:"Chat"},
+
+        
+          {class:"btn1",
+            logo:"Chats",
+            txt:"WeChat"}
+
+  ]
+
   return (
     <div className="share">
       <h3>Share</h3>
