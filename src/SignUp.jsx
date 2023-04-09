@@ -60,6 +60,13 @@ function SignUp({ txt, txt2, txt3, txt4, forgot, onSign, onForgot, onSwitch }) {
   //               <label htmlFor="okayToEmail">Keep me always logged in</label>
   //             </div>
 
+  const formItem = formAry.map((item,idx)=><div key={idx}>
+  <p>{item.txt}<span>*</span></p>
+  {/* <input {...item} onChange={handle}/> */}
+  <input className="form--input" onChange={handle} type={item.type} placeholder={item.placeholder} name={item.name} value={ite
+  .value}/>
+</div>)
+
   return (
     <div>
       {
@@ -71,7 +78,7 @@ function SignUp({ txt, txt2, txt3, txt4, forgot, onSign, onForgot, onSwitch }) {
           <div className="form-container">
             <h2>{txt}</h2>
             <form className="form" onSubmit={handleSubmit}>
-              <p>
+              {/* {<p>
                 Email <span>*</span>
               </p>
               <input
@@ -104,7 +111,8 @@ function SignUp({ txt, txt2, txt3, txt4, forgot, onSign, onForgot, onSwitch }) {
                 value={form.password2}
                 onChange={handle}
               />
-
+} */}
+{formItem}
               <div className="form--marketing">
                 <input
                   id="okayToEmail"
