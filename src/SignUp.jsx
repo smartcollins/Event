@@ -22,6 +22,43 @@ function SignUp({ txt, txt2, txt3, txt4, forgot, onSign, onForgot, onSwitch }) {
   function handleSubmit(event) {
     event.preventDefault();
   }
+  
+  const formAry = [
+    {
+              
+              txt:"Email",
+                type:"email",
+                placeholder:"Email address",
+                name:"email",
+                value:form.email
+              },
+              {
+               txt: "Password",
+                type:"password",
+                placeholder:"Password",
+                name:"password",
+                value:form.password
+              },
+              {
+               txt: "Confirm",
+                type:"password",
+                placeholder:"Confirm password",
+                name:"password2",
+                value:form.password2
+              }
+
+  ]
+
+  // <div className="form--marketing">
+  //               <input
+  //                 id="okayToEmail"
+  //                 type="checkbox"
+  //                 name="join"
+  //                 checked={form.join}
+  //                 onChange={handle}
+  //               />
+  //               <label htmlFor="okayToEmail">Keep me always logged in</label>
+  //             </div>
 
   return (
     <div>
