@@ -54,7 +54,7 @@ function UrgentItems() {
     txt2:"days left"}
   ]
 
-  
+  const items = itemsAry.map((item,idx)=><SearchItem key={idx} {...item}/>)
 
   return (
     <div>
@@ -87,7 +87,7 @@ function UrgentItems() {
               <button>Music</button>
               <button>Sport</button>
             </div>
-            <SearchItem
+            {/* <SearchItem
               img="search-img4"
               title="Help Victims of Volcanic Erruption"
               amt="$2,275"
@@ -126,7 +126,8 @@ function UrgentItems() {
               txt="Donators"
               num2="19"
               txt2="days left"
-            />
+            /> */}
+            {items}
           </div>
         </div>
       )}
