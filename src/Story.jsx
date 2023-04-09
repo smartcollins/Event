@@ -3,7 +3,9 @@ function Story() {
   const [read, setRead] = useState(false);
 
   function onRead() {
-    setRead((oldRead) => !read);
+    // setRead((oldRead) => !read);
+    // setRead(!read);
+    setRead((oldRead) => !oldRead);
   }
 
   return (
