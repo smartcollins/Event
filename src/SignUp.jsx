@@ -22,30 +22,30 @@ function SignUp({ txt, txt2, txt3, txt4, forgot, onSign, onForgot, onSwitch }) {
   function handleSubmit(event) {
     event.preventDefault();
   }
-  
+
   const formAry = [
     {
-              
-              txt:"Email",
-                type:"email",
-                placeholder:"Email address",
-                name:"email",
-                value:form.email
-              },
-              {
-               txt: "Password",
-                type:"password",
-                placeholder:"Password",
-                name:"password",
-                value:form.password
-              },
-              {
-               txt: "Confirm",
-                type:"password",
-                placeholder:"Confirm password",
-                name:"password2",
-                value:form.password2
-              }
+
+      txt: "Email",
+      type: "email",
+      placeholder: "Email address",
+      name: "email",
+      value: form.email
+    },
+    {
+      txt: "Password",
+      type: "password",
+      placeholder: "Password",
+      name: "password",
+      value: form.password
+    },
+    {
+      txt: "Confirm",
+      type: "password",
+      placeholder: "Confirm password",
+      name: "password2",
+      value: form.password2
+    }
 
   ]
 
@@ -60,12 +60,12 @@ function SignUp({ txt, txt2, txt3, txt4, forgot, onSign, onForgot, onSwitch }) {
   //               <label htmlFor="okayToEmail">Keep me always logged in</label>
   //             </div>
 
-  const formItem = formAry.map((item,idx)=><div key={idx}>
-  <p>{item.txt}<span>*</span></p>
-  {/* <input {...item} onChange={handle}/> */}
-  <input className="form--input" onChange={handle} type={item.type} placeholder={item.placeholder} name={item.name} value={ite
-  .value}/>
-</div>)
+  const formItem = formAry.map((item, idx) => <div key={idx}>
+    <p>{item.txt}<span>*</span></p>
+    {/* <input {...item} onChange={handle}/> */}
+    <input className="form--input" onChange={handle} type={item.type} placeholder={item.placeholder} name={item.name} value={ite
+      .value} />
+  </div>)
 
   return (
     <div>
@@ -112,7 +112,7 @@ function SignUp({ txt, txt2, txt3, txt4, forgot, onSign, onForgot, onSwitch }) {
                 onChange={handle}
               />
 } */}
-{formItem}
+              {formItem}
               <div className="form--marketing">
                 <input
                   id="okayToEmail"
