@@ -33,7 +33,7 @@ function Welcome() {
     {txt:"Sign up for free",
     txt2:"Sign Up",
     txt3:"Already have an account",
-    onSign:onSign,
+    onSign:{onSign},
     txt4:"Sign In",
     onSwitch:onSignIn,
   },
@@ -42,11 +42,14 @@ function Welcome() {
     txt3:"Don't have an Account",
     txt4:"Sign Up",
     forgot:"Forgot the Password?",
-    onSign:onSign,
-    onForgot:onForgot,
-    onSwitch:onSignUp},
+    onSign:{onSign},
+    onForgot:{onForgot},
+    onSwitch:{onSignUp}},
 
   ]
+
+  const sign1 = signAry.slice(0,1).map((item,idx)=><SignUp key={idx} {...item}/>)
+  const sign2 = signAry.slice(1,2).map((item,idx)=><SignUp key={idx} {...item}/>)
 
   return (
     <div>
@@ -55,25 +58,27 @@ function Welcome() {
       ) : forgotPass ? (
         <Forgot />
       ) : signUp ? (
-        <SignUp
-          txt="Sign up for free"
-          txt2="Sign Up"
-          txt3="Already have an account"
-          onSign={onSign}
-          txt4="Sign In"
-          onSwitch={onSignIn}
-        />
+        // <SignUp
+        //   txt="Sign up for free"
+        //   txt2="Sign Up"
+        //   txt3="Already have an account"
+        //   onSign={onSign}
+        //   txt4="Sign In"
+        //   onSwitch={onSignIn}
+        // />
+        {sign1}
       ) : signIn ? (
-        <SignUp
-          txt="Sign in to your account"
-          txt2="Sign In"
-          txt3="Don't have an Account"
-          txt4="Sign Up"
-          forgot="Forgot the Password?"
-          onSign={onSign}
-          onForgot={onForgot}
-          onSwitch={onSignUp}
-        />
+        // <SignUp
+        //   txt="Sign in to your account"
+        //   txt2="Sign In"
+        //   txt3="Don't have an Account"
+        //   txt4="Sign Up"
+        //   forgot="Forgot the Password?"
+        //   onSign={onSign}
+        //   onForgot={onForgot}
+        //   onSwitch={onSignUp}
+        // />
+        {sign2}
       ) : (
         <div className="welcome">
           <div className="intro-main">
