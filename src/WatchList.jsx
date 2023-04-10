@@ -16,6 +16,21 @@ function WatchList({ img, txt }) {
     setPlay(true);
   }
 
+  const watchAry = [
+              {img:"watch-main",
+              txt:"Help Improve Nutrition on Africa"},
+              {img:"watch-main2",
+              txt:"Siamese Twins Surgery Was Successful"},
+              {img:"watch-main3",
+              txt:"Help Improve Nutrition for Africa"},
+              {img:"watch-main4",
+              txt:"Help Victims of Flas Flood in South America"},
+              {img:"watch-main5",
+              txt:"Help Victims of Flash Flood in Africa"},
+              {img:"watch-main6",
+              txt:"Help Improve Nutrition on Asian"}          ,
+  ]
+
   return (
     <div>
       {back ? (
