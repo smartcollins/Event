@@ -31,6 +31,8 @@ function WatchList({ img, txt }) {
               txt:"Help Improve Nutrition on Asian"}          ,
   ]
 
+  const watch = watchAry.map((item,idx)=><WatchItem key={idx} onPlay={onPlay} {...item}/>)
+
   return (
     <div>
       {back ? (
@@ -49,7 +51,7 @@ function WatchList({ img, txt }) {
             </button>
           </div>
           <div className="watch-main-video">
-            <WatchItem
+            {/* <WatchItem
               img="watch-main"
               txt="Help Improve Nutrition on Africa"
               onPlay={onPlay}
@@ -78,7 +80,8 @@ function WatchList({ img, txt }) {
               img="watch-main6"
               txt="Help Improve Nutrition on Asian"
               onPlay={onPlay}
-            />
+            /> */}
+            {watch}
           </div>
         </div>
       )}
