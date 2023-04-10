@@ -17,21 +17,33 @@ function WatchList({ img, txt }) {
   }
 
   const watchAry = [
-              {img:"watch-main",
-              txt:"Help Improve Nutrition on Africa"},
-              {img:"watch-main2",
-              txt:"Siamese Twins Surgery Was Successful"},
-              {img:"watch-main3",
-              txt:"Help Improve Nutrition for Africa"},
-              {img:"watch-main4",
-              txt:"Help Victims of Flas Flood in South America"},
-              {img:"watch-main5",
-              txt:"Help Victims of Flash Flood in Africa"},
-              {img:"watch-main6",
-              txt:"Help Improve Nutrition on Asian"}          ,
+    {
+      img: "watch-main",
+      txt: "Help Improve Nutrition on Africa"
+    },
+    {
+      img: "watch-main2",
+      txt: "Siamese Twins Surgery Was Successful"
+    },
+    {
+      img: "watch-main3",
+      txt: "Help Improve Nutrition for Africa"
+    },
+    {
+      img: "watch-main4",
+      txt: "Help Victims of Flas Flood in South America"
+    },
+    {
+      img: "watch-main5",
+      txt: "Help Victims of Flash Flood in Africa"
+    },
+    {
+      img: "watch-main6",
+      txt: "Help Improve Nutrition on Asian"
+    },
   ]
 
-  const watch = watchAry.map((item,idx)=><WatchItem key={idx} onPlay={onPlay} {...item}/>)
+  const watch = watchAry.map((item, idx) => <WatchItem key={idx} onPlay={onPlay} {...item} />)
 
   return (
     <div>
