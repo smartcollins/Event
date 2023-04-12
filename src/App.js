@@ -31,28 +31,33 @@ function App() {
   }
 
   const introAry = [
-          {img:"intro3-img",
-          txt:"Trusted, transparent, and effective in sharing kindness",
-          nxt3:true,
-          nxt:onSkip,
-          skip:onSkip},
-        
-          {img:"intro2-img",
-          txt:"Create your own fundraising and publish it to the world",
-          nxt2:true,
-          nxt:onNextphase3,
-          skip:onSkip},
-        
-        {
-          img:"intro-img",
-          txt:"Donate easily, quickly, right on target all over the world",
-          nxt:{onNextphase2},
-          skip:{onSkip}},
+    {
+      img: "intro3-img",
+      txt: "Trusted, transparent, and effective in sharing kindness",
+      nxt3: true,
+      nxt: onSkip,
+      skip: onSkip
+    },
+
+    {
+      img: "intro2-img",
+      txt: "Create your own fundraising and publish it to the world",
+      nxt2: true,
+      nxt: onNextphase3,
+      skip: onSkip
+    },
+
+    {
+      img: "intro-img",
+      txt: "Donate easily, quickly, right on target all over the world",
+      nxt: { onNextphase2 },
+      skip: { onSkip }
+    },
   ]
 
-  const intro = introAry.slice(0,1).map((item,idx)=><Intro key={idx} {...item}/>)
-  const intro2 = introAry.slice(1,2).map((item,idx)=><Intro key={idx} {...item}/>)
-  const intro3 = introAry.slice(2,3).map((item,idx)=><Intro key={idx} {...item}/>)
+  const intro = introAry.slice(0, 1).map((item, idx) => <Intro key={idx} {...item} />)
+  const intro2 = introAry.slice(1, 2).map((item, idx) => <Intro key={idx} {...item} />)
+  const intro3 = introAry.slice(2, 3).map((item, idx) => <Intro key={idx} {...item} />)
 
   return (
     <div className="App">
@@ -66,7 +71,7 @@ function App() {
         //   nxt={onSkip}
         //   skip={onSkip}
         // />
-        {intro}
+        { intro }
       ) : nextPhase2 ? (
         // <Intro
         //   img="intro2-img"
@@ -75,7 +80,7 @@ function App() {
         //   nxt={onNextphase3}
         //   skip={onSkip}
         // />
-        {intro2}
+        { intro2 }
       ) : nextPhase ? (
         // <Intro
         //   img="intro-img"
@@ -83,7 +88,7 @@ function App() {
         //   nxt={onNextphase2}
         //   skip={onSkip}
         // />
-        {intro3}
+        { intro3 }
       ) : (
         <div className="signup">
           <div className="intro-main">
