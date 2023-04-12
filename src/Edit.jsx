@@ -19,6 +19,13 @@ function Edit() {
     setDel(false);
   }
 
+  const divAry = [
+              {class:"edit1"},
+              {class:"edit2"},
+              {class:"edit3"},
+              {class:"edit4"}
+  ]
+
   return (
     <div>
       {back ? (
