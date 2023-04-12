@@ -51,12 +51,15 @@ function Donation() {
     setPrayer(true);
   }
 
-  const btnAry = [
+  const circleAry = [
                {size:10, color:"#1EBA60", weight:"fill"},
                {size:10, color:"#ffffff", weight:"fill"},
                {size:10, color:"#ffffff", weight:"fill"},
                {size:10, color:"#ffffff", weight:"fill"},
   ]
+
+  const circle = circleAry.map((item,idx)=><Circle key={idx} {...item}/>)
+
 
   return (
     <div>
@@ -97,10 +100,11 @@ function Donation() {
               </div>
             </div>
             <div>
-              <Circle size={10} color="#1EBA60" weight="fill" />
+              {/* <Circle size={10} color="#1EBA60" weight="fill" />
               <Circle size={10} color="#ffffff" weight="fill" />
               <Circle size={10} color="#ffffff" weight="fill" />
-              <Circle size={10} color="#ffffff" weight="fill" />
+              <Circle size={10} color="#ffffff" weight="fill" /> */}
+              {circle}
             </div>
           </div>
           <div className="bookmark-note">
