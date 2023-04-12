@@ -59,28 +59,31 @@ function App() {
       {skip ? (
         <Welcome />
       ) : nextPhase3 ? (
-        <Intro
-          img="intro3-img"
-          txt="Trusted, transparent, and effective in sharing kindness"
-          nxt3={true}
-          nxt={onSkip}
-          skip={onSkip}
-        />
+        // <Intro
+        //   img="intro3-img"
+        //   txt="Trusted, transparent, and effective in sharing kindness"
+        //   nxt3={true}
+        //   nxt={onSkip}
+        //   skip={onSkip}
+        // />
+        {intro}
       ) : nextPhase2 ? (
-        <Intro
-          img="intro2-img"
-          txt="Create your own fundraising and publish it to the world"
-          nxt2={true}
-          nxt={onNextphase3}
-          skip={onSkip}
-        />
+        // <Intro
+        //   img="intro2-img"
+        //   txt="Create your own fundraising and publish it to the world"
+        //   nxt2={true}
+        //   nxt={onNextphase3}
+        //   skip={onSkip}
+        // />
+        {intro2}
       ) : nextPhase ? (
-        <Intro
-          img="intro-img"
-          txt="Donate easily, quickly, right on target all over the world"
-          nxt={onNextphase2}
-          skip={onSkip}
-        />
+        // <Intro
+        //   img="intro-img"
+        //   txt="Donate easily, quickly, right on target all over the world"
+        //   nxt={onNextphase2}
+        //   skip={onSkip}
+        // />
+        {intro3}
       ) : (
         <div className="signup">
           <div className="intro-main">
