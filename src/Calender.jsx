@@ -95,32 +95,36 @@ function Calender() {
       txt3: "$30"
     },
 
-                  {again:true,
-                  img:"search-img",
-                  title:"Help Little Baby Surgery",
-                  amt:"$2,275",
-                  info:"fund raised from $10,310",
-                  num:"4,471",
-                  txt:"Donators",
-                  num2:"9",
-                  txt2:"days left",
-                  txt3:"$22"},
-                
-                  {again:true,
-                  img:"search-img2",
-                  title:"Help Overcome Malnutrition",
-                  amt:"$8, 775",
-                  info:"fund raised from $7,310",
-                  num:"2,471",
-                  txt:"Donators",
-                  num2:"21",
-                  txt2:"days left",
-                  txt3:"$12"},
+    {
+      again: true,
+      img: "search-img",
+      title: "Help Little Baby Surgery",
+      amt: "$2,275",
+      info: "fund raised from $10,310",
+      num: "4,471",
+      txt: "Donators",
+      num2: "9",
+      txt2: "days left",
+      txt3: "$22"
+    },
+
+    {
+      again: true,
+      img: "search-img2",
+      title: "Help Overcome Malnutrition",
+      amt: "$8, 775",
+      info: "fund raised from $7,310",
+      num: "2,471",
+      txt: "Donators",
+      num2: "21",
+      txt2: "days left",
+      txt3: "$12"
+    },
   ]
 
-  const items = itemsAry.slice(0,4).map((item, idx) => <SearchItem key={idx} {...item} />)
-  const items2 = itemsAry.slice(4,6).map((item, idx) => <SearchItem key={idx} {...item} />)
-  
+  const items = itemsAry.slice(0, 4).map((item, idx) => <SearchItem key={idx} {...item} />)
+  const items2 = itemsAry.slice(4, 6).map((item, idx) => <SearchItem key={idx} {...item} />)
+
 
   return (
     <div>
@@ -286,7 +290,7 @@ function Calender() {
                   <h1>My Donation (7)</h1>
                   <p onClick={onAll}>See all</p>
                 </div>
-                <SearchItem
+                {/* <SearchItem
                   again={true}
                   img="search-img"
                   title="Help Little Baby Surgery"
@@ -309,7 +313,8 @@ function Calender() {
                   num2="21"
                   txt2="days left"
                   txt3="$12"
-                />
+                /> */}
+                {items2}
               </div>
             ) : (
               <div>
