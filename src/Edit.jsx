@@ -20,13 +20,13 @@ function Edit() {
   }
 
   const divAry = [
-              {class:"edit1"},
-              {class:"edit2"},
-              {class:"edit3"},
-              {class:"edit4"}
+    { class: "edit1" },
+    { class: "edit2" },
+    { class: "edit3" },
+    { class: "edit4" }
   ]
 
-  const divs = divAry.map((item,idx)=><div key={idx} className="edit-grid">
+  const divs = divAry.map((item, idx) => <div key={idx} className="edit-grid">
     <div className={item.class}></div>
   </div>)
 
