@@ -30,6 +30,26 @@ function App() {
     setSkip(true);
   }
 
+  const introAry = [
+          {img:"intro3-img",
+          txt:"Trusted, transparent, and effective in sharing kindness",
+          nxt3:true,
+          nxt:onSkip,
+          skip:onSkip},
+        
+          {img:"intro2-img",
+          txt:"Create your own fundraising and publish it to the world",
+          nxt2:true,
+          nxt:onNextphase3,
+          skip:onSkip},
+        
+        {
+          img:"intro-img",
+          txt:"Donate easily, quickly, right on target all over the world",
+          nxt:{onNextphase2},
+          skip:{onSkip}},
+  ]
+
   return (
     <div className="App">
       {skip ? (
