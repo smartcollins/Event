@@ -50,6 +50,10 @@ function App() {
           skip:{onSkip}},
   ]
 
+  const intro = introAry.slice(0,1).map((item,idx)=><Intro key={idx} {...item}/>)
+  const intro2 = introAry.slice(1,2).map((item,idx)=><Intro key={idx} {...item}/>)
+  const intro3 = introAry.slice(2,3).map((item,idx)=><Intro key={idx} {...item}/>)
+
   return (
     <div className="App">
       {skip ? (
