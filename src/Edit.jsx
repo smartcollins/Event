@@ -26,6 +26,10 @@ function Edit() {
               {class:"edit4"}
   ]
 
+  const divs = divAry.map((item,idx)=><div key={idx} className="edit-grid">
+    <div className={item.class}></div>
+  </div>)
+
   return (
     <div>
       {back ? (
@@ -58,12 +62,13 @@ function Edit() {
           </div>
           <div className="edit-main">
             <div className="edit-main-img"></div>
-            <div className="edit-grid">
+            {/* <div className="edit-grid">
               <div className="edit1"></div>
               <div className="edit2"></div>
               <div className="edit3"></div>
               <div className="edit4"></div>
-            </div>
+            </div> */}
+            {divs}
           </div>
           <div className="edit-end">
             <h1>Fundaraising Details</h1>
