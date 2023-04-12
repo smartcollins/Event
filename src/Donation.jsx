@@ -52,13 +52,13 @@ function Donation() {
   }
 
   const circleAry = [
-               {size:10, color:"#1EBA60", weight:"fill"},
-               {size:10, color:"#ffffff", weight:"fill"},
-               {size:10, color:"#ffffff", weight:"fill"},
-               {size:10, color:"#ffffff", weight:"fill"},
+    { size: 10, color: "#1EBA60", weight: "fill" },
+    { size: 10, color: "#ffffff", weight: "fill" },
+    { size: 10, color: "#ffffff", weight: "fill" },
+    { size: 10, color: "#ffffff", weight: "fill" },
   ]
 
-  const circle = circleAry.map((item,idx)=><Circle key={idx} {...item}/>)
+  const circle = circleAry.map((item, idx) => <Circle key={idx} {...item} />)
 
 
   return (
