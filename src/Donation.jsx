@@ -51,6 +51,13 @@ function Donation() {
     setPrayer(true);
   }
 
+  const btnAry = [
+               {size:10, color:"#1EBA60", weight:"fill"},
+               {size:10, color:"#ffffff", weight:"fill"},
+               {size:10, color:"#ffffff", weight:"fill"},
+               {size:10, color:"#ffffff", weight:"fill"},
+  ]
+
   return (
     <div>
       {media ? (
