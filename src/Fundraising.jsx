@@ -96,6 +96,44 @@ function Fundraising() {
     setPlus(true);
   }
 
+  const searchAry = [
+                      {wait:true,
+                      img:"search-img2",
+                      title:"Help Improve Child Health",
+                      amt:"$2,775",
+                      info:"fund required",
+                      num:"21",
+                      txt:"Days left"},,
+                    
+                      {edit:true,
+                      img:"search-img8",
+                      title:"Help Victims of Earthquake",
+                      amt:"$2,275",
+                      info:"fund raised from $10,310",
+                      num:"2,475",
+                      txt:"Donators",
+                      num2:"21",
+                      txt2:"days left",
+                      txt3:"$18",
+                      onEdit:onEdit,
+                      onSee:onSee},
+                    
+                      {edit:true,
+                      img:"search-img2",
+                      title:"Help Improve Child Health",
+                      amt:"$2,775",
+                      info:"fund raised from $6,310",
+                      num:"938",
+                      txt:"Donators",
+                      num2:"21",
+                      txt2:"days left",
+                      txt3:"$18",
+                      onEdit:onEdit,
+                      onSee:onSee},
+  ]
+
+  
+
   return (
     <div>
       {plus ? (
