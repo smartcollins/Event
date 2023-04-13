@@ -92,7 +92,7 @@ function Healthy() {
     }
   ]
 
-  const item2 = itemAry.map((item, idx) => <Prayer key={idx} {...item} />)
+  const item2 = item2Ary.map((item, idx) => <Prayer key={idx} {...item} />)
 
   return (
     <div>
