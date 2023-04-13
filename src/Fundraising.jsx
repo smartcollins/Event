@@ -132,7 +132,8 @@ function Fundraising() {
                       onSee:onSee},
   ]
 
-  
+  const search =  searchAry.slice(0,1).map((item,idx)=><SearchItem key={idx} {...item}/>)
+  const search2 =  searchAry.slice(1,2).map((item,idx)=><SearchItem key={idx} {...item}/>)  
 
   return (
     <div>
@@ -253,7 +254,7 @@ function Fundraising() {
               <div>
                 {pend ? (
                   <div className={pend && "pend"}>
-                    <SearchItem
+                    {/* <SearchItem
                       wait={true}
                       img="search-img2"
                       title="Help Improve Child Health"
@@ -261,11 +262,12 @@ function Fundraising() {
                       info="fund required"
                       num="21"
                       txt="Days left"
-                    />
+                    /> */}
+                    {search}
                   </div>
                 ) : (
                   <div>
-                    <SearchItem
+                    {/* <SearchItem
                       edit={true}
                       img="search-img8"
                       title="Help Victims of Earthquake"
@@ -292,7 +294,8 @@ function Fundraising() {
                       txt3="$18"
                       onEdit={onEdit}
                       onSee={onSee}
-                    />
+                    /> */}
+                    {search2}
                   </div>
                 )}
               </div>
