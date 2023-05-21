@@ -34,8 +34,8 @@ function Welcome() {
       txt: "Sign up for free",
       txt2: "Sign Up",
       txt3: "Already have an account",
-      onSign: { onSign },
       txt4: "Sign In",
+      onSign: onSign,
       onSwitch: onSignIn,
     },
     {
@@ -44,9 +44,9 @@ function Welcome() {
       txt3: "Don't have an Account",
       txt4: "Sign Up",
       forgot: "Forgot the Password?",
-      onSign: { onSign },
-      onForgot: { onForgot },
-      onSwitch: { onSignUp }
+      onSign: onSign,
+      onForgot: onForgot,
+      onSwitch: onSignUp
     },
 
   ]
@@ -69,7 +69,7 @@ function Welcome() {
         //   txt4="Sign In"
         //   onSwitch={onSignIn}
         // />
-        { sign1 }
+        sign1
       ) : signIn ? (
         // <SignUp
         //   txt="Sign in to your account"
@@ -81,7 +81,7 @@ function Welcome() {
         //   onForgot={onForgot}
         //   onSwitch={onSignUp}
         // />
-        { sign2 }
+        sign2
       ) : (
         <div className="welcome">
           <div className="intro-main">

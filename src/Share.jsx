@@ -17,7 +17,7 @@ function Share({ onShareMedia }) {
 
     {
       class: "btn1",
-      logo: "WhatsappLogo",
+      logo: WhatsappLogo,
       weight: "fill",
       txt: "Whatsapp"
     },
@@ -25,7 +25,7 @@ function Share({ onShareMedia }) {
 
     {
       class: "btn2",
-      logo: "TwitterLogo",
+      logo: TwitterLogo,
       weight: "fill",
       txt: "Twitter"
     },
@@ -33,7 +33,7 @@ function Share({ onShareMedia }) {
 
     {
       class: "btn2",
-      logo: "FacebookLogo",
+      logo: FacebookLogo,
       weight: "fill",
       txt: "Facebook"
     },
@@ -41,14 +41,14 @@ function Share({ onShareMedia }) {
 
     {
       class: "btn3",
-      logo: "InstagramLogo",
+      logo: InstagramLogo,
       txt: "Instagram"
     },
 
 
     {
       class: "btn4",
-      logo: "EnvelopeSimple",
+      logo: EnvelopeSimple,
       weight: "fill",
       txt: "Yahoo"
     },
@@ -56,7 +56,7 @@ function Share({ onShareMedia }) {
 
     {
       class: "btn5",
-      logo: "TiktokLogo",
+      logo: TiktokLogo,
       weight: "duotone",
       txt: "Tiktok"
     },
@@ -64,7 +64,7 @@ function Share({ onShareMedia }) {
 
     {
       class: "btn2",
-      logo: "ChatText",
+      logo: ChatText,
       weight: "fill",
       txt: "Chat"
     },
@@ -72,7 +72,7 @@ function Share({ onShareMedia }) {
 
     {
       class: "btn1",
-      logo: "Chats",
+      logo: Chats,
       weight: "fill",
       txt: "WeChat"
     }
