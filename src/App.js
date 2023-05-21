@@ -50,8 +50,8 @@ function App() {
     {
       img: "intro-img",
       txt: "Donate easily, quickly, right on target all over the world",
-      nxt: { onNextphase2 },
-      skip: { onSkip }
+      nxt: onNextphase2,
+      skip: onSkip
     },
   ]
 
@@ -71,7 +71,7 @@ function App() {
         //   nxt={onSkip}
         //   skip={onSkip}
         // />
-        { intro }
+        intro
       ) : nextPhase2 ? (
         // <Intro
         //   img="intro2-img"
@@ -80,7 +80,7 @@ function App() {
         //   nxt={onNextphase3}
         //   skip={onSkip}
         // />
-        { intro2 }
+        intro2
       ) : nextPhase ? (
         // <Intro
         //   img="intro-img"
@@ -88,7 +88,8 @@ function App() {
         //   nxt={onNextphase2}
         //   skip={onSkip}
         // />
-        { intro3 }
+        // { intro3 }
+            intro3
       ) : (
         <div className="signup">
           <div className="intro-main">

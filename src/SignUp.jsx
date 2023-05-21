@@ -63,8 +63,7 @@ function SignUp({ txt, txt2, txt3, txt4, forgot, onSign, onForgot, onSwitch }) {
   const formItem = formAry.map((item, idx) => <div key={idx}>
     <p>{item.txt}<span>*</span></p>
     {/* <input {...item} onChange={handle}/> */}
-    <input className="form--input" onChange={handle} type={item.type} placeholder={item.placeholder} name={item.name} value={ite
-      .value} />
+    <input className="form--input" onChange={handle} type={item.type} placeholder={item.placeholder} name={item.name} value={item.value}/>
   </div>)
 
   return (

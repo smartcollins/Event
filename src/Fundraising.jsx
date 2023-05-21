@@ -105,7 +105,7 @@ function Fundraising() {
       info: "fund required",
       num: "21",
       txt: "Days left"
-    }, ,
+    },
 
     {
       edit: true,
