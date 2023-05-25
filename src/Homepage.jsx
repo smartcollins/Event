@@ -110,24 +110,24 @@ function Home() {
     {
       search: true,
       top: "Search",
-      onBack: { onBack },
       txt: "No results found",
-      onMain: { onSearchMain }
+      onBack: onBack,
+      onMain: onSearchMain
     },
 
     {
       top: "Notification",
-      onBack: { onBack },
       txt: "You have no notification",
-      onMain: { onNotifyMain }
+      onBack: onBack,
+      onMain: onNotifyMain
     },
 
     {
       book: true,
       top: "Bookmark",
-      onBack: { onBack },
       txt: "You have no Bookmark",
-      onMain: { onBookMain }
+      onBack: onBack,
+      onMain: onBookMain
     }
   ]
 
@@ -189,7 +189,7 @@ function Home() {
         //   txt="No results found"
         //   onMain={onSearchMain}
         // />
-        { nullItem }
+        nullItem
       ) : searchMain ? (
         <Search />
       ) : notifyMain ? (
@@ -201,7 +201,7 @@ function Home() {
         //   txt="You have no notification"
         //   onMain={onNotifyMain}
         // />
-        { nullItem2 }
+        nullItem2
       ) : book ? (
         // <Null
         //   book={true}
@@ -210,7 +210,7 @@ function Home() {
         //   txt="You have no Bookmark"
         //   onMain={onBookMain}
         // />
-        { nullItem3 }
+        nullItem3
       ) : bookMain ? (
         <Bookmark />
       ) : (

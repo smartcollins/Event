@@ -77,7 +77,9 @@ function Bookmark() {
             info2="days left"
           /> */}
           {item}
-          <div className={dot && "remove"}>
+          
+          {/* <div className={dot && "remove"}> */}
+          <div className={dot?"remove":""}>
             {/* <BookMarkItem
               img="bookmark-img2"
               title="Help Orphange Children to Buy Study Books"

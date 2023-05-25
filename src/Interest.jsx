@@ -159,7 +159,8 @@ function Interest() {
               size={30}
               color="#2fe22c"
               weight="duotone"
-              onClick={!success && onBack}
+              onClick={onBack}
+              // onClick={!success && onBack}
             />
             <h1>Select Your Interest</h1>
           </div>
@@ -191,7 +192,8 @@ function Interest() {
               );
             })}
           </div>
-          <button onClick={!success && onContinue} className="nxt">
+          {/* <button onClick={!success && onContinue} className="nxt"> */}
+          <button onClick={onContinue} className="nxt">
             Verify
           </button>
         </div>
